@@ -133,7 +133,7 @@
     var qbTable;
     var qbArray;
     $(document).ready(function() {
-    	//Begin Datatables Initializing
+        //Begin Datatables Initializing
         $.fn.dataTable.defaults.column.asSorting = ['desc', 'asc'];
 
         var teTable = $('#te-table').DataTable({
@@ -151,7 +151,10 @@
             }, {
                 "orderSequence": ["asc"],
                 "targets": 6
-            }]
+            }],
+            "language": {
+                "emptyTable": "Loading..."
+            }
 
         });
 
@@ -170,7 +173,10 @@
             }, {
                 "orderSequence": ["asc"],
                 "targets": 6
-            }]
+            }],
+            "language": {
+                "emptyTable": "Loading..."
+            }
 
         });
 
@@ -189,7 +195,10 @@
             }, {
                 "orderSequence": ["asc"],
                 "targets": 6
-            }]
+            }],
+            "language": {
+                "emptyTable": "Loading..."
+            }
 
         });
 
@@ -208,7 +217,10 @@
             }, {
                 "orderSequence": ["asc"],
                 "targets": 6
-            }]
+            }],
+            "language": {
+                "emptyTable": "Loading..."
+            }
 
         });
 
@@ -227,7 +239,10 @@
             }, {
                 "orderSequence": ["asc"],
                 "targets": 6
-            }]
+            }],
+            "language": {
+                "emptyTable": "Loading..."
+            }
         });
 
         //End Datatables
