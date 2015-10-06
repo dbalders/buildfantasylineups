@@ -26,6 +26,9 @@
     #main-nav {
         width: 100%;
         margin-bottom: 25px;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
     }
     
     .main-nav-flex {
@@ -46,6 +49,14 @@
     .main-nav-flex a:hover {
         background-color: #bcbcbc;
     }
+    
+    h2 {
+        padding-top: 50px;
+    }
+
+    #table-container {
+        padding: 0 10px;
+    }
     </style>
 </head>
 
@@ -61,7 +72,7 @@
             <a href="#runningbacks" style="border-right:1px solid #bcbcbc">
                 <div class="nav-link">Running Backs</div>
             </a>
-            <a href="#tightends">
+            <a href="#tightends" style="border-right:1px solid #bcbcbc">
                 <div class="nav-link">Tight Ends</div>
             </a>
             <a href="#defense">
@@ -69,66 +80,70 @@
             </a>
         </div>
     </div>
-    <h2 id="quarterbacks">Quarterbacks</h2>
-    <table id="qb-table" class="dt-table display responsive" style="width:100%">
-        <thead>
-            <td>Name</td>
-            <td>Salary</td>
-            <td>GameInfo</td>
-            <td>AvgPointsPerGame</td>
-            <td>StDev</td>
-            <td>Value</td>
-            <td>Avg Dollars per Point</td>
-        </thead>
-    </table>
-    <h3 id="widereceivers">Wide Receivers</h3>
-    <table id="wr-table" class="dt-table display responsive" style="width:100%">
-        <thead>
-            <td>Name</td>
-            <td>Salary</td>
-            <td>GameInfo</td>
-            <td>AvgPointsPerGame</td>
-            <td>StDev</td>
-            <td>Value</td>
-            <td>Avg Dollars per Point</td>
-        </thead>
-    </table>
-    <h3 id="runningbacks">Running Backs</h3>
-    <table id="rb-table" class="dt-table display responsive" style="width:100%">
-        <thead>
-            <td>Name</td>
-            <td>Salary</td>
-            <td>GameInfo</td>
-            <td>AvgPointsPerGame</td>
-            <td>StDev</td>
-            <td>Value</td>
-            <td>Avg Dollars per Point</td>
-        </thead>
-    </table>
-    <h3 id="tightends">Tight Ends</h3>
-    <table id="te-table" class="dt-table display responsive" style="width:100%">
-        <thead>
-            <td>Name</td>
-            <td>Salary</td>
-            <td>GameInfo</td>
-            <td>AvgPointsPerGame</td>
-            <td>StDev</td>
-            <td>Value</td>
-            <td>Avg Dollars per Point</td>
-        </thead>
-    </table>
-    <h3 id="defense">Defense</h3>
-    <table id="def-table" class="dt-table display responsive" style="width:100%">
-        <thead>
-            <td>Name</td>
-            <td>Salary</td>
-            <td>GameInfo</td>
-            <td>AvgPointsPerGame</td>
-            <td>StDev</td>
-            <td>Value</td>
-            <td>Avg Dollars per Point</td>
-        </thead>
-    </table>
+    <div id="table-container">
+        <h1>FanDuel</h1>
+        <h2 id="quarterbacks">Quarterbacks</h2>
+        <table id="qb-table" class="dt-table display responsive" style="width:100%">
+            <thead>
+                <td>Name</td>
+                <td>Salary</td>
+                <td>GameInfo</td>
+                <td>AvgPointsPerGame</td>
+                <td>StDev</td>
+                <td>Value</td>
+                <td>Avg Dollars per Point</td>
+            </thead>
+        </table>
+        <h2 id="widereceivers">Wide Receivers</h2>
+        <table id="wr-table" class="dt-table display responsive" style="width:100%">
+            <thead>
+                <td>Name</td>
+                <td>Salary</td>
+                <td>GameInfo</td>
+                <td>AvgPointsPerGame</td>
+                <td>StDev</td>
+                <td>Value</td>
+                <td>Avg Dollars per Point</td>
+            </thead>
+        </table>
+        <h2 id="runningbacks">Running Backs</h2>
+        <table id="rb-table" class="dt-table display responsive" style="width:100%">
+            <thead>
+                <td>Name</td>
+                <td>Salary</td>
+                <td>GameInfo</td>
+                <td>AvgPointsPerGame</td>
+                <td>StDev</td>
+                <td>Value</td>
+                <td>Avg Dollars per Point</td>
+            </thead>
+        </table>
+        <h2 id="tightends">Tight Ends</h2>
+        <table id="te-table" class="dt-table display responsive" style="width:100%">
+            <thead>
+                <td>Name</td>
+                <td>Salary</td>
+                <td>GameInfo</td>
+                <td>AvgPointsPerGame</td>
+                <td>StDev</td>
+                <td>Value</td>
+                <td>Avg Dollars per Point</td>
+            </thead>
+        </table>
+        <h2 id="defense">Defense</h2>
+        <table id="def-table" class="dt-table display responsive" style="width:100%">
+            <thead>
+                <td>Name</td>
+                <td>Salary</td>
+                <td>GameInfo</td>
+                <td>AvgPointsPerGame</td>
+                <td>StDev</td>
+                <td>Value</td>
+                <td>Avg Dollars per Point</td>
+            </thead>
+        </table>
+    </div>
+
     <script>
     var qbTable;
     var qbArray;
@@ -142,18 +157,19 @@
             order: [
                 [5, "desc"]
             ],
-            "aaSorting": [
+            aaSorting: [
                 [4, 'asc']
             ],
-            "columnDefs": [{
-                "type": "num",
-                "targets": 6
+            columnDefs: [{
+                type: "num",
+                targets: 6
             }, {
-                "orderSequence": ["asc"],
-                "targets": 6
+                orderSequence: ["asc"],
+                targets: 6
             }],
-            "language": {
-                "emptyTable": "Loading..."
+            language: {
+                emptyTable: "Loading...",
+                search: "Filter:"
             }
 
         });
@@ -164,18 +180,19 @@
             order: [
                 [5, "desc"]
             ],
-            "aaSorting": [
+            aaSorting: [
                 [4, 'asc']
             ],
-            "columnDefs": [{
-                "type": "num",
-                "targets": 6
+            columnDefs: [{
+                type: "num",
+                targets: 6
             }, {
-                "orderSequence": ["asc"],
-                "targets": 6
+                orderSequence: ["asc"],
+                targets: 6
             }],
-            "language": {
-                "emptyTable": "Loading..."
+            language: {
+                emptyTable: "Loading...",
+                search: "Filter:"
             }
 
         });
@@ -186,18 +203,19 @@
             order: [
                 [5, "desc"]
             ],
-            "aaSorting": [
+            aaSorting: [
                 [4, 'asc']
             ],
-            "columnDefs": [{
-                "type": "num",
-                "targets": 6
+            columnDefs: [{
+                type: "num",
+                targets: 6
             }, {
-                "orderSequence": ["asc"],
-                "targets": 6
+                orderSequence: ["asc"],
+                targets: 6
             }],
-            "language": {
-                "emptyTable": "Loading..."
+            language: {
+                emptyTable: "Loading...",
+                search: "Filter:"
             }
 
         });
@@ -208,18 +226,19 @@
             order: [
                 [5, "desc"]
             ],
-            "aaSorting": [
+            aaSorting: [
                 [4, 'asc']
             ],
-            "columnDefs": [{
-                "type": "num",
-                "targets": 6
+            columnDefs: [{
+                type: "num",
+                targets: 6
             }, {
-                "orderSequence": ["asc"],
-                "targets": 6
+                orderSequence: ["asc"],
+                targets: 6
             }],
-            "language": {
-                "emptyTable": "Loading..."
+            language: {
+                emptyTable: "Loading...",
+                search: "Filter:"
             }
 
         });
@@ -230,18 +249,19 @@
             order: [
                 [5, "desc"]
             ],
-            "aaSorting": [
+            aaSorting: [
                 [4, 'asc']
             ],
-            "columnDefs": [{
-                "type": "num",
-                "targets": 6
+            columnDefs: [{
+                type: "num",
+                targets: 6
             }, {
-                "orderSequence": ["asc"],
-                "targets": 6
+                orderSequence: ["asc"],
+                targets: 6
             }],
-            "language": {
-                "emptyTable": "Loading..."
+            language: {
+                emptyTable: "Loading...",
+                search: "Filter:"
             }
         });
 
