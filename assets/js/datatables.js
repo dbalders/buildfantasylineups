@@ -128,4 +128,12 @@ function nflDatatables(callback) {
         }
     });
 }
+
+function clearTables() {
+    qbTable.clear().draw();
+    wrTable.clear().draw();
+    rbTable.clear().draw();
+    teTable.clear().draw();
+    defTable.clear().draw();
+}
 //End Datatables

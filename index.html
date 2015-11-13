@@ -74,7 +74,7 @@
 
 <body>
     <div id="main-nav">
-        <div class="main-nav-flex">
+        <div class="main-nav-flex" style="border-bottom: 1px solid #bcbcbc;margin-bottom:10px;">
             <a id="fanduel-nav" href="#fanduel" style="border-right:1px solid #bcbcbc">
                 <div class="nav-link">Fanduel</div>
             </a>
@@ -180,10 +180,12 @@
         fanduelNFL();
 
         $('#draftkings-nav').click(function() {
+            clearTables();
             draftkingsNFL();
             $('#title-header').text("DraftKings");
         });
         $('#fanduel-nav').click(function() {
+            clearTables();
             fanduelNFL();
             $('#title-header').text("Fanduel");
         });
