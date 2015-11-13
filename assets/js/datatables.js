@@ -1,9 +1,15 @@
 //NFL Datatables
+var teTable;
+var rbTable;
+var wrTable;
+var qbTable;
+var defTable;
 
-function nflDatatables() {
+
+function nflDatatables(callback) {
     $.fn.dataTable.defaults.column.asSorting = ['desc', 'asc'];
 
-    var teTable = $('#te-table').DataTable({
+    teTable = $('#te-table').DataTable({
         paging: false,
         info: false,
         order: [
@@ -26,7 +32,7 @@ function nflDatatables() {
 
     });
 
-    var rbTable = $('#rb-table').DataTable({
+    rbTable = $('#rb-table').DataTable({
         paging: false,
         info: false,
         order: [
@@ -49,7 +55,7 @@ function nflDatatables() {
 
     });
 
-    var wrTable = $('#wr-table').DataTable({
+    wrTable = $('#wr-table').DataTable({
         paging: false,
         info: false,
         order: [
@@ -72,7 +78,7 @@ function nflDatatables() {
 
     });
 
-    var defTable = $('#def-table').DataTable({
+    defTable = $('#def-table').DataTable({
         paging: false,
         info: false,
         order: [

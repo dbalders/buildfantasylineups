@@ -1,13 +1,10 @@
-var qbTable;
 var qbArray;
 
 function fanduelNFL() {
-   //Begin Datatables Initializing
-
     var fanduelJson;
 
     //Grab the data.json file
-    $.getJSON('/assets/json/fanduelNFLData.json', function(data) {
+    $.getJSON('assets/json/fanduelNFLData.json', function(data) {
         fanduelJson = data;
     }).done(function() {
         for (var i = 1; i < fanduelJson.length; i++) {
