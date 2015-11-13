@@ -12,6 +12,7 @@ function nflDatatables(callback) {
     teTable = $('#te-table').DataTable({
         paging: false,
         info: false,
+        destroy: true,
         order: [
             [5, "desc"]
         ],
@@ -35,6 +36,7 @@ function nflDatatables(callback) {
     rbTable = $('#rb-table').DataTable({
         paging: false,
         info: false,
+        destroy: true,
         order: [
             [5, "desc"]
         ],
@@ -58,6 +60,7 @@ function nflDatatables(callback) {
     wrTable = $('#wr-table').DataTable({
         paging: false,
         info: false,
+        destroy: true,
         order: [
             [5, "desc"]
         ],
@@ -81,6 +84,7 @@ function nflDatatables(callback) {
     defTable = $('#def-table').DataTable({
         paging: false,
         info: false,
+        destroy: true,
         order: [
             [5, "desc"]
         ],
@@ -104,6 +108,7 @@ function nflDatatables(callback) {
     qbTable = $('#qb-table').DataTable({
         paging: false,
         info: false,
+        destroy: true,
         order: [
             [5, "desc"]
         ],

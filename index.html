@@ -36,10 +36,10 @@
     
     #main-nav {
         width: 100%;
-        margin-bottom: 25px;
+        /*margin-bottom: 25px;
         position: fixed;
         top: 0;
-        z-index: 1000;
+        z-index: 1000;*/
     }
     
     .main-nav-flex {
@@ -75,6 +75,16 @@
 <body>
     <div id="main-nav">
         <div class="main-nav-flex">
+            <a id="fanduel-nav" href="#fanduel" style="border-right:1px solid #bcbcbc">
+                <div class="nav-link">Fanduel</div>
+            </a>
+            <a id="draftkings-nav" href="#draftkings">
+                <div class="nav-link">Draftkings</div>
+            </a>
+        </div>
+    </div>
+    <div id="main-nav">
+        <div class="main-nav-flex">
             <a href="#quarterbacks" style="border-right:1px solid #bcbcbc">
                 <div class="nav-link">Quarterbacks</div>
             </a>
@@ -93,7 +103,7 @@
         </div>
     </div>
     <div id="table-container">
-        <h1>FanDuel</h1>
+        <h1 id="title-header">FanDuel</h1>
         <p><strong>StDev:</strong> Standard deviations above the mean for position (higher better)</p>
         <p><strong>Value:</strong> Standard deviation divided by salary (higher better)</p>
         <p><strong>Avg Dollars per Point: </strong> The number of dollars it costs to get a point on average (lower better)</p>
@@ -162,11 +172,21 @@
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="assets/js/math.min.js"></script>
     <script type="text/javascript" src="assets/js/fanduelNFL.js"></script>
+    <script type="text/javascript" src="assets/js/draftkingsNFL.js"></script>
     <script type="text/javascript" src="assets/js/datatables.js"></script>
     <script>
     $(document).ready(function() {
         nflDatatables();
         fanduelNFL();
+
+        $('#draftkings-nav').click(function() {
+            draftkingsNFL();
+            $('#title-header').text("DraftKings");
+        });
+        $('#fanduel-nav').click(function() {
+            fanduelNFL();
+            $('#title-header').text("Fanduel");
+        });
     });
     </script>
 </body>
