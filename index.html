@@ -19,62 +19,29 @@
     ga('send', 'pageview');
     </script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.8/css/jquery.dataTables.min.css">
-    <style>
-    body {
-        text-align: center;
-    }
-    
-    .value {
-        margin: auto;
-    }
-    
-    .header {
-        font-weight: bold;
-        font-style: 20px;
-        margin-bottom: 10px;
-    }
-    
-    #main-nav {
-        width: 100%;
-        /*margin-bottom: 25px;
-        position: fixed;
-        top: 0;
-        z-index: 1000;*/
-    }
-    
-    .main-nav-flex {
-        display: flex;
-        display: -webkit-flex;
-    }
-    
-    .main-nav-flex a {
-        padding: 15px;
-        flex: 1 0 0;
-        -webkit-flex: 1 0 0;
-        background-color: #848484;
-        color: white;
-        font-size: 20px;
-        text-decoration: none;
-    }
-    
-    .main-nav-flex a:hover {
-        background-color: #bcbcbc;
-    }
-    
-    h1,
-    h2 {
-        padding-top: 50px;
-    }
-    
-    #table-container {
-        padding: 0 10px;
-    }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,600,400,300|Source+Sans+Pro|Ubuntu" />
 </head>
 
 <body>
     <div id="main-nav">
-        <div class="main-nav-flex" style="border-bottom: 1px solid #bcbcbc;margin-bottom:10px;">
+        <div class="main-nav-flex">
+            <a id="site-home-link" href="/">
+                <div class="nav-link">Daily Fantasy Values</div>
+            </a>
+            <a id="nfl-nav">
+                <div class="nav-link"></div>
+            </a>
+        </div>
+    </div>
+    <div id="main-description">
+        <p>Daily Fantasy Values is a site built to make it easy to see which daily players have the best value when compared to their salary. Each player is broken down into their average points vs salary, cost vs average salary, and their standard deviation of points vs other players in their categories.
+            <br>
+            <br>This site gets updated every week with the new salaries and should hopefully provide better insight into who you should pick for your roster.</p>
+    </div>
+    <div class="arrow-down"></div>
+    <div id="df-sites-nav">
+        <div class="df-sites-nav-flex">
             <a id="fanduel-nav" href="#fanduel" style="border-right:1px solid #bcbcbc">
                 <div class="nav-link">Fanduel</div>
             </a>
@@ -83,8 +50,12 @@
             </a>
         </div>
     </div>
-    <div id="main-nav">
-        <div class="main-nav-flex">
+    <h1 id="title-header">FanDuel</h1>
+    <p><strong>StDev:</strong> Standard deviations above the mean for position (higher better)</p>
+    <p><strong>Value:</strong> Standard deviation divided by salary (higher better)</p>
+    <p><strong>Avg Dollars per Point: </strong> The number of dollars it costs to get a point on average (lower better)</p>
+    <div id="position-nav">
+        <div class="position-nav-flex">
             <a href="#quarterbacks" style="border-right:1px solid #bcbcbc">
                 <div class="nav-link">Quarterbacks</div>
             </a>
@@ -103,10 +74,6 @@
         </div>
     </div>
     <div id="table-container">
-        <h1 id="title-header">FanDuel</h1>
-        <p><strong>StDev:</strong> Standard deviations above the mean for position (higher better)</p>
-        <p><strong>Value:</strong> Standard deviation divided by salary (higher better)</p>
-        <p><strong>Avg Dollars per Point: </strong> The number of dollars it costs to get a point on average (lower better)</p>
         <h2 id="quarterbacks" style="padding-top: 25px;">Quarterbacks</h2>
         <table id="qb-table" class="dt-table display responsive" style="width:100%">
             <thead>
