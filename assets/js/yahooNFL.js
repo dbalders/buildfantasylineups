@@ -57,7 +57,7 @@ function yahooNFL() {
                     ]).draw();
                     break;
 
-                case "D":
+                case "DEF":
                     defTable.row.add([
                         yahooJson[i]['First Name'] + " " + yahooJson[i]['Last Name'],
                         "$" + yahooJson[i]['Salary'],
