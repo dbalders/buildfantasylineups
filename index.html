@@ -48,6 +48,9 @@
             <a id="draftkings-nav" href="#draftkings">
                 <div class="nav-link">Draftkings</div>
             </a>
+            <a id="yahoo-nav" href="#draftkings">
+                <div class="nav-link">Yahoo</div>
+            </a>
         </div>
     </div>
     <h1 id="title-header">FanDuel</h1>
@@ -140,6 +143,7 @@
     <script type="text/javascript" src="assets/js/math.min.js"></script>
     <script type="text/javascript" src="assets/js/fanduelNFL.js"></script>
     <script type="text/javascript" src="assets/js/draftkingsNFL.js"></script>
+    <script type="text/javascript" src="assets/js/yahooNFL.js"></script>
     <script type="text/javascript" src="assets/js/datatables.js"></script>
     <script>
     $(document).ready(function() {
@@ -155,6 +159,11 @@
             clearTables();
             fanduelNFL();
             $('#title-header').text("Fanduel");
+        });
+        $('#yahoo-nav').click(function() {
+            clearTables();
+            yahooNFL();
+            $('#title-header').text("Yahoo");
         });
     });
     </script>
