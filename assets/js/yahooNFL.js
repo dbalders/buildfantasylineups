@@ -150,7 +150,7 @@ function calcValues(table, stDev, avg) {
         var salary = d[1].slice(1)
 
         d[4] = ((d[3] - avg) / stDev).toFixed(2); //creating the stDev value
-        d[5] = ((d[4] / salary) * 100).toFixed(2);
+        d[5] = ((d[4] / salary) * 10).toFixed(2);
         //If the avg is > than 0
         if (d[3] > 0) {
             d[6] = (salary / d[3]).toFixed(2);
