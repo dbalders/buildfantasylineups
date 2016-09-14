@@ -120,11 +120,12 @@ function draftkingsNFL() {
                 defAvg = math.mean(defArray);
 
                 //Calculate the values for last few columns
-                calcValues(qbTable, qbStDev, qbAvg);
-                calcValues(rbTable, rbStDev, rbAvg);
-                calcValues(wrTable, wrStDev, wrAvg);
-                calcValues(teTable, teStDev, teAvg);
-                calcValues(defTable, defStDev, defAvg);
+                calcVals(qbTable, qbStDev, qbAvg);
+                calcVals(rbTable, rbStDev, rbAvg);
+                calcVals(wrTable, wrStDev, wrAvg);
+                calcVals(teTable, teStDev, teAvg);
+                calcVals(defTable, defStDev, defAvg);
+
             }
         }
     })
@@ -142,7 +143,7 @@ function removeDollar(dataArray, table) {
     }
 }
 
-function calcValues(table, stDev, avg) {
+function calcVals(table, stDev, avg) {
     table.rows().every(function(rowIdx, tableLoop, rowLoop) {
         var d = this.data();
         var salary = d[1].slice(1)
