@@ -1,139 +1,41 @@
-//NFL Datatables
-var teTable;
-var rbTable;
-var wrTable;
-var qbTable;
-var defTable;
+$.fn.dataTable.defaults.column.asSorting = ['desc', 'asc'];
 
-
-function nflDatatables(callback) {
-    $.fn.dataTable.defaults.column.asSorting = ['desc', 'asc'];
-
-    teTable = $('#te-table').DataTable({
-        paging: false,
-        info: false,
-        destroy: true,
-        order: [
-            [5, "desc"]
-        ],
-        aaSorting: [
-            [4, 'asc']
-        ],
-        columnDefs: [{
-            type: "num",
-            targets: 6
-        }, {
-            orderSequence: ["asc"],
-            targets: 6
-        }],
-        language: {
-            emptyTable: "Loading...",
-            search: "Filter:"
-        }
-
-    });
-
-    rbTable = $('#rb-table').DataTable({
-        paging: false,
-        info: false,
-        destroy: true,
-        order: [
-            [5, "desc"]
-        ],
-        aaSorting: [
-            [4, 'asc']
-        ],
-        columnDefs: [{
-            type: "num",
-            targets: 6
-        }, {
-            orderSequence: ["asc"],
-            targets: 6
-        }],
-        language: {
-            emptyTable: "Loading...",
-            search: "Filter:"
-        }
-
-    });
-
-    wrTable = $('#wr-table').DataTable({
-        paging: false,
-        info: false,
-        destroy: true,
-        order: [
-            [5, "desc"]
-        ],
-        aaSorting: [
-            [4, 'asc']
-        ],
-        columnDefs: [{
-            type: "num",
-            targets: 6
-        }, {
-            orderSequence: ["asc"],
-            targets: 6
-        }],
-        language: {
-            emptyTable: "Loading...",
-            search: "Filter:"
-        }
-
-    });
-
-    defTable = $('#def-table').DataTable({
-        paging: false,
-        info: false,
-        destroy: true,
-        order: [
-            [5, "desc"]
-        ],
-        aaSorting: [
-            [4, 'asc']
-        ],
-        columnDefs: [{
-            type: "num",
-            targets: 6
-        }, {
-            orderSequence: ["asc"],
-            targets: 6
-        }],
-        language: {
-            emptyTable: "Loading...",
-            search: "Filter:"
-        }
-
-    });
-
-    qbTable = $('#qb-table').DataTable({
-        paging: false,
-        info: false,
-        destroy: true,
-        order: [
-            [5, "desc"]
-        ],
-        aaSorting: [
-            [4, 'asc']
-        ],
-        columnDefs: [{
-            type: "num",
-            targets: 6
-        }, {
-            orderSequence: ["asc"],
-            targets: 6
-        }],
-        language: {
-            emptyTable: "Loading...",
-            search: "Filter:"
-        }
-    });
-}
-
-function clearTables() {
-    qbTable.clear().draw();
-    wrTable.clear().draw();
-    rbTable.clear().draw();
-    teTable.clear().draw();
-    defTable.clear().draw();
-}
-//End Datatables
+var playersTable = $('#players-table').dataTable({
+    ajax: {
+        url: '/assets/json/data.json',
+        dataSrc: ""
+    },
+    paging: false,
+    info: false,
+    destroy: true,
+    order: [
+        [2, "desc"]
+    ],
+    "columnDefs": [{
+        "visible": false,
+        "targets": [0]
+    }],
+    columns: [{
+        "data": "ID"
+    }, {
+        "data": "Name"
+    }, {
+        "data": "Salary"
+    }, {
+        "data": "AvgPointsPerGame"
+    }, {
+        "data": "PPD"
+    }, {
+        "data": "Ceiling"
+    }, {
+        "data": "ceilingPPD"
+    }, {
+        "data": "Floor"
+    }, {
+        "data": "floorPPD"
+    }],
+    language: {
+        emptyTable: "Loading...",
+        search: "Filter:"
+    }
+});

@@ -1,172 +1,38 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-68503719-1', 'auto');
-    ga('send', 'pageview');
-    </script>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.8/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,600,400,300|Source+Sans+Pro|Ubuntu" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,600,400,300|Source+Sans+Pro|Ubuntu" />
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 </head>
 
 <body>
-    <div id="main-nav">
-        <div class="main-nav-flex">
-            <a id="site-home-link" href="/">
-                <div class="nav-link">Daily Fantasy Values</div>
-            </a>
-            <a id="nfl-nav">
-                <div class="nav-link"></div>
-            </a>
+    <div id="main-container" class="flex-vertical">
+        <nav id="nav" class="flex">
+            <div id="nav-title">DraftKings NBA Values</div>
+        </nav>
+        <div id="team-table-container">
+            <table id="team-table" class="dt-table display responsive" style="width:100%">
+            </table>
+        </div>
+        <div id="players-table-container">
+            <table id="players-table" class="dt-table display responsive" style="width:100%">
+                <thead>
+                	<td class="hidden">ID</td>
+                    <td>Name</td>
+                    <td>Salary</td>
+                    <td>Avg PPG</td>
+                    <td>Avg PPD</td>
+                    <td>Ceiling</td>
+                    <td>Ceiling PPD</td>
+                    <td>Floor</td>
+                    <td>Floor PPD</td>
+                </thead>
+            </table>
         </div>
     </div>
-    <div id="main-description">
-        <p>Daily Fantasy Values is a site built to make it easy to see which daily players have the best value when compared to their salary. Each player is broken down into their average points vs salary, cost vs average salary, and their standard deviation of points vs other players in their categories.
-            <br>
-            <br>This site gets updated every week with the new salaries and should hopefully provide better insight into who you should pick for your roster.</p>
-    </div>
-    <div class="arrow-down"></div>
-    <div id="df-sites-nav">
-        <div class="df-sites-nav-flex">
-            <a id="fanduel-nav" href="#fanduel" style="border-right:1px solid #bcbcbc">
-                <div class="nav-link">Fanduel</div>
-            </a>
-            <a id="draftkings-nav" href="#draftkings">
-                <div class="nav-link">Draftkings</div>
-            </a>
-            <a id="yahoo-nav" href="#draftkings">
-                <div class="nav-link">Yahoo</div>
-            </a>
-        </div>
-    </div>
-    <h1 id="title-header">FanDuel</h1>
-    <p><strong>StDev:</strong> Standard deviations above the mean for position (higher better)</p>
-    <p><strong>Value:</strong> Standard deviation divided by salary (higher better)</p>
-    <p><strong>Avg Dollars per Point: </strong> The number of dollars it costs to get a point on average (lower better)</p>
-    <div id="position-nav">
-        <div class="position-nav-flex">
-            <a href="#quarterbacks" style="border-right:1px solid #bcbcbc">
-                <div class="nav-link">Quarterbacks</div>
-            </a>
-            <a href="#widereceivers" style="border-right:1px solid #bcbcbc">
-                <div class="nav-link">Wide Receivers</div>
-            </a>
-            <a href="#runningbacks" style="border-right:1px solid #bcbcbc">
-                <div class="nav-link">Running Backs</div>
-            </a>
-            <a href="#tightends" style="border-right:1px solid #bcbcbc">
-                <div class="nav-link">Tight Ends</div>
-            </a>
-            <a href="#defense">
-                <div class="nav-link">Defense</div>
-            </a>
-        </div>
-    </div>
-    <div id="table-container">
-        <h2 id="quarterbacks" style="padding-top: 25px;">Quarterbacks</h2>
-        <table id="qb-table" class="dt-table display responsive" style="width:100%">
-            <thead>
-                <td>Name</td>
-                <td>Salary</td>
-                <td>GameInfo</td>
-                <td>Avg Points Per Game</td>
-                <td>StDev</td>
-                <td>Value</td>
-                <td>Avg Dollars per Point</td>
-            </thead>
-        </table>
-        <h2 id="widereceivers">Wide Receivers</h2>
-        <table id="wr-table" class="dt-table display responsive" style="width:100%">
-            <thead>
-                <td>Name</td>
-                <td>Salary</td>
-                <td>GameInfo</td>
-                <td>Avg Points Per Game</td>
-                <td>StDev</td>
-                <td>Value</td>
-                <td>Avg Dollars per Point</td>
-            </thead>
-        </table>
-        <h2 id="runningbacks">Running Backs</h2>
-        <table id="rb-table" class="dt-table display responsive" style="width:100%">
-            <thead>
-                <td>Name</td>
-                <td>Salary</td>
-                <td>GameInfo</td>
-                <td>Avg Points Per Game</td>
-                <td>StDev</td>
-                <td>Value</td>
-                <td>Avg Dollars per Point</td>
-            </thead>
-        </table>
-        <h2 id="tightends">Tight Ends</h2>
-        <table id="te-table" class="dt-table display responsive" style="width:100%">
-            <thead>
-                <td>Name</td>
-                <td>Salary</td>
-                <td>GameInfo</td>
-                <td>Avg Points Per Game</td>
-                <td>StDev</td>
-                <td>Value</td>
-                <td>Avg Dollars per Point</td>
-            </thead>
-        </table>
-        <h2 id="defense">Defense</h2>
-        <table id="def-table" class="dt-table display responsive" style="width:100%">
-            <thead>
-                <td>Name</td>
-                <td>Salary</td>
-                <td>GameInfo</td>
-                <td>Avg Points Per Game</td>
-                <td>StDev</td>
-                <td>Value</td>
-                <td>Avg Dollars per Point</td>
-            </thead>
-        </table>
-    </div>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="assets/js/math.min.js"></script>
-    <script type="text/javascript" src="assets/js/fanduelNFL.js"></script>
-    <script type="text/javascript" src="assets/js/draftkingsNFL.js"></script>
-    <script type="text/javascript" src="assets/js/yahooNFL.js"></script>
-    <script type="text/javascript" src="assets/js/datatables.js"></script>
-    <script>
-    $(document).ready(function() {
-        nflDatatables();
-        fanduelNFL();
-
-        $('#draftkings-nav').click(function() {
-            clearTables();
-            draftkingsNFL();
-            $('#title-header').text("DraftKings");
-        });
-        $('#fanduel-nav').click(function() {
-            clearTables();
-            fanduelNFL();
-            $('#title-header').text("Fanduel");
-        });
-        $('#yahoo-nav').click(function() {
-            clearTables();
-            yahooNFL();
-            $('#title-header').text("Yahoo");
-        });
-    });
-    </script>
 </body>
-
+<script src="assets/js/datatables.js"></script>
 </html>
