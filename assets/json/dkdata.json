@@ -1,1761 +1,713 @@
 [
   {
-    "Position": "PG",
-    "Name": "Russell Westbrook",
-    "Salary": 11900,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 59.821,
-    "teamAbbrev": "OKC"
+    "Position": "PF/C",
+    "Name": "Anthony Davis",
+    "Salary": 11300,
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 57.656,
+    "teamAbbrev": "NO"
   },
   {
-    "Position": "PG/SG",
-    "Name": "James Harden",
-    "Salary": 11500,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 62.357,
-    "teamAbbrev": "Hou"
+    "Position": "PF/C",
+    "Name": "DeMarcus Cousins",
+    "Salary": 10300,
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 44.361,
+    "teamAbbrev": "Sac"
+  },
+  {
+    "Position": "PG",
+    "Name": "Giannis Antetokounmpo",
+    "Salary": 9700,
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 47.107,
+    "teamAbbrev": "Mil"
   },
   {
     "Position": "SF/PF",
     "Name": "Kevin Durant",
-    "Salary": 9500,
-    "GameInfo": "Dal@GS 10:30PM ET",
+    "Salary": 9400,
+    "GameInfo": "GS@Den 09:00PM ET",
     "AvgPointsPerGame": 50.393,
     "teamAbbrev": "GS"
-  },
-  {
-    "Position": "SF",
-    "Name": "Kawhi Leonard",
-    "Salary": 9200,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 44.143,
-    "teamAbbrev": "SA"
-  },
-  {
-    "Position": "PG",
-    "Name": "Damian Lillard",
-    "Salary": 9100,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 48.594,
-    "teamAbbrev": "Por"
   },
   {
     "Position": "PG",
     "Name": "Stephen Curry",
     "Salary": 9000,
-    "GameInfo": "Dal@GS 10:30PM ET",
+    "GameInfo": "GS@Den 09:00PM ET",
     "AvgPointsPerGame": 43.25,
     "teamAbbrev": "GS"
   },
   {
-    "Position": "PG",
-    "Name": "Chris Paul",
-    "Salary": 8700,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 47.571,
-    "teamAbbrev": "LAC"
-  },
-  {
-    "Position": "PG",
-    "Name": "John Wall",
-    "Salary": 8600,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 47.5,
-    "teamAbbrev": "Was"
-  },
-  {
     "Position": "C",
-    "Name": "Karl-Anthony Towns",
+    "Name": "Hassan Whiteside",
     "Salary": 8500,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 40.792,
-    "teamAbbrev": "Min"
-  },
-  {
-    "Position": "SF",
-    "Name": "Paul George",
-    "Salary": 8400,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 37.107,
-    "teamAbbrev": "Ind"
-  },
-  {
-    "Position": "PF",
-    "Name": "Blake Griffin",
-    "Salary": 8200,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 40.643,
-    "teamAbbrev": "LAC"
-  },
-  {
-    "Position": "SG",
-    "Name": "DeMar DeRozan",
-    "Salary": 8000,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 44.542,
-    "teamAbbrev": "Tor"
+    "GameInfo": "Chi@Mia 08:00PM ET",
+    "AvgPointsPerGame": 42.625,
+    "teamAbbrev": "Mia"
   },
   {
     "Position": "PF/C",
     "Name": "Draymond Green",
-    "Salary": 7900,
-    "GameInfo": "Dal@GS 10:30PM ET",
+    "Salary": 7800,
+    "GameInfo": "GS@Den 09:00PM ET",
     "AvgPointsPerGame": 41.75,
     "teamAbbrev": "GS"
   },
   {
-    "Position": "C",
-    "Name": "Andre Drummond",
-    "Salary": 7800,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 39.143,
-    "teamAbbrev": "Det"
-  },
-  {
-    "Position": "PF",
-    "Name": "Paul Millsap",
-    "Salary": 7700,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 37.964,
-    "teamAbbrev": "Atl"
-  },
-  {
-    "Position": "PG",
-    "Name": "Isaiah Thomas",
-    "Salary": 7700,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 42.333,
-    "teamAbbrev": "Bos"
-  },
-  {
     "Position": "SF",
-    "Name": "Carmelo Anthony",
-    "Salary": 7600,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 36.167,
-    "teamAbbrev": "NY"
-  },
-  {
-    "Position": "C",
-    "Name": "Dwight Howard",
-    "Salary": 7500,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 40.036,
-    "teamAbbrev": "Atl"
-  },
-  {
-    "Position": "PG",
-    "Name": "Kyle Lowry",
-    "Salary": 7400,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 36.458,
-    "teamAbbrev": "Tor"
-  },
-  {
-    "Position": "PF/C",
-    "Name": "LaMarcus Aldridge",
+    "Name": "Rudy Gay",
     "Salary": 7300,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 31.125,
-    "teamAbbrev": "SA"
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 37.406,
+    "teamAbbrev": "Sac"
   },
   {
     "Position": "SG/SF",
     "Name": "Jimmy Butler",
-    "Salary": 7200,
-    "GameInfo": "Chi@Atl 07:30PM ET",
+    "Salary": 7100,
+    "GameInfo": "Chi@Mia 08:00PM ET",
     "AvgPointsPerGame": 34.464,
     "teamAbbrev": "Chi"
   },
   {
     "Position": "PF",
-    "Name": "Kristaps Porzingis",
-    "Salary": 7200,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 32.208,
-    "teamAbbrev": "NY"
-  },
-  {
-    "Position": "PF/C",
-    "Name": "Myles Turner",
-    "Salary": 7100,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 33.286,
-    "teamAbbrev": "Ind"
+    "Name": "Julius Randle",
+    "Salary": 6800,
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 30.469,
+    "teamAbbrev": "LAL"
   },
   {
     "Position": "PG",
-    "Name": "Kemba Walker",
-    "Salary": 7000,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 40.042,
-    "teamAbbrev": "Cha"
-  },
-  {
-    "Position": "PG/SG",
-    "Name": "C.J. McCollum",
-    "Salary": 7000,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 38.219,
-    "teamAbbrev": "Por"
-  },
-  {
-    "Position": "SF/PF",
-    "Name": "Harrison Barnes",
-    "Salary": 6900,
-    "GameInfo": "Dal@GS 10:30PM ET",
-    "AvgPointsPerGame": 32.321,
-    "teamAbbrev": "Dal"
-  },
-  {
-    "Position": "SF",
-    "Name": "Gordon Hayward",
-    "Salary": 6800,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 35.25,
-    "teamAbbrev": "Uta"
-  },
-  {
-    "Position": "SG/SF",
-    "Name": "Devin Booker",
-    "Salary": 6800,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 30.643,
-    "teamAbbrev": "Pho"
-  },
-  {
-    "Position": "SF",
-    "Name": "T.J. Warren",
-    "Salary": 6800,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 33.563,
-    "teamAbbrev": "Pho"
-  },
-  {
-    "Position": "PG/SG",
-    "Name": "J.J. Barea",
+    "Name": "Goran Dragic",
     "Salary": 6700,
-    "GameInfo": "Dal@GS 10:30PM ET",
-    "AvgPointsPerGame": 32.286,
-    "teamAbbrev": "Dal"
-  },
-  {
-    "Position": "PG/SG",
-    "Name": "George Hill",
-    "Salary": 6700,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 34.643,
-    "teamAbbrev": "Uta"
+    "GameInfo": "Chi@Mia 08:00PM ET",
+    "AvgPointsPerGame": 34.875,
+    "teamAbbrev": "Mia"
   },
   {
     "Position": "PG",
-    "Name": "Eric Bledsoe",
+    "Name": "Jrue Holiday",
     "Salary": 6600,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 33.938,
-    "teamAbbrev": "Pho"
-  },
-  {
-    "Position": "SG",
-    "Name": "Avery Bradley",
-    "Salary": 6500,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 39.75,
-    "teamAbbrev": "Bos"
-  },
-  {
-    "Position": "C",
-    "Name": "Rudy Gobert",
-    "Salary": 6500,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 29.188,
-    "teamAbbrev": "Uta"
-  },
-  {
-    "Position": "C",
-    "Name": "Jonas Valanciunas",
-    "Salary": 6400,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 30.75,
-    "teamAbbrev": "Tor"
-  },
-  {
-    "Position": "C",
-    "Name": "Marcin Gortat",
-    "Salary": 6400,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 32.417,
-    "teamAbbrev": "Was"
-  },
-  {
-    "Position": "PF/C",
-    "Name": "Gorgui Dieng",
-    "Salary": 6400,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 27.958,
-    "teamAbbrev": "Min"
-  },
-  {
-    "Position": "PG",
-    "Name": "Jeremy Lin",
-    "Salary": 6400,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 32.35,
-    "teamAbbrev": "Bkn"
-  },
-  {
-    "Position": "C",
-    "Name": "Brook Lopez",
-    "Salary": 6400,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 29.708,
-    "teamAbbrev": "Bkn"
-  },
-  {
-    "Position": "C",
-    "Name": "DeAndre Jordan",
-    "Salary": 6400,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 28.357,
-    "teamAbbrev": "LAC"
-  },
-  {
-    "Position": "C",
-    "Name": "Al Horford",
-    "Salary": 6300,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 30.667,
-    "teamAbbrev": "Bos"
-  },
-  {
-    "Position": "SG",
-    "Name": "Zach LaVine",
-    "Salary": 6300,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 27.208,
-    "teamAbbrev": "Min"
-  },
-  {
-    "Position": "PG",
-    "Name": "Derrick Rose",
-    "Salary": 6300,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 31.625,
-    "teamAbbrev": "NY"
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 0,
+    "teamAbbrev": "NO"
   },
   {
     "Position": "SG",
     "Name": "Dwyane Wade",
-    "Salary": 6200,
-    "GameInfo": "Chi@Atl 07:30PM ET",
+    "Salary": 6500,
+    "GameInfo": "Chi@Mia 08:00PM ET",
     "AvgPointsPerGame": 30.25,
     "teamAbbrev": "Chi"
+  },
+  {
+    "Position": "SG/SF",
+    "Name": "Tyreke Evans",
+    "Salary": 6400,
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 0,
+    "teamAbbrev": "NO"
+  },
+  {
+    "Position": "PG",
+    "Name": "D'Angelo Russell",
+    "Salary": 6400,
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 29.594,
+    "teamAbbrev": "LAL"
+  },
+  {
+    "Position": "PG",
+    "Name": "Emmanuel Mudiay",
+    "Salary": 6300,
+    "GameInfo": "GS@Den 09:00PM ET",
+    "AvgPointsPerGame": 31.357,
+    "teamAbbrev": "Den"
   },
   {
     "Position": "SG",
     "Name": "Klay Thompson",
     "Salary": 6200,
-    "GameInfo": "Dal@GS 10:30PM ET",
+    "GameInfo": "GS@Den 09:00PM ET",
     "AvgPointsPerGame": 27.75,
     "teamAbbrev": "GS"
   },
   {
-    "Position": "C",
-    "Name": "Nikola Vucevic",
-    "Salary": 6200,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 32.464,
-    "teamAbbrev": "Orl"
-  },
-  {
-    "Position": "PG",
-    "Name": "Jeff Teague",
-    "Salary": 6200,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 27.75,
-    "teamAbbrev": "Ind"
-  },
-  {
-    "Position": "SF/PF",
-    "Name": "Markieff Morris",
-    "Salary": 6100,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 28.5,
-    "teamAbbrev": "Was"
-  },
-  {
-    "Position": "PG",
-    "Name": "Reggie Jackson",
-    "Salary": 6100,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Det"
-  },
-  {
-    "Position": "PG",
-    "Name": "Dennis Schroder",
-    "Salary": 6000,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 30.929,
-    "teamAbbrev": "Atl"
-  },
-  {
-    "Position": "SG/SF",
-    "Name": "Nicolas Batum",
-    "Salary": 6000,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 31.167,
-    "teamAbbrev": "Cha"
-  },
-  {
     "Position": "SF",
-    "Name": "Andrew Wiggins",
-    "Salary": 6000,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 32.042,
-    "teamAbbrev": "Min"
-  },
-  {
-    "Position": "SF/PF",
-    "Name": "Tobias Harris",
-    "Salary": 6000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 28.536,
-    "teamAbbrev": "Det"
+    "Name": "Danilo Gallinari",
+    "Salary": 6100,
+    "GameInfo": "GS@Den 09:00PM ET",
+    "AvgPointsPerGame": 28.357,
+    "teamAbbrev": "Den"
   },
   {
     "Position": "PG",
-    "Name": "Rajon Rondo",
+    "Name": "Tim Frazier",
+    "Salary": 6000,
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 30.875,
+    "teamAbbrev": "NO"
+  },
+  {
+    "Position": "C",
+    "Name": "Jusuf Nurkic",
+    "Salary": 6000,
+    "GameInfo": "GS@Den 09:00PM ET",
+    "AvgPointsPerGame": 31.714,
+    "teamAbbrev": "Den"
+  },
+  {
+    "Position": "PG",
+    "Name": "Darren Collison",
+    "Salary": 6000,
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 19.25,
+    "teamAbbrev": "Sac"
+  },
+  {
+    "Position": "SF/PF",
+    "Name": "Jabari Parker",
     "Salary": 5900,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 25.857,
-    "teamAbbrev": "Chi"
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 29.893,
+    "teamAbbrev": "Mil"
   },
   {
     "Position": "PF/C",
     "Name": "Taj Gibson",
     "Salary": 5900,
-    "GameInfo": "Chi@Atl 07:30PM ET",
+    "GameInfo": "Chi@Mia 08:00PM ET",
     "AvgPointsPerGame": 29.357,
     "teamAbbrev": "Chi"
   },
   {
+    "Position": "C",
+    "Name": "Greg Monroe",
+    "Salary": 5800,
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 30.571,
+    "teamAbbrev": "Mil"
+  },
+  {
     "Position": "PG",
-    "Name": "Elfrid Payton",
-    "Salary": 5900,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 26.071,
-    "teamAbbrev": "Orl"
-  },
-  {
-    "Position": "C",
-    "Name": "Joel Embiid",
-    "Salary": 5900,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 33,
-    "teamAbbrev": "Phi"
-  },
-  {
-    "Position": "C",
-    "Name": "Pau Gasol",
-    "Salary": 5900,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 23.679,
-    "teamAbbrev": "SA"
-  },
-  {
-    "Position": "SG",
-    "Name": "Bradley Beal",
-    "Salary": 5800,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 28.042,
-    "teamAbbrev": "Was"
-  },
-  {
-    "Position": "SG",
-    "Name": "Rodney Hood",
-    "Salary": 5800,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 28.875,
-    "teamAbbrev": "Uta"
-  },
-  {
-    "Position": "PF",
-    "Name": "Derrick Favors",
-    "Salary": 5800,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 23.321,
-    "teamAbbrev": "Uta"
-  },
-  {
-    "Position": "SG",
-    "Name": "Sean Kilpatrick",
-    "Salary": 5800,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 27.571,
-    "teamAbbrev": "Bkn"
-  },
-  {
-    "Position": "SF",
-    "Name": "Jae Crowder",
+    "Name": "Rajon Rondo",
     "Salary": 5700,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 29.563,
-    "teamAbbrev": "Bos"
-  },
-  {
-    "Position": "PF",
-    "Name": "Thaddeus Young",
-    "Salary": 5700,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 23.714,
-    "teamAbbrev": "Ind"
-  },
-  {
-    "Position": "PG/SG",
-    "Name": "Victor Oladipo",
-    "Salary": 5600,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 24,
-    "teamAbbrev": "OKC"
-  },
-  {
-    "Position": "PG",
-    "Name": "Deron Williams",
-    "Salary": 5600,
-    "GameInfo": "Dal@GS 10:30PM ET",
-    "AvgPointsPerGame": 28.65,
-    "teamAbbrev": "Dal"
-  },
-  {
-    "Position": "SF",
-    "Name": "Otto Porter",
-    "Salary": 5600,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 27.667,
-    "teamAbbrev": "Was"
-  },
-  {
-    "Position": "PG",
-    "Name": "Ricky Rubio",
-    "Salary": 5600,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 19.625,
-    "teamAbbrev": "Min"
-  },
-  {
-    "Position": "SG",
-    "Name": "Evan Fournier",
-    "Salary": 5600,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 26.5,
-    "teamAbbrev": "Orl"
-  },
-  {
-    "Position": "SF/PF",
-    "Name": "Aaron Gordon",
-    "Salary": 5600,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 27.786,
-    "teamAbbrev": "Orl"
-  },
-  {
-    "Position": "C",
-    "Name": "Steven Adams",
-    "Salary": 5500,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 27.214,
-    "teamAbbrev": "OKC"
-  },
-  {
-    "Position": "PG",
-    "Name": "Kris Dunn",
-    "Salary": 5500,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 18.958,
-    "teamAbbrev": "Min"
+    "GameInfo": "Chi@Mia 08:00PM ET",
+    "AvgPointsPerGame": 25.857,
+    "teamAbbrev": "Chi"
   },
   {
     "Position": "PF/C",
-    "Name": "Serge Ibaka",
+    "Name": "Nikola Jokic",
     "Salary": 5500,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 23.357,
-    "teamAbbrev": "Orl"
-  },
-  {
-    "Position": "PG",
-    "Name": "Sergio Rodriguez",
-    "Salary": 5500,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 28.5,
-    "teamAbbrev": "Phi"
+    "GameInfo": "GS@Den 09:00PM ET",
+    "AvgPointsPerGame": 24.25,
+    "teamAbbrev": "Den"
   },
   {
     "Position": "SF",
-    "Name": "Marcus Morris",
-    "Salary": 5500,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 28.214,
-    "teamAbbrev": "Det"
-  },
-  {
-    "Position": "SG",
-    "Name": "Monta Ellis",
+    "Name": "Justise Winslow",
     "Salary": 5400,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 23.75,
-    "teamAbbrev": "Ind"
-  },
-  {
-    "Position": "PF",
-    "Name": "Dirk Nowitzki",
-    "Salary": 5300,
-    "GameInfo": "Dal@GS 10:30PM ET",
-    "AvgPointsPerGame": 26,
-    "teamAbbrev": "Dal"
-  },
-  {
-    "Position": "PF",
-    "Name": "Trevor Booker",
-    "Salary": 5200,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 30.214,
-    "teamAbbrev": "Bkn"
-  },
-  {
-    "Position": "PF",
-    "Name": "Ryan Anderson",
-    "Salary": 5200,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 24.393,
-    "teamAbbrev": "Hou"
-  },
-  {
-    "Position": "C",
-    "Name": "Enes Kanter",
-    "Salary": 5100,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 23.929,
-    "teamAbbrev": "OKC"
-  },
-  {
-    "Position": "SG",
-    "Name": "Wesley Matthews",
-    "Salary": 5100,
-    "GameInfo": "Dal@GS 10:30PM ET",
-    "AvgPointsPerGame": 23.714,
-    "teamAbbrev": "Dal"
-  },
-  {
-    "Position": "PG",
-    "Name": "Ish Smith",
-    "Salary": 5100,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 23.143,
-    "teamAbbrev": "Det"
+    "GameInfo": "Chi@Mia 08:00PM ET",
+    "AvgPointsPerGame": 26.167,
+    "teamAbbrev": "Mia"
   },
   {
     "Position": "SG/SF",
-    "Name": "Kent Bazemore",
-    "Salary": 5000,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 24.571,
-    "teamAbbrev": "Atl"
-  },
-  {
-    "Position": "C",
-    "Name": "Nerlens Noel",
-    "Salary": 5000,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Phi"
-  },
-  {
-    "Position": "C",
-    "Name": "Mason Plumlee",
-    "Salary": 5000,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 25.813,
-    "teamAbbrev": "Por"
+    "Name": "Will Barton",
+    "Salary": 5200,
+    "GameInfo": "GS@Den 09:00PM ET",
+    "AvgPointsPerGame": 29.75,
+    "teamAbbrev": "Den"
   },
   {
     "Position": "SG",
-    "Name": "Eric Gordon",
+    "Name": "Lou Williams",
+    "Salary": 5100,
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 26.938,
+    "teamAbbrev": "LAL"
+  },
+  {
+    "Position": "PG/SG",
+    "Name": "Jordan Clarkson",
     "Salary": 5000,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 25.357,
-    "teamAbbrev": "Hou"
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 23.594,
+    "teamAbbrev": "LAL"
   },
   {
     "Position": "SF",
-    "Name": "Trevor Ariza",
-    "Salary": 5000,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 25.143,
-    "teamAbbrev": "Hou"
-  },
-  {
-    "Position": "PF/C",
-    "Name": "Clint Capela",
-    "Salary": 5000,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 23.286,
-    "teamAbbrev": "Hou"
-  },
-  {
-    "Position": "C",
-    "Name": "Tyson Chandler",
-    "Salary": 5000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 26.036,
-    "teamAbbrev": "Pho"
-  },
-  {
-    "Position": "C",
-    "Name": "Joakim Noah",
+    "Name": "Wilson Chandler",
     "Salary": 4900,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 23.167,
-    "teamAbbrev": "NY"
+    "GameInfo": "GS@Den 09:00PM ET",
+    "AvgPointsPerGame": 25.208,
+    "teamAbbrev": "Den"
+  },
+  {
+    "Position": "PG/SG",
+    "Name": "Tyler Johnson",
+    "Salary": 4900,
+    "GameInfo": "Chi@Mia 08:00PM ET",
+    "AvgPointsPerGame": 27.083,
+    "teamAbbrev": "Mia"
+  },
+  {
+    "Position": "PF",
+    "Name": "Kenneth Faried",
+    "Salary": 4800,
+    "GameInfo": "GS@Den 09:00PM ET",
+    "AvgPointsPerGame": 23.25,
+    "teamAbbrev": "Den"
+  },
+  {
+    "Position": "PF",
+    "Name": "Terrence Jones",
+    "Salary": 4700,
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 20.107,
+    "teamAbbrev": "NO"
+  },
+  {
+    "Position": "SG",
+    "Name": "Gary Harris",
+    "Salary": 4600,
+    "GameInfo": "GS@Den 09:00PM ET",
+    "AvgPointsPerGame": 18.667,
+    "teamAbbrev": "Den"
+  },
+  {
+    "Position": "PG/SG",
+    "Name": "Matthew Dellavedova",
+    "Salary": 4500,
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 23.321,
+    "teamAbbrev": "Mil"
   },
   {
     "Position": "PF",
     "Name": "Nikola Mirotic",
-    "Salary": 4800,
-    "GameInfo": "Chi@Atl 07:30PM ET",
+    "Salary": 4500,
+    "GameInfo": "Chi@Mia 08:00PM ET",
     "AvgPointsPerGame": 21.571,
     "teamAbbrev": "Chi"
   },
   {
-    "Position": "SF",
-    "Name": "Michael Kidd-Gilchrist",
-    "Salary": 4800,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 26.375,
-    "teamAbbrev": "Cha"
-  },
-  {
-    "Position": "PF/C",
-    "Name": "Jahlil Okafor",
-    "Salary": 4800,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 20.15,
-    "teamAbbrev": "Phi"
-  },
-  {
-    "Position": "PF",
-    "Name": "Al-Farouq Aminu",
-    "Salary": 4800,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 21.594,
-    "teamAbbrev": "Por"
-  },
-  {
     "Position": "SG",
-    "Name": "Kentavious Caldwell-Pope",
-    "Salary": 4800,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 21.107,
-    "teamAbbrev": "Det"
-  },
-  {
-    "Position": "SG/SF",
-    "Name": "Joe Johnson",
-    "Salary": 4700,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 23.406,
-    "teamAbbrev": "Uta"
-  },
-  {
-    "Position": "PF/C",
-    "Name": "Amir Johnson",
-    "Salary": 4600,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 19.333,
-    "teamAbbrev": "Bos"
-  },
-  {
-    "Position": "C",
-    "Name": "Tyler Zeller",
-    "Salary": 4600,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 21.75,
-    "teamAbbrev": "Bos"
-  },
-  {
-    "Position": "SG/SF",
-    "Name": "C.J. Miles",
-    "Salary": 4600,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 24.714,
-    "teamAbbrev": "Ind"
-  },
-  {
-    "Position": "C",
-    "Name": "Andrew Bogut",
+    "Name": "Nick Young",
     "Salary": 4500,
-    "GameInfo": "Dal@GS 10:30PM ET",
-    "AvgPointsPerGame": 21.125,
-    "teamAbbrev": "Dal"
-  },
-  {
-    "Position": "PG/SG",
-    "Name": "Marcus Smart",
-    "Salary": 4500,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 22.5,
-    "teamAbbrev": "Bos"
-  },
-  {
-    "Position": "SF",
-    "Name": "Jaylen Brown",
-    "Salary": 4500,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 16.25,
-    "teamAbbrev": "Bos"
-  },
-  {
-    "Position": "PF",
-    "Name": "Marvin Williams",
-    "Salary": 4500,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 23.583,
-    "teamAbbrev": "Cha"
-  },
-  {
-    "Position": "SG/SF",
-    "Name": "Bojan Bogdanovic",
-    "Salary": 4500,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 22.286,
-    "teamAbbrev": "Bkn"
-  },
-  {
-    "Position": "PG",
-    "Name": "Jerryd Bayless",
-    "Salary": 4500,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Phi"
-  },
-  {
-    "Position": "SF",
-    "Name": "Maurice Harkless",
-    "Salary": 4500,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 21.844,
-    "teamAbbrev": "Por"
-  },
-  {
-    "Position": "PG/SG",
-    "Name": "Brandon Knight",
-    "Salary": 4500,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 19.188,
-    "teamAbbrev": "Pho"
-  },
-  {
-    "Position": "PF",
-    "Name": "Jon Leuer",
-    "Salary": 4500,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 22.25,
-    "teamAbbrev": "Det"
-  },
-  {
-    "Position": "SF",
-    "Name": "Thabo Sefolosha",
-    "Salary": 4400,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 21.643,
-    "teamAbbrev": "Atl"
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 22.281,
+    "teamAbbrev": "LAL"
   },
   {
     "Position": "SF/PF",
-    "Name": "Dario Saric",
+    "Name": "Larry Nance Jr.",
     "Salary": 4400,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 17.75,
-    "teamAbbrev": "Phi"
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 18.5,
+    "teamAbbrev": "LAL"
   },
   {
-    "Position": "SF",
-    "Name": "Robert Covington",
-    "Salary": 4400,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 18.75,
-    "teamAbbrev": "Phi"
-  },
-  {
-    "Position": "PG",
-    "Name": "Patrick Beverley",
-    "Salary": 4400,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Hou"
-  },
-  {
-    "Position": "PF",
-    "Name": "Ersan Ilyasova",
+    "Position": "SG",
+    "Name": "Dion Waiters",
     "Salary": 4300,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 18.25,
-    "teamAbbrev": "Phi"
-  },
-  {
-    "Position": "PG",
-    "Name": "Patty Mills",
-    "Salary": 4300,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 20.071,
-    "teamAbbrev": "SA"
+    "GameInfo": "Chi@Mia 08:00PM ET",
+    "AvgPointsPerGame": 21.583,
+    "teamAbbrev": "Mia"
   },
   {
     "Position": "C",
     "Name": "Robin Lopez",
     "Salary": 4200,
-    "GameInfo": "Chi@Atl 07:30PM ET",
+    "GameInfo": "Chi@Mia 08:00PM ET",
     "AvgPointsPerGame": 20.071,
     "teamAbbrev": "Chi"
   },
   {
-    "Position": "PF",
-    "Name": "Patrick Patterson",
-    "Salary": 4200,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 19.667,
-    "teamAbbrev": "Tor"
-  },
-  {
-    "Position": "PF",
-    "Name": "Domantas Sabonis",
+    "Position": "SG",
+    "Name": "E'Twaun Moore",
     "Salary": 4100,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 17.464,
-    "teamAbbrev": "OKC"
-  },
-  {
-    "Position": "SF",
-    "Name": "Rondae Hollis-Jefferson",
-    "Salary": 4100,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 16.821,
-    "teamAbbrev": "Bkn"
-  },
-  {
-    "Position": "C",
-    "Name": "Justin Hamilton",
-    "Salary": 4100,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 20.357,
-    "teamAbbrev": "Bkn"
-  },
-  {
-    "Position": "SG/SF",
-    "Name": "Allen Crabbe",
-    "Salary": 4100,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 17.031,
-    "teamAbbrev": "Por"
-  },
-  {
-    "Position": "SG",
-    "Name": "Jamal Crawford",
-    "Salary": 4100,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 18.893,
-    "teamAbbrev": "LAC"
-  },
-  {
-    "Position": "PG/SG",
-    "Name": "Tim Hardaway Jr.",
-    "Salary": 4000,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 17.214,
-    "teamAbbrev": "Atl"
-  },
-  {
-    "Position": "SG",
-    "Name": "Kyle Korver",
-    "Salary": 4000,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 17.875,
-    "teamAbbrev": "Atl"
-  },
-  {
-    "Position": "PG",
-    "Name": "Shelvin Mack",
-    "Salary": 4000,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 13.5,
-    "teamAbbrev": "Uta"
-  },
-  {
-    "Position": "C",
-    "Name": "Cody Zeller",
-    "Salary": 4000,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 22.625,
-    "teamAbbrev": "Cha"
-  },
-  {
-    "Position": "C",
-    "Name": "Bismack Biyombo",
-    "Salary": 4000,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 17.667,
-    "teamAbbrev": "Orl"
-  },
-  {
-    "Position": "PG",
-    "Name": "Isaiah Whitehead",
-    "Salary": 4000,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 13.25,
-    "teamAbbrev": "Bkn"
-  },
-  {
-    "Position": "SG",
-    "Name": "Courtney Lee",
-    "Salary": 4000,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 19.083,
-    "teamAbbrev": "NY"
-  },
-  {
-    "Position": "SG",
-    "Name": "J.J. Redick",
-    "Salary": 4000,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 17.214,
-    "teamAbbrev": "LAC"
-  },
-  {
-    "Position": "C",
-    "Name": "Alex Len",
-    "Salary": 4000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 20.063,
-    "teamAbbrev": "Pho"
-  },
-  {
-    "Position": "PF/C",
-    "Name": "Dwight Powell",
-    "Salary": 3900,
-    "GameInfo": "Dal@GS 10:30PM ET",
-    "AvgPointsPerGame": 15.75,
-    "teamAbbrev": "Dal"
-  },
-  {
-    "Position": "SG",
-    "Name": "Marco Belinelli",
-    "Salary": 3900,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 17.292,
-    "teamAbbrev": "Cha"
-  },
-  {
-    "Position": "PF/C",
-    "Name": "Spencer Hawes",
-    "Salary": 3900,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 21.833,
-    "teamAbbrev": "Cha"
-  },
-  {
-    "Position": "PF",
-    "Name": "Frank Kaminsky",
-    "Salary": 3900,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 19.688,
-    "teamAbbrev": "Cha"
-  },
-  {
-    "Position": "C",
-    "Name": "Cole Aldrich",
-    "Salary": 3900,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 9.292,
-    "teamAbbrev": "Min"
-  },
-  {
-    "Position": "SG/SF",
-    "Name": "Evan Turner",
-    "Salary": 3900,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 16.188,
-    "teamAbbrev": "Por"
-  },
-  {
-    "Position": "PG",
-    "Name": "Tony Parker",
-    "Salary": 3900,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 14.5,
-    "teamAbbrev": "SA"
-  },
-  {
-    "Position": "SG",
-    "Name": "Danny Green",
-    "Salary": 3900,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "SA"
-  },
-  {
-    "Position": "SG/SF",
-    "Name": "Andre Roberson",
-    "Salary": 3800,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 18,
-    "teamAbbrev": "OKC"
-  },
-  {
-    "Position": "PG",
-    "Name": "Tomas Satoransky",
-    "Salary": 3800,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 7.708,
-    "teamAbbrev": "Was"
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 21.344,
+    "teamAbbrev": "NO"
   },
   {
     "Position": "SF/PF",
-    "Name": "Jeff Green",
+    "Name": "Luol Deng",
+    "Salary": 4000,
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 19.719,
+    "teamAbbrev": "LAL"
+  },
+  {
+    "Position": "SF",
+    "Name": "Matt Barnes",
+    "Salary": 3900,
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 18.944,
+    "teamAbbrev": "Sac"
+  },
+  {
+    "Position": "PG",
+    "Name": "Jameer Nelson",
     "Salary": 3800,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 18.393,
-    "teamAbbrev": "Orl"
+    "GameInfo": "GS@Den 09:00PM ET",
+    "AvgPointsPerGame": 19.679,
+    "teamAbbrev": "Den"
+  },
+  {
+    "Position": "SG",
+    "Name": "Buddy Hield",
+    "Salary": 3700,
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 16.156,
+    "teamAbbrev": "NO"
   },
   {
     "Position": "SG/SF",
-    "Name": "Jonathon Simmons",
-    "Salary": 3800,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 16.464,
-    "teamAbbrev": "SA"
+    "Name": "Josh Richardson",
+    "Salary": 3700,
+    "GameInfo": "Chi@Mia 08:00PM ET",
+    "AvgPointsPerGame": 7.125,
+    "teamAbbrev": "Mia"
   },
   {
-    "Position": "PF",
-    "Name": "David Lee",
-    "Salary": 3800,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 15.571,
-    "teamAbbrev": "SA"
+    "Position": "SF",
+    "Name": "Solomon Hill",
+    "Salary": 3600,
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 16.469,
+    "teamAbbrev": "NO"
   },
   {
     "Position": "SF",
     "Name": "Doug McDermott",
-    "Salary": 3700,
-    "GameInfo": "Chi@Atl 07:30PM ET",
+    "Salary": 3600,
+    "GameInfo": "Chi@Mia 08:00PM ET",
     "AvgPointsPerGame": 18.667,
     "teamAbbrev": "Chi"
   },
   {
+    "Position": "C",
+    "Name": "Willie Reed",
+    "Salary": 3600,
+    "GameInfo": "Chi@Mia 08:00PM ET",
+    "AvgPointsPerGame": 11.708,
+    "teamAbbrev": "Mia"
+  },
+  {
     "Position": "SG/SF",
-    "Name": "Terrence Ross",
-    "Salary": 3700,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 17.083,
-    "teamAbbrev": "Tor"
-  },
-  {
-    "Position": "SF/PF",
-    "Name": "DeMarre Carroll",
-    "Salary": 3700,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 15.875,
-    "teamAbbrev": "Tor"
-  },
-  {
-    "Position": "SF",
-    "Name": "Andre Iguodala",
-    "Salary": 3700,
-    "GameInfo": "Dal@GS 10:30PM ET",
-    "AvgPointsPerGame": 16.714,
-    "teamAbbrev": "GS"
-  },
-  {
-    "Position": "C",
-    "Name": "Zaza Pachulia",
-    "Salary": 3700,
-    "GameInfo": "Dal@GS 10:30PM ET",
-    "AvgPointsPerGame": 16.857,
-    "teamAbbrev": "GS"
-  },
-  {
-    "Position": "PG",
-    "Name": "Ramon Sessions",
-    "Salary": 3700,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 14.875,
-    "teamAbbrev": "Cha"
-  },
-  {
-    "Position": "C",
-    "Name": "Roy Hibbert",
-    "Salary": 3700,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 20.5,
-    "teamAbbrev": "Cha"
-  },
-  {
-    "Position": "SG",
-    "Name": "Manu Ginobili",
-    "Salary": 3700,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 17.167,
-    "teamAbbrev": "SA"
-  },
-  {
-    "Position": "C",
-    "Name": "Dewayne Dedmon",
-    "Salary": 3700,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 17.893,
-    "teamAbbrev": "SA"
-  },
-  {
-    "Position": "C",
-    "Name": "Mike Muscala",
-    "Salary": 3600,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 19.571,
-    "teamAbbrev": "Atl"
-  },
-  {
-    "Position": "SF/PF",
-    "Name": "Jerami Grant",
-    "Salary": 3600,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 12.958,
-    "teamAbbrev": "OKC"
-  },
-  {
-    "Position": "PF",
-    "Name": "Richaun Holmes",
-    "Salary": 3600,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 15.3,
-    "teamAbbrev": "Phi"
-  },
-  {
-    "Position": "PG/SG",
-    "Name": "Raymond Felton",
-    "Salary": 3600,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 13.821,
-    "teamAbbrev": "LAC"
-  },
-  {
-    "Position": "PG",
-    "Name": "Cory Joseph",
+    "Name": "Tony Snell",
     "Salary": 3500,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 13.75,
-    "teamAbbrev": "Tor"
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 15.542,
+    "teamAbbrev": "Mil"
   },
   {
     "Position": "PG",
     "Name": "Shaun Livingston",
     "Salary": 3500,
-    "GameInfo": "Dal@GS 10:30PM ET",
+    "GameInfo": "GS@Den 09:00PM ET",
     "AvgPointsPerGame": 9.964,
     "teamAbbrev": "GS"
   },
   {
-    "Position": "PF/C",
-    "Name": "Trey Lyles",
+    "Position": "SF",
+    "Name": "Andre Iguodala",
     "Salary": 3500,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 15.313,
-    "teamAbbrev": "Uta"
+    "GameInfo": "GS@Den 09:00PM ET",
+    "AvgPointsPerGame": 16.714,
+    "teamAbbrev": "GS"
   },
   {
     "Position": "PG",
-    "Name": "D.J. Augustin",
+    "Name": "Ty Lawson",
     "Salary": 3500,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 13.679,
-    "teamAbbrev": "Orl"
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 20.972,
+    "teamAbbrev": "Sac"
+  },
+  {
+    "Position": "C",
+    "Name": "Zaza Pachulia",
+    "Salary": 3400,
+    "GameInfo": "GS@Den 09:00PM ET",
+    "AvgPointsPerGame": 16.857,
+    "teamAbbrev": "GS"
+  },
+  {
+    "Position": "SG",
+    "Name": "Malcolm Brogdon",
+    "Salary": 3300,
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 18.393,
+    "teamAbbrev": "Mil"
+  },
+  {
+    "Position": "SG",
+    "Name": "Arron Afflalo",
+    "Salary": 3300,
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 15.194,
+    "teamAbbrev": "Sac"
+  },
+  {
+    "Position": "SF",
+    "Name": "Brandon Ingram",
+    "Salary": 3300,
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 14.063,
+    "teamAbbrev": "LAL"
   },
   {
     "Position": "PG",
-    "Name": "Brandon Jennings",
-    "Salary": 3500,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 18.083,
-    "teamAbbrev": "NY"
-  },
-  {
-    "Position": "C",
-    "Name": "Marreese Speights",
-    "Salary": 3500,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 17.643,
-    "teamAbbrev": "LAC"
-  },
-  {
-    "Position": "SG/SF",
-    "Name": "Kyle Anderson",
-    "Salary": 3500,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 12.429,
-    "teamAbbrev": "SA"
-  },
-  {
-    "Position": "C",
-    "Name": "Nene Hilario",
-    "Salary": 3500,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 16,
-    "teamAbbrev": "Hou"
+    "Name": "Langston Galloway",
+    "Salary": 3200,
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 14.469,
+    "teamAbbrev": "NO"
   },
   {
     "Position": "PG",
     "Name": "Michael Carter-Williams",
-    "Salary": 3400,
-    "GameInfo": "Chi@Atl 07:30PM ET",
+    "Salary": 3200,
+    "GameInfo": "Chi@Mia 08:00PM ET",
     "AvgPointsPerGame": 13.583,
     "teamAbbrev": "Chi"
   },
   {
     "Position": "C",
-    "Name": "Jakob Poeltl",
-    "Salary": 3400,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 11.375,
-    "teamAbbrev": "Tor"
-  },
-  {
-    "Position": "SG",
-    "Name": "Gerald Henderson",
-    "Salary": 3400,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 15.542,
-    "teamAbbrev": "Phi"
+    "Name": "Kosta Koufos",
+    "Salary": 3200,
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 16.75,
+    "teamAbbrev": "Sac"
   },
   {
     "Position": "C",
-    "Name": "Al Jefferson",
-    "Salary": 3400,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 16.357,
-    "teamAbbrev": "Ind"
-  },
-  {
-    "Position": "SF",
-    "Name": "Corey Brewer",
-    "Salary": 3400,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 10.036,
-    "teamAbbrev": "Hou"
+    "Name": "Timofey Mozgov",
+    "Salary": 3200,
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 17.321,
+    "teamAbbrev": "LAL"
   },
   {
     "Position": "PF",
-    "Name": "Kelly Olynyk",
-    "Salary": 3300,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Bos"
-  },
-  {
-    "Position": "PG",
-    "Name": "Dante Exum",
-    "Salary": 3300,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 12.563,
-    "teamAbbrev": "Uta"
-  },
-  {
-    "Position": "SF",
-    "Name": "Glenn Robinson III",
-    "Salary": 3300,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 7.292,
-    "teamAbbrev": "Ind"
-  },
-  {
-    "Position": "PG",
-    "Name": "Austin Rivers",
-    "Salary": 3300,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 14.857,
-    "teamAbbrev": "LAC"
+    "Name": "Luke Babbitt",
+    "Salary": 3100,
+    "GameInfo": "Chi@Mia 08:00PM ET",
+    "AvgPointsPerGame": 14.292,
+    "teamAbbrev": "Mia"
   },
   {
     "Position": "PF",
     "Name": "Bobby Portis",
-    "Salary": 3200,
-    "GameInfo": "Chi@Atl 07:30PM ET",
+    "Salary": 3100,
+    "GameInfo": "Chi@Mia 08:00PM ET",
     "AvgPointsPerGame": 11.667,
     "teamAbbrev": "Chi"
   },
   {
-    "Position": "PF",
-    "Name": "Pascal Siakam",
-    "Salary": 3200,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 12.417,
-    "teamAbbrev": "Tor"
-  },
-  {
-    "Position": "SF",
-    "Name": "Justin Anderson",
-    "Salary": 3200,
-    "GameInfo": "Dal@GS 10:30PM ET",
-    "AvgPointsPerGame": 15.929,
-    "teamAbbrev": "Dal"
-  },
-  {
-    "Position": "PF/C",
-    "Name": "Luis Scola",
-    "Salary": 3200,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 16.571,
-    "teamAbbrev": "Bkn"
-  },
-  {
-    "Position": "PF/C",
-    "Name": "Montrezl Harrell",
-    "Salary": 3200,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 17.333,
-    "teamAbbrev": "Hou"
-  },
-  {
     "Position": "PG",
-    "Name": "Isaiah Canaan",
-    "Salary": 3100,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 13.5,
-    "teamAbbrev": "Chi"
-  },
-  {
-    "Position": "PG",
-    "Name": "Terry Rozier",
-    "Salary": 3100,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 14.292,
-    "teamAbbrev": "Bos"
-  },
-  {
-    "Position": "PF",
-    "Name": "Jonas Jerebko",
-    "Salary": 3100,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 11.333,
-    "teamAbbrev": "Bos"
-  },
-  {
-    "Position": "PG",
-    "Name": "Greivis Vasquez",
-    "Salary": 3100,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 7,
-    "teamAbbrev": "Bkn"
-  },
-  {
-    "Position": "PG",
-    "Name": "T.J. McConnell",
-    "Salary": 3100,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 14.417,
-    "teamAbbrev": "Phi"
-  },
-  {
-    "Position": "PF",
-    "Name": "Jared Dudley",
-    "Salary": 3100,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 15.219,
-    "teamAbbrev": "Pho"
-  },
-  {
-    "Position": "PG",
-    "Name": "Malcolm Delaney",
+    "Name": "Jason Terry",
     "Salary": 3000,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 13.821,
-    "teamAbbrev": "Atl"
-  },
-  {
-    "Position": "PG",
-    "Name": "Jerian Grant",
-    "Salary": 3000,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 10.688,
-    "teamAbbrev": "Chi"
-  },
-  {
-    "Position": "SG/SF",
-    "Name": "Denzel Valentine",
-    "Salary": 3000,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 3.667,
-    "teamAbbrev": "Chi"
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 8.083,
+    "teamAbbrev": "Mil"
   },
   {
     "Position": "SG",
-    "Name": "R.J. Hunter",
+    "Name": "Khris Middleton",
     "Salary": 3000,
-    "GameInfo": "Chi@Atl 07:30PM ET",
+    "GameInfo": "NO@Mil 08:00PM ET",
     "AvgPointsPerGame": 0,
-    "teamAbbrev": "Chi"
-  },
-  {
-    "Position": "SF",
-    "Name": "Ryan Kelly",
-    "Salary": 3000,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 2,
-    "teamAbbrev": "Atl"
-  },
-  {
-    "Position": "SF",
-    "Name": "Taurean Prince",
-    "Salary": 3000,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 3.75,
-    "teamAbbrev": "Atl"
-  },
-  {
-    "Position": "SF",
-    "Name": "DeAndre' Bembry",
-    "Salary": 3000,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 2.583,
-    "teamAbbrev": "Atl"
-  },
-  {
-    "Position": "SF",
-    "Name": "Paul Zipser",
-    "Salary": 3000,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 3.375,
-    "teamAbbrev": "Chi"
-  },
-  {
-    "Position": "PF",
-    "Name": "Kris Humphries",
-    "Salary": 3000,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 9.708,
-    "teamAbbrev": "Atl"
-  },
-  {
-    "Position": "PF",
-    "Name": "Mike Scott",
-    "Salary": 3000,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Atl"
-  },
-  {
-    "Position": "C",
-    "Name": "Tiago Splitter",
-    "Salary": 3000,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Atl"
-  },
-  {
-    "Position": "C",
-    "Name": "Cristiano Felicio",
-    "Salary": 3000,
-    "GameInfo": "Chi@Atl 07:30PM ET",
-    "AvgPointsPerGame": 8.536,
-    "teamAbbrev": "Chi"
-  },
-  {
-    "Position": "PG",
-    "Name": "Semaj Christon",
-    "Salary": 3000,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 12.214,
-    "teamAbbrev": "OKC"
-  },
-  {
-    "Position": "PG",
-    "Name": "Fred VanVleet",
-    "Salary": 3000,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Tor"
-  },
-  {
-    "Position": "PG",
-    "Name": "Delon Wright",
-    "Salary": 3000,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Tor"
-  },
-  {
-    "Position": "PG",
-    "Name": "Cameron Payne",
-    "Salary": 3000,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "OKC"
-  },
-  {
-    "Position": "SG/SF",
-    "Name": "Norman Powell",
-    "Salary": 3000,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 7.45,
-    "teamAbbrev": "Tor"
+    "teamAbbrev": "Mil"
   },
   {
     "Position": "SG",
-    "Name": "Anthony Morrow",
+    "Name": "Archie Goodwin",
     "Salary": 3000,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 4.333,
-    "teamAbbrev": "OKC"
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 0,
+    "teamAbbrev": "NO"
   },
   {
     "Position": "SG",
-    "Name": "Alex Abrines",
+    "Name": "Rashad Vaughn",
     "Salary": 3000,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 7.5,
-    "teamAbbrev": "OKC"
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 14,
+    "teamAbbrev": "Mil"
+  },
+  {
+    "Position": "SF/PF",
+    "Name": "Dante Cunningham",
+    "Salary": 3000,
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 12.464,
+    "teamAbbrev": "NO"
+  },
+  {
+    "Position": "SF/PF",
+    "Name": "Michael Beasley",
+    "Salary": 3000,
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 11.393,
+    "teamAbbrev": "Mil"
   },
   {
     "Position": "SF",
-    "Name": "Kyle Singler",
+    "Name": "Steve Novak",
     "Salary": 3000,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 6.417,
-    "teamAbbrev": "OKC"
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 0,
+    "teamAbbrev": "Mil"
   },
   {
     "Position": "SF",
-    "Name": "Josh Huestis",
+    "Name": "Quincy Pondexter",
     "Salary": 3000,
-    "GameInfo": "Tor@OKC 08:00PM ET",
+    "GameInfo": "NO@Mil 08:00PM ET",
     "AvgPointsPerGame": 0,
-    "teamAbbrev": "OKC"
+    "teamAbbrev": "NO"
   },
   {
-    "Position": "SF",
-    "Name": "Bruno Caboclo",
+    "Position": "PF",
+    "Name": "Mirza Teletovic",
     "Salary": 3000,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Tor"
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 13,
+    "teamAbbrev": "Mil"
   },
   {
-    "Position": "PF/C",
-    "Name": "Joffrey Lauvergne",
+    "Position": "PF",
+    "Name": "Cheick Diallo",
     "Salary": 3000,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 12.375,
-    "teamAbbrev": "OKC"
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 3.25,
+    "teamAbbrev": "NO"
+  },
+  {
+    "Position": "PF",
+    "Name": "Thon Maker",
+    "Salary": 3000,
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 6.25,
+    "teamAbbrev": "Mil"
   },
   {
     "Position": "C",
-    "Name": "Nick Collison",
+    "Name": "Alexis Ajinca",
     "Salary": 3000,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 7,
-    "teamAbbrev": "OKC"
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 6.313,
+    "teamAbbrev": "NO"
   },
   {
     "Position": "C",
-    "Name": "Jared Sullinger",
+    "Name": "Omer Asik",
     "Salary": 3000,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Tor"
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 13.344,
+    "teamAbbrev": "NO"
   },
   {
     "Position": "C",
-    "Name": "Lucas Nogueira",
+    "Name": "Miles Plumlee",
     "Salary": 3000,
-    "GameInfo": "Tor@OKC 08:00PM ET",
-    "AvgPointsPerGame": 16.75,
-    "teamAbbrev": "Tor"
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 11.214,
+    "teamAbbrev": "Mil"
+  },
+  {
+    "Position": "C",
+    "Name": "John Henson",
+    "Salary": 3000,
+    "GameInfo": "NO@Mil 08:00PM ET",
+    "AvgPointsPerGame": 11.542,
+    "teamAbbrev": "Mil"
   },
   {
     "Position": "PG/SG",
     "Name": "Ian Clark",
     "Salary": 3000,
-    "GameInfo": "Dal@GS 10:30PM ET",
+    "GameInfo": "GS@Den 09:00PM ET",
     "AvgPointsPerGame": 10.679,
     "teamAbbrev": "GS"
   },
   {
-    "Position": "PG",
-    "Name": "Devin Harris",
+    "Position": "PG/SG",
+    "Name": "Jamal Murray",
     "Salary": 3000,
-    "GameInfo": "Dal@GS 10:30PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Dal"
+    "GameInfo": "GS@Den 09:00PM ET",
+    "AvgPointsPerGame": 9.429,
+    "teamAbbrev": "Den"
+  },
+  {
+    "Position": "PG",
+    "Name": "Malik Beasley",
+    "Salary": 3000,
+    "GameInfo": "GS@Den 09:00PM ET",
+    "AvgPointsPerGame": 0.75,
+    "teamAbbrev": "Den"
   },
   {
     "Position": "SG/SF",
     "Name": "Patrick McCaw",
     "Salary": 3000,
-    "GameInfo": "Dal@GS 10:30PM ET",
+    "GameInfo": "GS@Den 09:00PM ET",
     "AvgPointsPerGame": 7.25,
     "teamAbbrev": "GS"
   },
   {
     "Position": "SG",
-    "Name": "Seth Curry",
+    "Name": "Mike Miller",
     "Salary": 3000,
-    "GameInfo": "Dal@GS 10:30PM ET",
-    "AvgPointsPerGame": 16.071,
-    "teamAbbrev": "Dal"
-  },
-  {
-    "Position": "SG",
-    "Name": "Nicolas Brussino",
-    "Salary": 3000,
-    "GameInfo": "Dal@GS 10:30PM ET",
-    "AvgPointsPerGame": 1.55,
-    "teamAbbrev": "Dal"
-  },
-  {
-    "Position": "SF",
-    "Name": "Dorian Finney-Smith",
-    "Salary": 3000,
-    "GameInfo": "Dal@GS 10:30PM ET",
-    "AvgPointsPerGame": 4.792,
-    "teamAbbrev": "Dal"
+    "GameInfo": "GS@Den 09:00PM ET",
+    "AvgPointsPerGame": 1.125,
+    "teamAbbrev": "Den"
   },
   {
     "Position": "PF",
     "Name": "David West",
     "Salary": 3000,
-    "GameInfo": "Dal@GS 10:30PM ET",
+    "GameInfo": "GS@Den 09:00PM ET",
     "AvgPointsPerGame": 9.607,
     "teamAbbrev": "GS"
   },
   {
     "Position": "PF",
-    "Name": "Quincy Acy",
+    "Name": "Darrell Arthur",
     "Salary": 3000,
-    "GameInfo": "Dal@GS 10:30PM ET",
-    "AvgPointsPerGame": 2.813,
-    "teamAbbrev": "Dal"
+    "GameInfo": "GS@Den 09:00PM ET",
+    "AvgPointsPerGame": 6,
+    "teamAbbrev": "Den"
   },
   {
     "Position": "PF",
     "Name": "James Michael McAdoo",
     "Salary": 3000,
-    "GameInfo": "Dal@GS 10:30PM ET",
+    "GameInfo": "GS@Den 09:00PM ET",
     "AvgPointsPerGame": 3.25,
     "teamAbbrev": "GS"
   },
   {
     "Position": "PF",
+    "Name": "Jarnell Stokes",
+    "Salary": 3000,
+    "GameInfo": "GS@Den 09:00PM ET",
+    "AvgPointsPerGame": 1,
+    "teamAbbrev": "Den"
+  },
+  {
+    "Position": "PF",
     "Name": "Kevon Looney",
     "Salary": 3000,
-    "GameInfo": "Dal@GS 10:30PM ET",
+    "GameInfo": "GS@Den 09:00PM ET",
     "AvgPointsPerGame": 8,
     "teamAbbrev": "GS"
   },
@@ -1763,7 +715,7 @@
     "Position": "C",
     "Name": "Anderson Varejao",
     "Salary": 3000,
-    "GameInfo": "Dal@GS 10:30PM ET",
+    "GameInfo": "GS@Den 09:00PM ET",
     "AvgPointsPerGame": 2.625,
     "teamAbbrev": "GS"
   },
@@ -1771,872 +723,240 @@
     "Position": "C",
     "Name": "JaVale McGee",
     "Salary": 3000,
-    "GameInfo": "Dal@GS 10:30PM ET",
+    "GameInfo": "GS@Den 09:00PM ET",
     "AvgPointsPerGame": 2.875,
     "teamAbbrev": "GS"
   },
   {
     "Position": "C",
-    "Name": "Salah Mejri",
-    "Salary": 3000,
-    "GameInfo": "Dal@GS 10:30PM ET",
-    "AvgPointsPerGame": 10.75,
-    "teamAbbrev": "Dal"
-  },
-  {
-    "Position": "C",
-    "Name": "A.J. Hammons",
-    "Salary": 3000,
-    "GameInfo": "Dal@GS 10:30PM ET",
-    "AvgPointsPerGame": 0.75,
-    "teamAbbrev": "Dal"
-  },
-  {
-    "Position": "C",
     "Name": "Damian Jones",
     "Salary": 3000,
-    "GameInfo": "Dal@GS 10:30PM ET",
+    "GameInfo": "GS@Den 09:00PM ET",
     "AvgPointsPerGame": 0,
     "teamAbbrev": "GS"
   },
   {
-    "Position": "PG",
-    "Name": "Trey Burke",
-    "Salary": 3000,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 4.5,
-    "teamAbbrev": "Was"
-  },
-  {
-    "Position": "PG",
-    "Name": "Demetrius Jackson",
-    "Salary": 3000,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 15.25,
-    "teamAbbrev": "Bos"
-  },
-  {
-    "Position": "SG/SF",
-    "Name": "Gerald Green",
-    "Salary": 3000,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 10.583,
-    "teamAbbrev": "Bos"
-  },
-  {
-    "Position": "SG/SF",
-    "Name": "Kelly Oubre Jr.",
-    "Salary": 3000,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 7.5,
-    "teamAbbrev": "Was"
-  },
-  {
-    "Position": "SG",
-    "Name": "Marcus Thornton",
-    "Salary": 3000,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 11.667,
-    "teamAbbrev": "Was"
-  },
-  {
-    "Position": "SG",
-    "Name": "Sheldon McClellan",
-    "Salary": 3000,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 5.75,
-    "teamAbbrev": "Was"
-  },
-  {
-    "Position": "SG",
-    "Name": "Danuel House",
-    "Salary": 3000,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Was"
-  },
-  {
-    "Position": "SG",
-    "Name": "James Young",
-    "Salary": 3000,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 0.667,
-    "teamAbbrev": "Bos"
-  },
-  {
-    "Position": "PF/C",
-    "Name": "Jason Smith",
-    "Salary": 3000,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 5.7,
-    "teamAbbrev": "Was"
-  },
-  {
-    "Position": "PF",
-    "Name": "Andrew Nicholson",
-    "Salary": 3000,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 11.85,
-    "teamAbbrev": "Was"
-  },
-  {
-    "Position": "PF",
-    "Name": "Jordan Mickey",
-    "Salary": 3000,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 5.313,
-    "teamAbbrev": "Bos"
-  },
-  {
     "Position": "C",
-    "Name": "Ian Mahinmi",
+    "Name": "Juancho Hernangomez",
     "Salary": 3000,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Was"
-  },
-  {
-    "Position": "C",
-    "Name": "Daniel Ochefu",
-    "Salary": 3000,
-    "GameInfo": "Bos@Was 07:00PM ET",
-    "AvgPointsPerGame": 1.25,
-    "teamAbbrev": "Was"
+    "GameInfo": "GS@Den 09:00PM ET",
+    "AvgPointsPerGame": 3.65,
+    "teamAbbrev": "Den"
   },
   {
     "Position": "PG",
-    "Name": "Brian Roberts",
+    "Name": "Isaiah Canaan",
     "Salary": 3000,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 3.25,
-    "teamAbbrev": "Cha"
+    "GameInfo": "Chi@Mia 08:00PM ET",
+    "AvgPointsPerGame": 13.5,
+    "teamAbbrev": "Chi"
   },
   {
     "Position": "PG",
-    "Name": "Raul Neto",
+    "Name": "Jerian Grant",
     "Salary": 3000,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 1.25,
-    "teamAbbrev": "Uta"
-  },
-  {
-    "Position": "PG",
-    "Name": "Aaron Harrison",
-    "Salary": 3000,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 2.75,
-    "teamAbbrev": "Cha"
-  },
-  {
-    "Position": "SG/SF",
-    "Name": "Jeremy Lamb",
-    "Salary": 3000,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 14.833,
-    "teamAbbrev": "Cha"
-  },
-  {
-    "Position": "SG",
-    "Name": "Alec Burks",
-    "Salary": 3000,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Uta"
-  },
-  {
-    "Position": "SG",
-    "Name": "Treveon Graham",
-    "Salary": 3000,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 3,
-    "teamAbbrev": "Cha"
-  },
-  {
-    "Position": "SF",
-    "Name": "Joe Ingles",
-    "Salary": 3000,
-    "GameInfo": "Uta@Cha 07:00PM ET",
+    "GameInfo": "Chi@Mia 08:00PM ET",
     "AvgPointsPerGame": 10.688,
-    "teamAbbrev": "Uta"
-  },
-  {
-    "Position": "PF/C",
-    "Name": "Boris Diaw",
-    "Salary": 3000,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 3.583,
-    "teamAbbrev": "Uta"
-  },
-  {
-    "Position": "PF",
-    "Name": "Joel Bolomboy",
-    "Salary": 3000,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 5.167,
-    "teamAbbrev": "Uta"
-  },
-  {
-    "Position": "PF",
-    "Name": "Christian Wood",
-    "Salary": 3000,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 2.5,
-    "teamAbbrev": "Cha"
-  },
-  {
-    "Position": "C",
-    "Name": "Jeff Withey",
-    "Salary": 3000,
-    "GameInfo": "Uta@Cha 07:00PM ET",
-    "AvgPointsPerGame": 6.4,
-    "teamAbbrev": "Uta"
-  },
-  {
-    "Position": "PG",
-    "Name": "John Lucas III",
-    "Salary": 3000,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 7.5,
-    "teamAbbrev": "Min"
-  },
-  {
-    "Position": "PG",
-    "Name": "C.J. Watson",
-    "Salary": 3000,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 4.8,
-    "teamAbbrev": "Orl"
-  },
-  {
-    "Position": "PG",
-    "Name": "Tyus Jones",
-    "Salary": 3000,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 18.688,
-    "teamAbbrev": "Min"
+    "teamAbbrev": "Chi"
   },
   {
     "Position": "SG/SF",
-    "Name": "Brandon Rush",
+    "Name": "Denzel Valentine",
     "Salary": 3000,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 7.1,
-    "teamAbbrev": "Min"
-  },
-  {
-    "Position": "SG/SF",
-    "Name": "Shabazz Muhammad",
-    "Salary": 3000,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 12.083,
-    "teamAbbrev": "Min"
-  },
-  {
-    "Position": "SG/SF",
-    "Name": "Mario Hezonja",
-    "Salary": 3000,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 11.571,
-    "teamAbbrev": "Orl"
+    "GameInfo": "Chi@Mia 08:00PM ET",
+    "AvgPointsPerGame": 3.667,
+    "teamAbbrev": "Chi"
   },
   {
     "Position": "SG",
-    "Name": "Jodie Meeks",
+    "Name": "Wayne Ellington",
     "Salary": 3000,
-    "GameInfo": "Min@Orl 07:00PM ET",
+    "GameInfo": "Chi@Mia 08:00PM ET",
     "AvgPointsPerGame": 0,
-    "teamAbbrev": "Orl"
+    "teamAbbrev": "Mia"
   },
   {
     "Position": "SG",
-    "Name": "C.J. Wilcox",
+    "Name": "Rodney McGruder",
     "Salary": 3000,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 4.25,
-    "teamAbbrev": "Orl"
+    "GameInfo": "Chi@Mia 08:00PM ET",
+    "AvgPointsPerGame": 7.375,
+    "teamAbbrev": "Mia"
   },
   {
-    "Position": "SF",
-    "Name": "Damjan Rudez",
+    "Position": "SG",
+    "Name": "R.J. Hunter",
     "Salary": 3000,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 4.25,
-    "teamAbbrev": "Orl"
-  },
-  {
-    "Position": "PF",
-    "Name": "Arinze Onuaku",
-    "Salary": 3000,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 1.25,
-    "teamAbbrev": "Orl"
-  },
-  {
-    "Position": "PF",
-    "Name": "Jordan Hill",
-    "Salary": 3000,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 6.25,
-    "teamAbbrev": "Min"
-  },
-  {
-    "Position": "PF",
-    "Name": "Nemanja Bjelica",
-    "Salary": 3000,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 11.917,
-    "teamAbbrev": "Min"
-  },
-  {
-    "Position": "PF",
-    "Name": "Adreian Payne",
-    "Salary": 3000,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 7.25,
-    "teamAbbrev": "Min"
-  },
-  {
-    "Position": "PF",
-    "Name": "Stephen Zimmerman Jr.",
-    "Salary": 3000,
-    "GameInfo": "Min@Orl 07:00PM ET",
-    "AvgPointsPerGame": 6.5,
-    "teamAbbrev": "Orl"
-  },
-  {
-    "Position": "C",
-    "Name": "Nikola Pekovic",
-    "Salary": 3000,
-    "GameInfo": "Min@Orl 07:00PM ET",
+    "GameInfo": "Chi@Mia 08:00PM ET",
     "AvgPointsPerGame": 0,
-    "teamAbbrev": "Min"
-  },
-  {
-    "Position": "SG/SF",
-    "Name": "Justin Holiday",
-    "Salary": 3000,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 10.833,
-    "teamAbbrev": "NY"
-  },
-  {
-    "Position": "SG",
-    "Name": "Randy Foye",
-    "Salary": 3000,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 5.75,
-    "teamAbbrev": "Bkn"
-  },
-  {
-    "Position": "SG",
-    "Name": "Sasha Vujacic",
-    "Salary": 3000,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 3.375,
-    "teamAbbrev": "NY"
-  },
-  {
-    "Position": "SG",
-    "Name": "Joe Harris",
-    "Salary": 3000,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 15.821,
-    "teamAbbrev": "Bkn"
-  },
-  {
-    "Position": "SG",
-    "Name": "Ron Baker",
-    "Salary": 3000,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 8.5,
-    "teamAbbrev": "NY"
+    "teamAbbrev": "Chi"
   },
   {
     "Position": "SF/PF",
-    "Name": "Lance Thomas",
+    "Name": "James Johnson",
     "Salary": 3000,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 8.2,
-    "teamAbbrev": "NY"
+    "GameInfo": "Chi@Mia 08:00PM ET",
+    "AvgPointsPerGame": 18.083,
+    "teamAbbrev": "Mia"
   },
   {
     "Position": "SF",
-    "Name": "Mindaugas Kuzminskas",
+    "Name": "Paul Zipser",
     "Salary": 3000,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 8.833,
-    "teamAbbrev": "NY"
-  },
-  {
-    "Position": "SF",
-    "Name": "Caris LeVert",
-    "Salary": 3000,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Bkn"
-  },
-  {
-    "Position": "SF",
-    "Name": "Anthony Bennett",
-    "Salary": 3000,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 9.5,
-    "teamAbbrev": "Bkn"
-  },
-  {
-    "Position": "PF/C",
-    "Name": "Kyle O'Quinn",
-    "Salary": 3000,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 13.167,
-    "teamAbbrev": "NY"
+    "GameInfo": "Chi@Mia 08:00PM ET",
+    "AvgPointsPerGame": 3.375,
+    "teamAbbrev": "Chi"
   },
   {
     "Position": "PF",
-    "Name": "Maurice Ndour",
+    "Name": "Chris Bosh",
     "Salary": 3000,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 6.417,
-    "teamAbbrev": "NY"
+    "GameInfo": "Chi@Mia 08:00PM ET",
+    "AvgPointsPerGame": 0,
+    "teamAbbrev": "Mia"
   },
   {
     "Position": "PF",
-    "Name": "Chris McCullough",
+    "Name": "Udonis Haslem",
     "Salary": 3000,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 4.125,
-    "teamAbbrev": "Bkn"
+    "GameInfo": "Chi@Mia 08:00PM ET",
+    "AvgPointsPerGame": 8.5,
+    "teamAbbrev": "Mia"
+  },
+  {
+    "Position": "PF",
+    "Name": "Derrick Williams",
+    "Salary": 3000,
+    "GameInfo": "Chi@Mia 08:00PM ET",
+    "AvgPointsPerGame": 1.25,
+    "teamAbbrev": "Mia"
   },
   {
     "Position": "C",
-    "Name": "Marshall Plumlee",
+    "Name": "Josh McRoberts",
     "Salary": 3000,
-    "GameInfo": "Bkn@NY 07:00PM ET",
+    "GameInfo": "Chi@Mia 08:00PM ET",
     "AvgPointsPerGame": 0,
-    "teamAbbrev": "NY"
+    "teamAbbrev": "Mia"
   },
   {
     "Position": "C",
-    "Name": "Guillermo Hernangomez",
+    "Name": "Cristiano Felicio",
     "Salary": 3000,
-    "GameInfo": "Bkn@NY 07:00PM ET",
-    "AvgPointsPerGame": 4.333,
-    "teamAbbrev": "NY"
+    "GameInfo": "Chi@Mia 08:00PM ET",
+    "AvgPointsPerGame": 8.536,
+    "teamAbbrev": "Chi"
   },
   {
     "Position": "PG/SG",
-    "Name": "Rodney Stuckey",
+    "Name": "Garrett Temple",
     "Salary": 3000,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 7.75,
-    "teamAbbrev": "Ind"
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 14.639,
+    "teamAbbrev": "Sac"
   },
   {
     "Position": "PG",
-    "Name": "Aaron Brooks",
+    "Name": "Jose Calderon",
     "Salary": 3000,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 15.688,
-    "teamAbbrev": "Ind"
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 5.083,
+    "teamAbbrev": "LAL"
   },
   {
-    "Position": "SG/SF",
-    "Name": "Hollis Thompson",
+    "Position": "PG",
+    "Name": "Marcelo Huertas",
     "Salary": 3000,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 14.75,
-    "teamAbbrev": "Phi"
-  },
-  {
-    "Position": "SG",
-    "Name": "Joe Young",
-    "Salary": 3000,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 8.5,
-    "teamAbbrev": "Ind"
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 9.5,
+    "teamAbbrev": "LAL"
   },
   {
     "Position": "SG",
-    "Name": "Nik Stauskas",
+    "Name": "Ben McLemore",
     "Salary": 3000,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 12.667,
-    "teamAbbrev": "Phi"
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 13.063,
+    "teamAbbrev": "Sac"
   },
   {
     "Position": "SG",
-    "Name": "Timothe Luwawu-Cabarrot",
+    "Name": "Malachi Richardson",
     "Salary": 3000,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 1.5,
-    "teamAbbrev": "Phi"
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 1.75,
+    "teamAbbrev": "Sac"
+  },
+  {
+    "Position": "SF/PF",
+    "Name": "Anthony Tolliver",
+    "Salary": 3000,
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 7.5,
+    "teamAbbrev": "Sac"
   },
   {
     "Position": "SF",
-    "Name": "Georges Niang",
+    "Name": "Metta World Peace",
     "Salary": 3000,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 2.85,
-    "teamAbbrev": "Ind"
-  },
-  {
-    "Position": "SF",
-    "Name": "Ben Simmons",
-    "Salary": 3000,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Phi"
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 1.313,
+    "teamAbbrev": "LAL"
   },
   {
     "Position": "PF",
-    "Name": "Lavoy Allen",
+    "Name": "Omri Casspi",
     "Salary": 3000,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 9.571,
-    "teamAbbrev": "Ind"
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 10.1,
+    "teamAbbrev": "Sac"
   },
   {
     "Position": "PF",
-    "Name": "Rakeem Christmas",
+    "Name": "Thomas Robinson",
     "Salary": 3000,
-    "GameInfo": "Phi@Ind 07:00PM ET",
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 0.813,
+    "teamAbbrev": "LAL"
+  },
+  {
+    "Position": "PF",
+    "Name": "Skal Labissiere",
+    "Salary": 3000,
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 11.75,
+    "teamAbbrev": "Sac"
+  },
+  {
+    "Position": "C",
+    "Name": "Tarik Black",
+    "Salary": 3000,
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 12.656,
+    "teamAbbrev": "LAL"
+  },
+  {
+    "Position": "C",
+    "Name": "Willie Cauley-Stein",
+    "Salary": 3000,
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 9,
+    "teamAbbrev": "Sac"
+  },
+  {
+    "Position": "C",
+    "Name": "Georgios Papagiannis",
+    "Salary": 3000,
+    "GameInfo": "LAL@Sac 10:30PM ET",
     "AvgPointsPerGame": 2.75,
-    "teamAbbrev": "Ind"
+    "teamAbbrev": "Sac"
   },
   {
     "Position": "C",
-    "Name": "Kevin Seraphin",
+    "Name": "Ivica Zubac",
     "Salary": 3000,
-    "GameInfo": "Phi@Ind 07:00PM ET",
-    "AvgPointsPerGame": 6.833,
-    "teamAbbrev": "Ind"
-  },
-  {
-    "Position": "PG",
-    "Name": "Shabazz Napier",
-    "Salary": 3000,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 4.5,
-    "teamAbbrev": "Por"
-  },
-  {
-    "Position": "PG",
-    "Name": "Tim Quarterman",
-    "Salary": 3000,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Por"
-  },
-  {
-    "Position": "SF",
-    "Name": "Alan Anderson",
-    "Salary": 3000,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "LAC"
-  },
-  {
-    "Position": "SF",
-    "Name": "Luc Richard Mbah a Moute",
-    "Salary": 3000,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 10.321,
-    "teamAbbrev": "LAC"
-  },
-  {
-    "Position": "SF",
-    "Name": "Wesley Johnson",
-    "Salary": 3000,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 9.643,
-    "teamAbbrev": "LAC"
-  },
-  {
-    "Position": "SF",
-    "Name": "Pat Connaughton",
-    "Salary": 3000,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 4.25,
-    "teamAbbrev": "Por"
-  },
-  {
-    "Position": "PF/C",
-    "Name": "Brandon Bass",
-    "Salary": 3000,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 7.583,
-    "teamAbbrev": "LAC"
-  },
-  {
-    "Position": "PF",
-    "Name": "Paul Pierce",
-    "Salary": 3000,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "LAC"
-  },
-  {
-    "Position": "PF",
-    "Name": "Meyers Leonard",
-    "Salary": 3000,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 7.917,
-    "teamAbbrev": "Por"
-  },
-  {
-    "Position": "PF",
-    "Name": "Brice Johnson",
-    "Salary": 3000,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "LAC"
-  },
-  {
-    "Position": "PF",
-    "Name": "Jake Layman",
-    "Salary": 3000,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 24.25,
-    "teamAbbrev": "Por"
-  },
-  {
-    "Position": "PF",
-    "Name": "Noah Vonleh",
-    "Salary": 3000,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 9.125,
-    "teamAbbrev": "Por"
-  },
-  {
-    "Position": "C",
-    "Name": "Festus Ezeli",
-    "Salary": 3000,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Por"
-  },
-  {
-    "Position": "C",
-    "Name": "Ed Davis",
-    "Salary": 3000,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 8.875,
-    "teamAbbrev": "Por"
-  },
-  {
-    "Position": "C",
-    "Name": "Diamond Stone",
-    "Salary": 3000,
-    "GameInfo": "Por@LAC 10:30PM ET",
-    "AvgPointsPerGame": 0.375,
-    "teamAbbrev": "LAC"
-  },
-  {
-    "Position": "PG",
-    "Name": "Bobby Brown",
-    "Salary": 3000,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Hou"
-  },
-  {
-    "Position": "PG",
-    "Name": "Nicolas Laprovittola",
-    "Salary": 3000,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 7.458,
-    "teamAbbrev": "SA"
-  },
-  {
-    "Position": "PG",
-    "Name": "Bryn Forbes",
-    "Salary": 3000,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 2.6,
-    "teamAbbrev": "SA"
-  },
-  {
-    "Position": "PG",
-    "Name": "Tyler Ennis",
-    "Salary": 3000,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 5,
-    "teamAbbrev": "Hou"
-  },
-  {
-    "Position": "PG",
-    "Name": "Dejounte Murray",
-    "Salary": 3000,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 3.375,
-    "teamAbbrev": "SA"
-  },
-  {
-    "Position": "SG",
-    "Name": "K.J. McDaniels",
-    "Salary": 3000,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 12.5,
-    "teamAbbrev": "Hou"
-  },
-  {
-    "Position": "SF",
-    "Name": "Sam Dekker",
-    "Salary": 3000,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 11.643,
-    "teamAbbrev": "Hou"
-  },
-  {
-    "Position": "PF",
-    "Name": "Davis Bertans",
-    "Salary": 3000,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 7.05,
-    "teamAbbrev": "SA"
-  },
-  {
-    "Position": "PF",
-    "Name": "Kyle Wiltjer",
-    "Salary": 3000,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 0.5,
-    "teamAbbrev": "Hou"
-  },
-  {
-    "Position": "C",
-    "Name": "Chinanu Onuaku",
-    "Salary": 3000,
-    "GameInfo": "Hou@SA 09:30PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Hou"
-  },
-  {
-    "Position": "PG",
-    "Name": "Beno Udrih",
-    "Salary": 3000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 15.679,
-    "teamAbbrev": "Det"
-  },
-  {
-    "Position": "PG",
-    "Name": "Tyler Ulis",
-    "Salary": 3000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 7.563,
-    "teamAbbrev": "Pho"
-  },
-  {
-    "Position": "SG",
-    "Name": "Leandro Barbosa",
-    "Salary": 3000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 9.321,
-    "teamAbbrev": "Pho"
-  },
-  {
-    "Position": "SG",
-    "Name": "John Jenkins",
-    "Salary": 3000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Pho"
-  },
-  {
-    "Position": "SG",
-    "Name": "Reggie Bullock",
-    "Salary": 3000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Det"
-  },
-  {
-    "Position": "SG",
-    "Name": "Darrun Hilliard",
-    "Salary": 3000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 4.167,
-    "teamAbbrev": "Det"
-  },
-  {
-    "Position": "SF",
-    "Name": "P.J. Tucker",
-    "Salary": 3000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 12.625,
-    "teamAbbrev": "Pho"
-  },
-  {
-    "Position": "SF",
-    "Name": "Michael Gbinije",
-    "Salary": 3000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 1.167,
-    "teamAbbrev": "Det"
-  },
-  {
-    "Position": "SF",
-    "Name": "Stanley Johnson",
-    "Salary": 3000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 11.679,
-    "teamAbbrev": "Det"
-  },
-  {
-    "Position": "SF",
-    "Name": "Derrick Jones Jr.",
-    "Salary": 3000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 0,
-    "teamAbbrev": "Pho"
-  },
-  {
-    "Position": "PF",
-    "Name": "Henry Ellenson",
-    "Salary": 3000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 3.167,
-    "teamAbbrev": "Det"
-  },
-  {
-    "Position": "PF",
-    "Name": "Marquese Chriss",
-    "Salary": 3000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 11.5,
-    "teamAbbrev": "Pho"
-  },
-  {
-    "Position": "PF",
-    "Name": "Dragan Bender",
-    "Salary": 3000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 8.2,
-    "teamAbbrev": "Pho"
-  },
-  {
-    "Position": "C",
-    "Name": "Aron Baynes",
-    "Salary": 3000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 12.786,
-    "teamAbbrev": "Det"
-  },
-  {
-    "Position": "C",
-    "Name": "Boban Marjanovic",
-    "Salary": 3000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 4.5,
-    "teamAbbrev": "Det"
-  },
-  {
-    "Position": "C",
-    "Name": "Alan Williams",
-    "Salary": 3000,
-    "GameInfo": "Det@Pho 09:00PM ET",
-    "AvgPointsPerGame": 2.25,
-    "teamAbbrev": "Pho"
+    "GameInfo": "LAL@Sac 10:30PM ET",
+    "AvgPointsPerGame": 5.875,
+    "teamAbbrev": "LAL"
   }
 ]
