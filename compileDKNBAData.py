@@ -84,6 +84,7 @@ for playerName in dkdata:
 	playerGameMinutes = 0
 	lastFive = 0
 	lastFiveGamePoints = 0
+	lastFiveGamePointsPPD = 0
 	lastFiveGameMin = 0
 
 	# print(ceiling)
@@ -119,9 +120,6 @@ for playerName in dkdata:
 
 		pointsPerDollarGameLog = round(gamePoints / (playerName['Salary'] / 1000.0), 1)
 
-		if floor == 100:
-			floor = 0
-
 		if lastFive < 5:
 			lastFiveGamePoints += gamePoints
 			lastFiveGameMin += games['MIN']
@@ -130,14 +128,8 @@ for playerName in dkdata:
 		# print(ceiling)
 		playerGames.append({'DATE': gameDate, 'MIN': games['MIN'], 'PTS': games['PTS'], 'FG3M': games['FG3M'], 'AST': games['AST'], 'REB': games['REB'], 'STL': games['STL'], 'BLK': games['BLK'], 'TOV': games['TOV'], 'PPD': pointsPerDollarGameLog})
 
-	# print(dkPlayerFirstName + dkPlayerLastName)
-	# print(player.get_player(dkPlayerFirstName, dkPlayerLastName))
-	# print(playerName['Salary'])
-	# print(player.PlayerSummary(player.get_player(dkPlayerFirstName, dkPlayerLastName)).headline_stats())
-
-	# playerIdList.append(dkPlayerID)
-	# playerSalary.append(playerName['Salary'])
-	# playerFantasyPointsAvg.append(playerName['AvgPointsPerGame'])
+	if floor == 100:
+		floor = 0
 
 	pointsPerDollar = round(playerName['AvgPointsPerGame'] / (playerName['Salary'] / 1000.0), 1)
 	ceilingPPD = round(ceiling / (playerName['Salary'] / 1000.0), 1)
@@ -145,18 +137,15 @@ for playerName in dkdata:
 
 	if len(gameLogs) > 0:
 		playerGameMinutes = round(playerGameMinutes / float(len(gameLogs)), 1)
-		
+
 		if len(gameLogs) >= 5:
 			lastFiveGamePoints = lastFiveGamePoints / 5.0
 			lastFiveGamePointsPPD = round(lastFiveGamePoints / (playerName['Salary'] / 1000.0), 1)
 			lastFiveGameMin = lastFiveGameMin / 5.0
 		else:
-			lastFiveGamePoints = round(lastFiveGamePoints / float(len(gameLogs)), 1)
+			lastFiveGamePoints = playerName['AvgPointsPerGame']
 			lastFiveGamePointsPPD = round(lastFiveGamePoints / (playerName['Salary'] / 1000.0), 1)
 			lastFiveGameMin = round(lastFiveGameMin / float(len(gameLogs)), 1)
-		print(lastFiveGameMin)
-		print(lastFiveGamePoints)
-		print(lastFiveGamePointsPPD)
 
 	finalJson.append({'ID': dkPlayerID, 'Name': playerName['Name'], 'Salary': playerName['Salary'], 'AvgPointsPerGame': playerName['AvgPointsPerGame'], 'PPD': pointsPerDollar, 'MIN': playerGameMinutes, 'Ceiling': ceiling, 'ceilingPPD': ceilingPPD, 'Floor': floor, 'floorPPD': floorPPD, 'lastFivePoints': lastFiveGamePoints, 'lastFivePPD': lastFiveGamePointsPPD, 'lastFiveGameMin':lastFiveGameMin, 'GameLogs': playerGames})
 
