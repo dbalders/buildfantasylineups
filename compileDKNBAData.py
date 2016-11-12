@@ -81,6 +81,11 @@ for playerName in dkdata:
 	playerGames = []
 	ceiling = 0
 	floor = 100
+	playerGameMinutes = 0
+	lastFive = 0
+	lastFiveGamePoints = 0
+	lastFiveGameMin = 0
+
 	# print(ceiling)
 	for games in gameLogs:
 		gamePoints = 0
@@ -91,6 +96,8 @@ for playerName in dkdata:
 		gamePoints += games['FG3M'] * .5
 		gamePoints += games['STL'] * 2
 		gamePoints += games['BLK'] * 2
+
+		playerGameMinutes += games['MIN']
 
 		gameDate = game.BoxscoreSummary(games['Game_ID']).game_summary()
 		gameDate = datetime.datetime.strptime(gameDate[0]['GAME_DATE_EST'], "%Y-%m-%dT%H:%M:%S").date()
@@ -110,10 +117,15 @@ for playerName in dkdata:
 		if gamePoints < floor:
 			floor = gamePoints
 
-		pointsPerDollarGameLog = round(gamePoints / (playerName['Salary'] / 1000), 1)
+		pointsPerDollarGameLog = round(gamePoints / (playerName['Salary'] / 1000.0), 1)
 
 		if floor == 100:
 			floor = 0
+
+		if lastFive < 5:
+			lastFiveGamePoints += gamePoints
+			lastFiveGameMin += games['MIN']
+			lastFive += 1
 		# print(str(gamePoints) + "points")
 		# print(ceiling)
 		playerGames.append({'DATE': gameDate, 'MIN': games['MIN'], 'PTS': games['PTS'], 'FG3M': games['FG3M'], 'AST': games['AST'], 'REB': games['REB'], 'STL': games['STL'], 'BLK': games['BLK'], 'TOV': games['TOV'], 'PPD': pointsPerDollarGameLog})
@@ -127,11 +139,26 @@ for playerName in dkdata:
 	# playerSalary.append(playerName['Salary'])
 	# playerFantasyPointsAvg.append(playerName['AvgPointsPerGame'])
 
-	pointsPerDollar = round(playerName['AvgPointsPerGame'] / (playerName['Salary'] / 1000), 1)
-	ceilingPPD = round(ceiling / (playerName['Salary'] / 1000), 1)
-	floorPPD = round(floor / (playerName['Salary'] / 1000), 1)
+	pointsPerDollar = round(playerName['AvgPointsPerGame'] / (playerName['Salary'] / 1000.0), 1)
+	ceilingPPD = round(ceiling / (playerName['Salary'] / 1000.0), 1)
+	floorPPD = round(floor / (playerName['Salary'] / 1000.0), 1)
 
-	finalJson.append({'ID': dkPlayerID, 'Name': playerName['Name'], 'Salary': playerName['Salary'], 'AvgPointsPerGame': playerName['AvgPointsPerGame'], 'PPD': pointsPerDollar, 'Ceiling': ceiling, 'ceilingPPD': ceilingPPD, 'Floor': floor, 'floorPPD': floorPPD, 'GameLogs': playerGames})
+	if len(gameLogs) > 0:
+		playerGameMinutes = round(playerGameMinutes / float(len(gameLogs)), 1)
+		
+		if len(gameLogs) >= 5:
+			lastFiveGamePoints = lastFiveGamePoints / 5.0
+			lastFiveGamePointsPPD = round(lastFiveGamePoints / (playerName['Salary'] / 1000.0), 1)
+			lastFiveGameMin = lastFiveGameMin / 5.0
+		else:
+			lastFiveGamePoints = round(lastFiveGamePoints / float(len(gameLogs)), 1)
+			lastFiveGamePointsPPD = round(lastFiveGamePoints / (playerName['Salary'] / 1000.0), 1)
+			lastFiveGameMin = round(lastFiveGameMin / float(len(gameLogs)), 1)
+		print(lastFiveGameMin)
+		print(lastFiveGamePoints)
+		print(lastFiveGamePointsPPD)
+
+	finalJson.append({'ID': dkPlayerID, 'Name': playerName['Name'], 'Salary': playerName['Salary'], 'AvgPointsPerGame': playerName['AvgPointsPerGame'], 'PPD': pointsPerDollar, 'MIN': playerGameMinutes, 'Ceiling': ceiling, 'ceilingPPD': ceilingPPD, 'Floor': floor, 'floorPPD': floorPPD, 'lastFivePoints': lastFiveGamePoints, 'lastFivePPD': lastFiveGamePointsPPD, 'lastFiveGameMin':lastFiveGameMin, 'GameLogs': playerGames})
 
 	continue
 

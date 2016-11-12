@@ -22,6 +22,8 @@ var playersTable = $('#players-table').dataTable({
     }, {
         "data": "Salary"
     }, {
+        "data": "MIN"
+    }, {
         "data": "AvgPointsPerGame"
     }, {
         "data": "PPD"
@@ -33,6 +35,12 @@ var playersTable = $('#players-table').dataTable({
         "data": "Floor"
     }, {
         "data": "floorPPD"
+    }, {
+        "data": "lastFiveGameMin"
+    }, {
+        "data": "lastFivePoints"
+    }, {
+        "data": "lastFivePPD"
     }],
     language: {
         emptyTable: "Loading...",
