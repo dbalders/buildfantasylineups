@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,600,400,300|Source+Sans+Pro|Ubuntu" />
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+</head>
+
+<body>
+    <div id="main-container" class="flex-vertical">
+        <nav id="nav" class="flex">
+            <div id="nav-title">FanDuel NBA Values</div>
+        </nav>
+        <div id="team-table-container">
+            <table id="team-table" class="dt-table display responsive" style="width:100%">
+            </table>
+        </div>
+        <div id="players-table-container">
+            <table id="players-table" class="dt-table display responsive" style="width:100%">
+                <thead>
+                	<td class="hidden">ID</td>
+                    <td>Name</td>
+                    <td>Salary</td>
+                    <td>MPG</td>
+                    <td>Avg PPG</td>
+                    <td>Avg PPD</td>
+                    <td>Ceiling</td>
+                    <td>Ceiling PPD</td>
+                    <td>Floor</td>
+                    <td>Floor PPD</td>
+                    <td>Last 5 MPG</td>
+                    <td>Last 5 Points</td>
+                    <td>Last 5 PPD</td>
+                </thead>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="assets/js/datatables-fd.js"></script>
+</html>

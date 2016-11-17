@@ -5,7 +5,7 @@ import json
 import datetime
 import os
 
-filename = 'assets/json/data.json'
+filename = 'assets/json/dkFinalData.json'
 playerIdList = []
 playerSalary = []
 playerFantasyPointsAvg = []

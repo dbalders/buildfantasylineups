@@ -2,7 +2,7 @@ $.fn.dataTable.defaults.column.asSorting = ['desc', 'asc'];
 
 var playersTable = $('#players-table').dataTable({
     ajax: {
-        url: '/assets/json/dkFinalData.json',
+        url: '/assets/json/fdFinalData.json',
         dataSrc: ""
     },
     paging: false,
