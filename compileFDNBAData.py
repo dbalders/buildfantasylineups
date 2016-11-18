@@ -25,7 +25,7 @@ for playerName in fddata:
 	fdPlayerFirstName = playerName['First Name'].replace('.','')
 	fdPlayerLastName = playerName['Last Name']
 
-	print(fdPlayerFirstName + " " + fdPlayerLastName)
+	print(fdPlayerLastName)
 
 	if (fdPlayerFirstName == 'JJ' and fdPlayerLastName == 'Barea'):
 		fdPlayerFirstName = 'Jose Juan'
@@ -48,7 +48,7 @@ for playerName in fddata:
 	if fdPlayerFirstName == 'Nene':
 		fdPlayerID = 2403
 
-	if fdPlayerFirstName == 'Robinson III':
+	if fdPlayerLastName == 'Robinson III':
 		fdPlayerID = 203922
 
 	if fdPlayerFirstName == 'Michael McAdoo':
@@ -68,6 +68,12 @@ for playerName in fddata:
 
 	if fdPlayerLastName == 'Richard Mbah a Moute':
 		fdPlayerID = 201601
+
+	if fdPlayerLastName == 'Mbah a Moute':
+		fdPlayerID = 201601
+
+	if fdPlayerLastName == 'Tavares':
+		fdPlayerID = 204002
 
 	if fdPlayerID == 0:
 		fdPlayerID = player.get_player(fdPlayerFirstName, fdPlayerLastName)
