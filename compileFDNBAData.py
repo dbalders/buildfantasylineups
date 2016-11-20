@@ -135,17 +135,13 @@ for playerName in fddata:
 		playerGameMinutes = round(playerGameMinutes / float(len(gameLogs)), 1)
 
 		if len(gameLogs) >= 5:
-			print(lastFiveGamePoints)
 			lastFiveGamePoints = lastFiveGamePoints / 5.0
 			lastFiveGamePointsPPD = round(lastFiveGamePoints / (playerName['Salary'] / 1000.0), 1)
 			lastFiveGameMin = lastFiveGameMin / 5.0
-			print(lastFiveGamePoints)
 		else:
 			lastFiveGamePoints = round(playerName['FPPG'], 1)
 			lastFiveGamePointsPPD = round(lastFiveGamePoints / (playerName['Salary'] / 1000.0), 1)
 			lastFiveGameMin = round(lastFiveGameMin / float(len(gameLogs)), 1)
-
-	print(lastFiveGamePoints)
 
 	finalJson.append({'ID': fdPlayerID, 'Name': fdPlayerFirstName + " " + fdPlayerLastName, 'Salary': playerName['Salary'], 'AvgPointsPerGame': round(playerName['FPPG'], 1), 'PPD': pointsPerDollar, 'MIN': playerGameMinutes, 'Ceiling': round(ceiling, 1), 'ceilingPPD': ceilingPPD, 'Floor': round(floor, 1), 'floorPPD': floorPPD, 'lastFivePoints': round(lastFiveGamePoints, 1), 'lastFivePPD': lastFiveGamePointsPPD, 'lastFiveGameMin':lastFiveGameMin, 'GameLogs': playerGames})
 
