@@ -3,7 +3,7 @@
     "Position": "PG",
     "Name": "Russell Westbrook",
     "Salary": 12500,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 62.964,
     "teamAbbrev": "OKC"
   },
@@ -11,7 +11,7 @@
     "Position": "PF/C",
     "Name": "Anthony Davis",
     "Salary": 11000,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 58.327,
     "teamAbbrev": "NO"
   },
@@ -19,7 +19,7 @@
     "Position": "SG/SF",
     "Name": "Jimmy Butler",
     "Salary": 9200,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 42.75,
     "teamAbbrev": "Chi"
   },
@@ -27,7 +27,7 @@
     "Position": "PG",
     "Name": "Damian Lillard",
     "Salary": 8900,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 42.567,
     "teamAbbrev": "Por"
   },
@@ -35,7 +35,7 @@
     "Position": "PF",
     "Name": "Paul Millsap",
     "Salary": 7900,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 37.481,
     "teamAbbrev": "Atl"
   },
@@ -43,7 +43,7 @@
     "Position": "SF",
     "Name": "Carmelo Anthony",
     "Salary": 7800,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 36.327,
     "teamAbbrev": "NY"
   },
@@ -51,7 +51,7 @@
     "Position": "C",
     "Name": "Dwight Howard",
     "Salary": 7700,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 39.625,
     "teamAbbrev": "Atl"
   },
@@ -59,7 +59,7 @@
     "Position": "PF",
     "Name": "Kristaps Porzingis",
     "Salary": 7500,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 35.25,
     "teamAbbrev": "NY"
   },
@@ -67,7 +67,7 @@
     "Position": "PG/SG",
     "Name": "C.J. McCollum",
     "Salary": 7400,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 36.833,
     "teamAbbrev": "Por"
   },
@@ -75,7 +75,7 @@
     "Position": "PF",
     "Name": "Julius Randle",
     "Salary": 6700,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 32.321,
     "teamAbbrev": "LAL"
   },
@@ -83,7 +83,7 @@
     "Position": "PG/SG",
     "Name": "Victor Oladipo",
     "Salary": 6600,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 27.839,
     "teamAbbrev": "OKC"
   },
@@ -91,7 +91,7 @@
     "Position": "PG",
     "Name": "Jrue Holiday",
     "Salary": 6400,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 39,
     "teamAbbrev": "NO"
   },
@@ -99,7 +99,7 @@
     "Position": "SG/SF",
     "Name": "Tyreke Evans",
     "Salary": 6300,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 0,
     "teamAbbrev": "NO"
   },
@@ -107,7 +107,7 @@
     "Position": "PG",
     "Name": "D'Angelo Russell",
     "Salary": 6200,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 30.538,
     "teamAbbrev": "LAL"
   },
@@ -115,7 +115,7 @@
     "Position": "SG",
     "Name": "Dwyane Wade",
     "Salary": 6000,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 32.038,
     "teamAbbrev": "Chi"
   },
@@ -123,7 +123,7 @@
     "Position": "PG",
     "Name": "Emmanuel Mudiay",
     "Salary": 5900,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 30.731,
     "teamAbbrev": "Den"
   },
@@ -131,7 +131,7 @@
     "Position": "SF",
     "Name": "Danilo Gallinari",
     "Salary": 5900,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 28.096,
     "teamAbbrev": "Den"
   },
@@ -139,7 +139,7 @@
     "Position": "PG",
     "Name": "Derrick Rose",
     "Salary": 5800,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 28.423,
     "teamAbbrev": "NY"
   },
@@ -147,7 +147,7 @@
     "Position": "SF",
     "Name": "Wilson Chandler",
     "Salary": 5700,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 29.886,
     "teamAbbrev": "Den"
   },
@@ -155,7 +155,7 @@
     "Position": "PF",
     "Name": "Kenneth Faried",
     "Salary": 5700,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 27.231,
     "teamAbbrev": "Den"
   },
@@ -163,7 +163,7 @@
     "Position": "PG",
     "Name": "Dennis Schroder",
     "Salary": 5600,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 27.635,
     "teamAbbrev": "Atl"
   },
@@ -171,7 +171,7 @@
     "Position": "PG",
     "Name": "Rajon Rondo",
     "Salary": 5600,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 27.792,
     "teamAbbrev": "Chi"
   },
@@ -179,7 +179,7 @@
     "Position": "C",
     "Name": "Mason Plumlee",
     "Salary": 5600,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 26.833,
     "teamAbbrev": "Por"
   },
@@ -187,7 +187,7 @@
     "Position": "SG/SF",
     "Name": "Kent Bazemore",
     "Salary": 5500,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 25.365,
     "teamAbbrev": "Atl"
   },
@@ -195,7 +195,7 @@
     "Position": "PF",
     "Name": "Terrence Jones",
     "Salary": 5400,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 23.981,
     "teamAbbrev": "NO"
   },
@@ -203,7 +203,7 @@
     "Position": "PF/C",
     "Name": "Taj Gibson",
     "Salary": 5400,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 26.679,
     "teamAbbrev": "Chi"
   },
@@ -211,7 +211,7 @@
     "Position": "C",
     "Name": "Robin Lopez",
     "Salary": 5300,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 23.661,
     "teamAbbrev": "Chi"
   },
@@ -219,7 +219,7 @@
     "Position": "SG",
     "Name": "Lou Williams",
     "Salary": 5300,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 27.964,
     "teamAbbrev": "LAL"
   },
@@ -227,7 +227,7 @@
     "Position": "C",
     "Name": "Steven Adams",
     "Salary": 5200,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 25.357,
     "teamAbbrev": "OKC"
   },
@@ -235,7 +235,7 @@
     "Position": "PG",
     "Name": "Tim Frazier",
     "Salary": 5100,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 29.054,
     "teamAbbrev": "NO"
   },
@@ -243,7 +243,7 @@
     "Position": "PG/SG",
     "Name": "Jordan Clarkson",
     "Salary": 5000,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 24.196,
     "teamAbbrev": "LAL"
   },
@@ -251,7 +251,7 @@
     "Position": "SF",
     "Name": "Maurice Harkless",
     "Salary": 4900,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 21.95,
     "teamAbbrev": "Por"
   },
@@ -259,7 +259,7 @@
     "Position": "PF",
     "Name": "Nikola Mirotic",
     "Salary": 4800,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 21.429,
     "teamAbbrev": "Chi"
   },
@@ -267,7 +267,7 @@
     "Position": "SG/SF",
     "Name": "Will Barton",
     "Salary": 4700,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 25.5,
     "teamAbbrev": "Den"
   },
@@ -275,7 +275,7 @@
     "Position": "C",
     "Name": "Jusuf Nurkic",
     "Salary": 4600,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 25.077,
     "teamAbbrev": "Den"
   },
@@ -283,7 +283,7 @@
     "Position": "PF",
     "Name": "Al-Farouq Aminu",
     "Salary": 4600,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 21.844,
     "teamAbbrev": "Por"
   },
@@ -291,7 +291,7 @@
     "Position": "C",
     "Name": "Enes Kanter",
     "Salary": 4600,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 23,
     "teamAbbrev": "OKC"
   },
@@ -299,7 +299,7 @@
     "Position": "PF/C",
     "Name": "Nikola Jokic",
     "Salary": 4500,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 21.404,
     "teamAbbrev": "Den"
   },
@@ -307,7 +307,7 @@
     "Position": "C",
     "Name": "Joakim Noah",
     "Salary": 4400,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 23.354,
     "teamAbbrev": "NY"
   },
@@ -315,7 +315,7 @@
     "Position": "SG",
     "Name": "Nick Young",
     "Salary": 4400,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 21.804,
     "teamAbbrev": "LAL"
   },
@@ -323,7 +323,7 @@
     "Position": "SG/SF",
     "Name": "Andre Roberson",
     "Salary": 4300,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 19.429,
     "teamAbbrev": "OKC"
   },
@@ -331,7 +331,7 @@
     "Position": "SG",
     "Name": "E'Twaun Moore",
     "Salary": 4200,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 21.192,
     "teamAbbrev": "NO"
   },
@@ -339,7 +339,7 @@
     "Position": "SG/SF",
     "Name": "Evan Turner",
     "Salary": 4100,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 18.183,
     "teamAbbrev": "Por"
   },
@@ -347,7 +347,7 @@
     "Position": "C",
     "Name": "Mike Muscala",
     "Salary": 4000,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 20,
     "teamAbbrev": "Atl"
   },
@@ -355,7 +355,7 @@
     "Position": "SG",
     "Name": "Gary Harris",
     "Salary": 4000,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 19.4,
     "teamAbbrev": "Den"
   },
@@ -363,7 +363,7 @@
     "Position": "SG",
     "Name": "Kyle Korver",
     "Salary": 3900,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 18.833,
     "teamAbbrev": "Atl"
   },
@@ -371,7 +371,7 @@
     "Position": "SG/SF",
     "Name": "Allen Crabbe",
     "Salary": 3900,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 17.317,
     "teamAbbrev": "Por"
   },
@@ -379,7 +379,7 @@
     "Position": "SF/PF",
     "Name": "Larry Nance Jr.",
     "Salary": 3900,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 18.135,
     "teamAbbrev": "LAL"
   },
@@ -387,7 +387,7 @@
     "Position": "PG",
     "Name": "Langston Galloway",
     "Salary": 3800,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 18.446,
     "teamAbbrev": "NO"
   },
@@ -395,7 +395,7 @@
     "Position": "PG/SG",
     "Name": "Jameer Nelson",
     "Salary": 3800,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 17.231,
     "teamAbbrev": "Den"
   },
@@ -403,7 +403,7 @@
     "Position": "PG",
     "Name": "Brandon Jennings",
     "Salary": 3800,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 19.596,
     "teamAbbrev": "NY"
   },
@@ -411,7 +411,7 @@
     "Position": "SF",
     "Name": "Thabo Sefolosha",
     "Salary": 3700,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 21.4,
     "teamAbbrev": "Atl"
   },
@@ -419,7 +419,7 @@
     "Position": "SG",
     "Name": "Courtney Lee",
     "Salary": 3700,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 17.865,
     "teamAbbrev": "NY"
   },
@@ -427,7 +427,7 @@
     "Position": "SF/PF",
     "Name": "Luol Deng",
     "Salary": 3700,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 17.75,
     "teamAbbrev": "LAL"
   },
@@ -435,7 +435,7 @@
     "Position": "PG/SG",
     "Name": "Tim Hardaway Jr.",
     "Salary": 3600,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 18.365,
     "teamAbbrev": "Atl"
   },
@@ -443,7 +443,7 @@
     "Position": "PG",
     "Name": "Jerian Grant",
     "Salary": 3600,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 12.222,
     "teamAbbrev": "Chi"
   },
@@ -451,7 +451,7 @@
     "Position": "PF/C",
     "Name": "Kyle O'Quinn",
     "Salary": 3600,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 12.154,
     "teamAbbrev": "NY"
   },
@@ -459,7 +459,7 @@
     "Position": "PG",
     "Name": "Jamal Murray",
     "Salary": 3500,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 14.885,
     "teamAbbrev": "Den"
   },
@@ -467,7 +467,7 @@
     "Position": "SF/PF",
     "Name": "Dante Cunningham",
     "Salary": 3400,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 13.962,
     "teamAbbrev": "NO"
   },
@@ -475,7 +475,7 @@
     "Position": "SF",
     "Name": "Solomon Hill",
     "Salary": 3400,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 15.357,
     "teamAbbrev": "NO"
   },
@@ -483,7 +483,7 @@
     "Position": "PG",
     "Name": "Isaiah Canaan",
     "Salary": 3400,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 12.875,
     "teamAbbrev": "Chi"
   },
@@ -491,7 +491,7 @@
     "Position": "SF",
     "Name": "Brandon Ingram",
     "Salary": 3400,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 14.768,
     "teamAbbrev": "LAL"
   },
@@ -499,7 +499,7 @@
     "Position": "SF",
     "Name": "Doug McDermott",
     "Salary": 3300,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 16.889,
     "teamAbbrev": "Chi"
   },
@@ -507,7 +507,7 @@
     "Position": "C",
     "Name": "Guillermo Hernangomez",
     "Salary": 3300,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 11.175,
     "teamAbbrev": "NY"
   },
@@ -515,7 +515,7 @@
     "Position": "PF",
     "Name": "Domantas Sabonis",
     "Salary": 3300,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 15.179,
     "teamAbbrev": "OKC"
   },
@@ -523,7 +523,7 @@
     "Position": "C",
     "Name": "Timofey Mozgov",
     "Salary": 3300,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 17.019,
     "teamAbbrev": "LAL"
   },
@@ -531,7 +531,7 @@
     "Position": "SG",
     "Name": "Buddy Hield",
     "Salary": 3200,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 15.054,
     "teamAbbrev": "NO"
   },
@@ -539,7 +539,7 @@
     "Position": "SG/SF",
     "Name": "Justin Holiday",
     "Salary": 3200,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 12.769,
     "teamAbbrev": "NY"
   },
@@ -547,7 +547,7 @@
     "Position": "PF",
     "Name": "Meyers Leonard",
     "Salary": 3200,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 12.135,
     "teamAbbrev": "Por"
   },
@@ -555,7 +555,7 @@
     "Position": "C",
     "Name": "Ed Davis",
     "Salary": 3200,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 10.817,
     "teamAbbrev": "Por"
   },
@@ -563,7 +563,7 @@
     "Position": "SG/SF",
     "Name": "Denzel Valentine",
     "Salary": 3100,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 4.925,
     "teamAbbrev": "Chi"
   },
@@ -571,7 +571,7 @@
     "Position": "SF/PF",
     "Name": "Jerami Grant",
     "Salary": 3100,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 13.25,
     "teamAbbrev": "OKC"
   },
@@ -579,7 +579,7 @@
     "Position": "PG",
     "Name": "Malcolm Delaney",
     "Salary": 3000,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 14.115,
     "teamAbbrev": "Atl"
   },
@@ -587,7 +587,7 @@
     "Position": "SF",
     "Name": "Quincy Pondexter",
     "Salary": 3000,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 0,
     "teamAbbrev": "NO"
   },
@@ -595,7 +595,7 @@
     "Position": "SF",
     "Name": "Ryan Kelly",
     "Salary": 3000,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 2.5,
     "teamAbbrev": "Atl"
   },
@@ -603,7 +603,7 @@
     "Position": "SF",
     "Name": "Anthony Brown",
     "Salary": 3000,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 0,
     "teamAbbrev": "NO"
   },
@@ -611,7 +611,7 @@
     "Position": "SF",
     "Name": "Taurean Prince",
     "Salary": 3000,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 7.781,
     "teamAbbrev": "Atl"
   },
@@ -619,7 +619,7 @@
     "Position": "SF",
     "Name": "DeAndre' Bembry",
     "Salary": 3000,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 2.25,
     "teamAbbrev": "Atl"
   },
@@ -627,7 +627,7 @@
     "Position": "PF",
     "Name": "Kris Humphries",
     "Salary": 3000,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 10.25,
     "teamAbbrev": "Atl"
   },
@@ -635,7 +635,7 @@
     "Position": "PF",
     "Name": "Mike Scott",
     "Salary": 3000,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 0,
     "teamAbbrev": "Atl"
   },
@@ -643,7 +643,7 @@
     "Position": "PF",
     "Name": "Cheick Diallo",
     "Salary": 3000,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 3.25,
     "teamAbbrev": "NO"
   },
@@ -651,7 +651,7 @@
     "Position": "C",
     "Name": "Tiago Splitter",
     "Salary": 3000,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 0,
     "teamAbbrev": "Atl"
   },
@@ -659,7 +659,7 @@
     "Position": "C",
     "Name": "Alexis Ajinca",
     "Salary": 3000,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 10.071,
     "teamAbbrev": "NO"
   },
@@ -667,7 +667,7 @@
     "Position": "C",
     "Name": "Omer Asik",
     "Salary": 3000,
-    "GameInfo": "NO@Atl 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 12.768,
     "teamAbbrev": "NO"
   },
@@ -675,7 +675,7 @@
     "Position": "PG",
     "Name": "Michael Carter-Williams",
     "Salary": 3000,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 13.583,
     "teamAbbrev": "Chi"
   },
@@ -683,7 +683,7 @@
     "Position": "PG",
     "Name": "Malik Beasley",
     "Salary": 3000,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 3.25,
     "teamAbbrev": "Den"
   },
@@ -691,7 +691,7 @@
     "Position": "SG",
     "Name": "Mike Miller",
     "Salary": 3000,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 5.167,
     "teamAbbrev": "Den"
   },
@@ -699,7 +699,7 @@
     "Position": "SG",
     "Name": "R.J. Hunter",
     "Salary": 3000,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 0,
     "teamAbbrev": "Chi"
   },
@@ -707,7 +707,7 @@
     "Position": "SF",
     "Name": "Alonzo Gee",
     "Salary": 3000,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 2.417,
     "teamAbbrev": "Den"
   },
@@ -715,7 +715,7 @@
     "Position": "SF",
     "Name": "Paul Zipser",
     "Salary": 3000,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 2.95,
     "teamAbbrev": "Chi"
   },
@@ -723,7 +723,7 @@
     "Position": "PF",
     "Name": "Darrell Arthur",
     "Salary": 3000,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 6,
     "teamAbbrev": "Den"
   },
@@ -731,7 +731,7 @@
     "Position": "PF",
     "Name": "Bobby Portis",
     "Salary": 3000,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 9.827,
     "teamAbbrev": "Chi"
   },
@@ -739,7 +739,7 @@
     "Position": "C",
     "Name": "Cristiano Felicio",
     "Salary": 3000,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 7,
     "teamAbbrev": "Chi"
   },
@@ -747,7 +747,7 @@
     "Position": "C",
     "Name": "Juancho Hernangomez",
     "Salary": 3000,
-    "GameInfo": "Chi@Den 09:00PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 8.591,
     "teamAbbrev": "Den"
   },
@@ -755,7 +755,7 @@
     "Position": "PG",
     "Name": "Shabazz Napier",
     "Salary": 3000,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 6.975,
     "teamAbbrev": "Por"
   },
@@ -763,7 +763,7 @@
     "Position": "PG",
     "Name": "Tim Quarterman",
     "Salary": 3000,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 3.75,
     "teamAbbrev": "Por"
   },
@@ -771,7 +771,7 @@
     "Position": "SG",
     "Name": "Sasha Vujacic",
     "Salary": 3000,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 4.469,
     "teamAbbrev": "NY"
   },
@@ -779,7 +779,7 @@
     "Position": "SG",
     "Name": "Ron Baker",
     "Salary": 3000,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 6.25,
     "teamAbbrev": "NY"
   },
@@ -787,7 +787,7 @@
     "Position": "SF/PF",
     "Name": "Lance Thomas",
     "Salary": 3000,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 8.781,
     "teamAbbrev": "NY"
   },
@@ -795,7 +795,7 @@
     "Position": "SF",
     "Name": "Pat Connaughton",
     "Salary": 3000,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 3.167,
     "teamAbbrev": "Por"
   },
@@ -803,7 +803,7 @@
     "Position": "SF",
     "Name": "Mindaugas Kuzminskas",
     "Salary": 3000,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 7.85,
     "teamAbbrev": "NY"
   },
@@ -811,7 +811,7 @@
     "Position": "PF",
     "Name": "Jake Layman",
     "Salary": 3000,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 8.656,
     "teamAbbrev": "Por"
   },
@@ -819,7 +819,7 @@
     "Position": "PF",
     "Name": "Noah Vonleh",
     "Salary": 3000,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 9.604,
     "teamAbbrev": "Por"
   },
@@ -827,7 +827,7 @@
     "Position": "PF",
     "Name": "Maurice Ndour",
     "Salary": 3000,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 6.679,
     "teamAbbrev": "NY"
   },
@@ -835,7 +835,7 @@
     "Position": "C",
     "Name": "Festus Ezeli",
     "Salary": 3000,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 0,
     "teamAbbrev": "Por"
   },
@@ -843,7 +843,7 @@
     "Position": "C",
     "Name": "Marshall Plumlee",
     "Salary": 3000,
-    "GameInfo": "Por@NY 07:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 1.25,
     "teamAbbrev": "NY"
   },
@@ -851,7 +851,7 @@
     "Position": "PG",
     "Name": "Jose Calderon",
     "Salary": 3000,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 6,
     "teamAbbrev": "LAL"
   },
@@ -859,7 +859,7 @@
     "Position": "PG",
     "Name": "Marcelo Huertas",
     "Salary": 3000,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 7.333,
     "teamAbbrev": "LAL"
   },
@@ -867,7 +867,7 @@
     "Position": "PG",
     "Name": "Semaj Christon",
     "Salary": 3000,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 10.019,
     "teamAbbrev": "OKC"
   },
@@ -875,7 +875,7 @@
     "Position": "PG",
     "Name": "Cameron Payne",
     "Salary": 3000,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 0,
     "teamAbbrev": "OKC"
   },
@@ -883,7 +883,7 @@
     "Position": "SG",
     "Name": "Anthony Morrow",
     "Salary": 3000,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 4.25,
     "teamAbbrev": "OKC"
   },
@@ -891,7 +891,7 @@
     "Position": "SG",
     "Name": "Alex Abrines",
     "Salary": 3000,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 8.135,
     "teamAbbrev": "OKC"
   },
@@ -899,7 +899,7 @@
     "Position": "SF",
     "Name": "Metta World Peace",
     "Salary": 3000,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 1.313,
     "teamAbbrev": "LAL"
   },
@@ -907,7 +907,7 @@
     "Position": "SF",
     "Name": "Kyle Singler",
     "Salary": 3000,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 4.944,
     "teamAbbrev": "OKC"
   },
@@ -915,7 +915,7 @@
     "Position": "SF",
     "Name": "Josh Huestis",
     "Salary": 3000,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 0,
     "teamAbbrev": "OKC"
   },
@@ -923,7 +923,7 @@
     "Position": "PF/C",
     "Name": "Joffrey Lauvergne",
     "Salary": 3000,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 11.792,
     "teamAbbrev": "OKC"
   },
@@ -931,7 +931,7 @@
     "Position": "PF",
     "Name": "Thomas Robinson",
     "Salary": 3000,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 2.5,
     "teamAbbrev": "LAL"
   },
@@ -939,7 +939,7 @@
     "Position": "C",
     "Name": "Nick Collison",
     "Salary": 3000,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 1.9,
     "teamAbbrev": "OKC"
   },
@@ -947,7 +947,7 @@
     "Position": "C",
     "Name": "Tarik Black",
     "Salary": 3000,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 13.839,
     "teamAbbrev": "LAL"
   },
@@ -955,7 +955,7 @@
     "Position": "C",
     "Name": "Ivica Zubac",
     "Salary": 3000,
-    "GameInfo": "OKC@LAL 10:30PM ET",
+    "GameInfo": "Final",
     "AvgPointsPerGame": 5.333,
     "teamAbbrev": "LAL"
   }
