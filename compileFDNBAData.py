@@ -28,7 +28,7 @@ for playerName in fddata:
 	print(fdPlayerLastName)
 
 	if (fdPlayerFirstName == 'JJ' and fdPlayerLastName == 'Barea'):
-		fdPlayerFirstName = 'Jose Juan'
+		fdPlayerID = 200826
 
 	if fdPlayerFirstName == 'DJ':
 		fdPlayerFirstName = 'D.J.'
