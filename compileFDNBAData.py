@@ -75,6 +75,9 @@ for playerName in fddata:
 	if fdPlayerLastName == 'Tavares':
 		fdPlayerID = 204002
 
+	if fdPlayerLastName == 'Bembry':
+		fdPlayerID = 1627761
+
 	if fdPlayerID == 0:
 		fdPlayerID = player.get_player(fdPlayerFirstName, fdPlayerLastName)
 
