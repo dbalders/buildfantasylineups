@@ -10,6 +10,7 @@ playerIdList = []
 playerSalary = []
 playerFantasyPointsAvg = []
 finalJson = []
+numberInList = 0
 # print(player.get_player('James', 'Michael McAdoo'))
 try:
     os.remove(filename)
@@ -25,7 +26,9 @@ for playerName in fddata:
 	fdPlayerFirstName = playerName['First Name'].replace('.','')
 	fdPlayerLastName = playerName['Last Name']
 
-	print(fdPlayerLastName)
+	numberInList += 1
+
+	print(str(numberInList) + "/" + str(len(fddata)) + " " + fdPlayerLastName)
 
 	if (fdPlayerFirstName == 'JJ' and fdPlayerLastName == 'Barea'):
 		fdPlayerID = 200826
@@ -80,8 +83,6 @@ for playerName in fddata:
 
 	if fdPlayerID == 0:
 		fdPlayerID = player.get_player(fdPlayerFirstName, fdPlayerLastName)
-
-	print(fdPlayerID)
 
 	gameLogs = player.PlayerGameLogs(fdPlayerID,'00','2016-17').info()
 	# print(gameLogs)
@@ -146,7 +147,7 @@ for playerName in fddata:
 			lastFiveGamePointsPPD = round(lastFiveGamePoints / (playerName['Salary'] / 1000.0), 1)
 			lastFiveGameMin = round(lastFiveGameMin / float(len(gameLogs)), 1)
 
-	finalJson.append({'ID': fdPlayerID, 'Name': fdPlayerFirstName + " " + fdPlayerLastName, 'Salary': playerName['Salary'], 'AvgPointsPerGame': round(playerName['FPPG'], 1), 'PPD': pointsPerDollar, 'MIN': playerGameMinutes, 'Ceiling': round(ceiling, 1), 'ceilingPPD': ceilingPPD, 'Floor': round(floor, 1), 'floorPPD': floorPPD, 'lastFivePoints': round(lastFiveGamePoints, 1), 'lastFivePPD': lastFiveGamePointsPPD, 'lastFiveGameMin':lastFiveGameMin, 'GameLogs': playerGames})
+	finalJson.append({'ID': fdPlayerID, 'Name': fdPlayerFirstName + " " + fdPlayerLastName, 'Salary': playerName['Salary'], 'Position': playerName['Position'], 'AvgPointsPerGame': round(playerName['FPPG'], 1), 'PPD': pointsPerDollar, 'MIN': playerGameMinutes, 'Ceiling': round(ceiling, 1), 'ceilingPPD': ceilingPPD, 'Floor': round(floor, 1), 'floorPPD': floorPPD, 'lastFivePoints': round(lastFiveGamePoints, 1), 'lastFivePPD': lastFiveGamePointsPPD, 'lastFiveGameMin':lastFiveGameMin, 'GameLogs': playerGames})
 
 	continue
 

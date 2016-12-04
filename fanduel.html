@@ -2,10 +2,16 @@
 
 <head>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.0/css/select.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/scroller/1.4.2/css/scroller.dataTables.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,600,400,300|Source+Sans+Pro|Ubuntu" />
     <script src="http://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.2.0/js/dataTables.select.min.js"></script>
+    <script src="https://cdn.datatables.net/scroller/1.4.2/js/dataTables.scroller.min.js"></script>
 </head>
 
 <body>
@@ -13,14 +19,197 @@
         <nav id="nav" class="flex">
             <div id="nav-title">FanDuel NBA Values</div>
         </nav>
+        <div id="totals-container">
+            <table>
+                <thead>
+                    <td>Salary Remaining</td>
+                    <td>Salary Per Player</td>
+                    <td>AVG</td>
+                    <td>Last 5 AVG</td>
+                    <td>Ceiling</td>
+                    <td>Floor</td>
+                </thead>
+                <tbody>
+                    <td id="salary-remaining">60000</td>
+                    <td id="salary-per-player">6667</td>
+                    <td id="total-avg"></td>
+                    <td id="last-five-avg"></td>
+                    <td id="total-ceiling"></td>
+                    <td id="total-floor"></td>
+                </tbody>
+            </table>
+        </div>
         <div id="team-table-container">
             <table id="team-table" class="dt-table display responsive" style="width:100%">
+                <thead>
+                    <td>ID</td>
+                    <td>Position</td>
+                    <td>Name</td>
+                    <td>Salary</td>
+                    <td>MPG</td>
+                    <td>Avg PPG</td>
+                    <td>Avg PPD</td>
+                    <td>Ceiling</td>
+                    <td>Ceiling PPD</td>
+                    <td>Floor</td>
+                    <td>Floor PPD</td>
+                    <td>Last 5 MPG</td>
+                    <td>Last 5 Points</td>
+                    <td>Last 5 PPD</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>PG</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>PG</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>SG</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>SG</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>SF</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>SF</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>PF</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>PF</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>C</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
             </table>
         </div>
         <div id="players-table-container">
             <table id="players-table" class="dt-table display responsive" style="width:100%">
                 <thead>
-                	<td class="hidden">ID</td>
+                    <td>ID</td>
+                    <td>Position</td>
                     <td>Name</td>
                     <td>Salary</td>
                     <td>MPG</td>
@@ -39,4 +228,5 @@
     </div>
 </body>
 <script src="assets/js/datatables-fd.js"></script>
+
 </html>

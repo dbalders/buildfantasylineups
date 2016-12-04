@@ -1,0 +1,18 @@
+#team-table tbody tr td {
+    white-space: nowrap;
+}
+
+#team-table-container {
+    margin-bottom: 25px;
+}
+
+#totals-container table {
+    margin: auto;
+    border: 1px solid;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#totals-container table td {
+    border: 1px solid;
+}
