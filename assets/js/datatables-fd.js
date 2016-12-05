@@ -257,6 +257,7 @@ function addPlayersToTeam() {
             }
             break;
     }
+    $('#players-table').DataTable().search("").draw()
     calculateTeamTotals();
 }
 
