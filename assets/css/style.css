@@ -6,6 +6,10 @@
     margin-bottom: 25px;
 }
 
+#totals-container {
+	margin-bottom: 15px;
+}
+
 #totals-container table {
     margin: auto;
     border: 1px solid;
@@ -15,4 +19,5 @@
 
 #totals-container table td {
     border: 1px solid;
+    padding: 2.5px;
 }
