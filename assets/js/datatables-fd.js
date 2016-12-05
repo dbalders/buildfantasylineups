@@ -103,18 +103,14 @@ var playersTable = $('#players-table').dataTable({
         action: function(e, dt, node, config) {
             addPlayersToTeam();
         }
-    }],
-    initComplete: function(settings, json) {
-        console.log('init')
-        origPGRow = $('#team-table').DataTable().row(0).data();
-        origSGRow = $('#team-table').DataTable().row(2).data();
-        origSFRow = $('#team-table').DataTable().row(4).data();
-        origPFRow = $('#team-table').DataTable().row(6).data();
-        origCRow = $('#team-table').DataTable().row(8).data();
-    }
+    }]
 });
 
 var teamTable = $('#team-table').dataTable({
+    ajax: {
+        url: "/assets/json/blank.json",
+        dataSrc: ""
+    },
     dom: 'Blrtip',
     paging: false,
     info: false,
@@ -161,12 +157,38 @@ var teamTable = $('#team-table').dataTable({
         emptyTable: "Loading...",
         search: "Filter:"
     },
+    drawCallback: calculateTeamTotals,
     buttons: [{
         text: 'Remove Player',
         action: function(e, dt, node, config) {
             removePlayersFromTeam();
         }
-    }]
+    }, {
+        text: 'Clear',
+        action: function(e, dt, node, config) {
+            var table = $('#team-table').DataTable();
+            table.ajax.url('/assets/json/blank.json').load();
+        }
+    }, {
+        text: 'Best Roster Based on Season AVG',
+        action: function(e, dt, node, config) {
+            var table = $('#team-table').DataTable();
+            table.ajax.url('/assets/json/optimalAVG.json').load();
+        }
+    }, {
+        text: 'Best Roster Based on Last 5 Games',
+        action: function(e, dt, node, config) {
+            var table = $('#team-table').DataTable();
+            table.ajax.url('/assets/json/optimalLastFive.json').load();
+        }
+    }],
+    initComplete: function(settings, json) {
+        origPGRow = $('#team-table').DataTable().row(0).data();
+        origSGRow = $('#team-table').DataTable().row(2).data();
+        origSFRow = $('#team-table').DataTable().row(4).data();
+        origPFRow = $('#team-table').DataTable().row(6).data();
+        origCRow = $('#team-table').DataTable().row(8).data();
+    }
 });
 
 function addPlayersToTeam() {
@@ -303,7 +325,9 @@ function calculateTeamTotals() {
     var ceilingPPG = 0;
     var floorPPG = 0;
 
-    teamTable.api().rows().every(function( rowIdx, tableLoop, rowLoop ) {
+    var table = $('#team-table').DataTable();
+
+    table.rows().every(function(rowIdx, tableLoop, rowLoop) {
         totalSalary = totalSalary - this.data().Salary;
 
         $('#salary-remaining').text(totalSalary);
@@ -319,7 +343,6 @@ function calculateTeamTotals() {
         }
 
         ppg = Math.round(Number(ppg) + Number(this.data().AvgPointsPerGame), 1);
-        console.log(ppg)
         $('#total-avg').text(ppg);
 
         lastPPG = Math.round(Number(lastPPG) + Number(this.data().lastFivePoints), 1);
@@ -330,9 +353,5 @@ function calculateTeamTotals() {
 
         floorPPG = Math.round(Number(floorPPG) + Number(this.data().Floor), 1);
         $('#total-floor').text(floorPPG);
-
-        
     });
-
-
 }

@@ -5,6 +5,9 @@
 # Picks an ideal fantasy NBA team using a modified knapsack algorithm
 #
 # Usage: python nba-optimizer.py players.csv
+from __main__ import *
+import os
+import json
 
 salaryCap = 60000
 
@@ -17,7 +20,8 @@ def getPositionNumber(name):
         'SF': 4
     }[name]
 
-def main(players, salaryCap):
+def main(players, salaryCap, filename):
+    optimalJson = []
     solver = pywraplp.Solver('CoinsGridCLP', pywraplp.Solver.CBC_MIXED_INTEGER_PROGRAMMING)
 
     rangeC = range(len(players[0]))
@@ -67,58 +71,78 @@ def main(players, salaryCap):
 
     # Max 4 players per team
     for i in range(0, 29):
-        solver.Add(teamsC[i] + teamsPG[i] + teamsPF[i] + teamsSG[i] + teamsSF[i] <= 4)
+        solver.Add(teamsPG[i] + teamsSG[i] + teamsSF[i] + teamsPF[i] + teamsC[i] <= 4)
 
-    solver.Maximize(valueC + valuePG + valuePF + valueSG + valueSF)
+    solver.Maximize(valuePG + valueSG + valueSF + valuePF + valueC)
     solver.Solve()
     assert solver.VerifySolution(1e-7, True)
     print 'Solved in', solver.wall_time(), 'milliseconds!', "\n"
     salary = 0
 
-    for i in rangeC:
-        if (takeC[i].SolutionValue()):
-            salary += players[0][i][2]
-            print players[0][i][0], '(C): ${:,d}'.format(players[0][i][2]), '(' + str(players[0][i][1]) + ')'
-
+    
     for i in rangePG:
         if (takePG[i].SolutionValue()):
             salary += players[1][i][2]
+            optimalJson.append(players[1][i][4])
             print players[1][i][0], '(PG): ${:,d}'.format(players[1][i][2]), '(' + str(players[1][i][1]) + ')'
-
-    for i in rangePF:
-        if (takePF[i].SolutionValue()):
-            salary += players[2][i][2]
-            print players[2][i][0], '(PF): ${:,d}'.format(players[2][i][2]), '(' + str(players[2][i][1]) + ')'
 
     for i in rangeSG:
         if (takeSG[i].SolutionValue()):
             salary += players[3][i][2]
+            optimalJson.append(players[3][i][4])
             print players[3][i][0], '(SG): ${:,d}'.format(players[3][i][2]), '(' + str(players[3][i][1]) + ')'
 
     for i in rangeSF:
         if (takeSF[i].SolutionValue()):
             salary += players[4][i][2]
+            optimalJson.append(players[4][i][4])
             print players[4][i][0], '(SF): ${:,d}'.format(players[4][i][2]), '(' + str(players[4][i][1]) + ')'
+
+    for i in rangePF:
+        if (takePF[i].SolutionValue()):
+            salary += players[2][i][2]
+            optimalJson.append(players[2][i][4])
+            print players[2][i][0], '(PF): ${:,d}'.format(players[2][i][2]), '(' + str(players[2][i][1]) + ')'
+
+    for i in rangeC:
+        if (takeC[i].SolutionValue()):
+            salary += players[0][i][2]
+            optimalJson.append(players[0][i][4])
+            print players[0][i][0], '(C): ${:,d}'.format(players[0][i][2]), '(' + str(players[0][i][1]) + ')'
+
+    with open(filename, 'w') as fp:
+        json.dump(optimalJson, fp)
 
     print "\n", 'Total: ${:,d}'.format(salary), '(' + str(solver.Objective().Value()) + ')'
 
-import sys
+# import sys
 
-if (len(sys.argv) < 2):
-    print 'Usage:', sys.executable, sys.argv[0], 'players.csv'
-    sys.exit(1)
+# if (len(sys.argv) < 2):
+#     print 'Usage:', sys.executable, sys.argv[0], 'players.csv'
+#     sys.exit(1)
 
 players = [[], [], [], [], []]
 
-import csv
-with open(sys.argv[1], 'rb') as csvfile:
-    reader = csv.DictReader(csvfile)
+# import csv
+# with open(sys.argv[1], 'rb') as csvfile:
+#     reader = csv.DictReader(csvfile)
 
-    for row in reader:
-        players[getPositionNumber(row['Position'])].append(
-            [row['First Name'] + " " + row['Last Name'], float(row['FPPG']), int(row['Salary']), row['Team']]
-        )
+for row in finalJson:
+    players[getPositionNumber(row['Position'])].append(
+        [row['Name'], float(row['AvgPointsPerGame']), int(row['Salary']), row['Team'], row]
+    )
 
 from ortools.linear_solver import pywraplp
 
-main(players, salaryCap)
+main(players, salaryCap, 'assets/json/optimalAVG.json')
+
+players = [[], [], [], [], []]
+
+for row in finalJson:
+    players[getPositionNumber(row['Position'])].append(
+        [row['Name'], float(row['lastFivePoints']), int(row['Salary']), row['Team'], row]
+    )
+
+from ortools.linear_solver import pywraplp
+
+main(players, salaryCap, 'assets/json/optimalLastFive.json')
