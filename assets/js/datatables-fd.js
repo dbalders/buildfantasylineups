@@ -168,18 +168,21 @@ var teamTable = $('#team-table').dataTable({
         action: function(e, dt, node, config) {
             var table = $('#team-table').DataTable();
             table.ajax.url('/assets/json/blank.json').load();
+            tableCleared();
         }
     }, {
         text: 'Best Roster Based on Season AVG',
         action: function(e, dt, node, config) {
             var table = $('#team-table').DataTable();
             table.ajax.url('/assets/json/optimalAVG.json').load();
+            tableFilled();
         }
     }, {
         text: 'Best Roster Based on Last 5 Games',
         action: function(e, dt, node, config) {
             var table = $('#team-table').DataTable();
             table.ajax.url('/assets/json/optimalLastFive.json').load();
+            tableFilled();
         }
     }],
     initComplete: function(settings, json) {
@@ -315,6 +318,30 @@ function removePlayersFromTeam() {
             break;
     }
     calculateTeamTotals();
+}
+
+function tableFilled() {
+    pg1 = 1;
+    pg2 = 1;
+    sg1 = 1;
+    sg2 = 1;
+    sf1 = 1;
+    sf2 = 1;
+    pf1 = 1;
+    pf2 = 1;
+    c1 = 1;
+}
+
+function tableCleared() {
+    pg1 = 0;
+    pg2 = 0;
+    sg1 = 0;
+    sg2 = 0;
+    sf1 = 0;
+    sf2 = 0;
+    pf1 = 0;
+    pf2 = 0;
+    c1 = 0;
 }
 
 function calculateTeamTotals() {
