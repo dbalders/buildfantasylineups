@@ -20,7 +20,7 @@ var playersTable = $('#players-table').dataTable({
         url: '/assets/json/fdFinalData.json',
         dataSrc: ""
     },
-    dom: 'Blrtip',
+    dom: 'Bflrtip',
     select: true,
     paging: true,
     info: false,
