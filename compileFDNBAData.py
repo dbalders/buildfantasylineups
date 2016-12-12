@@ -4,6 +4,9 @@ from nba_py import game
 import json
 import datetime
 import os
+import csv
+import urllib2
+import requests
 
 filename = 'assets/json/fdFinalData.json'
 playerIdList = []
@@ -11,17 +14,26 @@ playerSalary = []
 playerFantasyPointsAvg = []
 finalJson = []
 numberInList = 0
+tomorrow = str(datetime.date.today() + datetime.timedelta(days=1))
+grinderProj = 0
+swishProj = 0
+
+grindersProjectionUrl = 'https://rotogrinders.com/projected-stats/nba-player.csv?site=fanduel'
+grindersProjectionUrlResponse = urllib2.urlopen(grindersProjectionUrl)
+grindersProjData = list(csv.reader(grindersProjectionUrlResponse))
+swishProjData = requests.get('https://api.swishanalytics.com/nba/players/fantasy?date=' + tomorrow + '/&apikey=e4d97b074362422b80f18e6545beb37c').json()['data']['results']
+
 # print(player.get_player('James', 'Michael McAdoo'))
-try:
-    os.remove(filename)
-except OSError:
-    pass
 
 with open('assets/json/fddata.json') as data_file:    
     fddata = json.load(data_file)
 
+with open('assets/json/swishIds.json') as data_file:    
+    swishIds = json.load(data_file)
+ 
 for playerName in fddata:
 	fdPlayerID = 0
+	fdPlayerFullName = str(playerName['First Name']) + " " + str(playerName['Last Name'])
 	fdPlayerFirstName = playerName['First Name'].replace('.','')
 	fdPlayerLastName = playerName['Last Name']
 
@@ -83,6 +95,32 @@ for playerName in fddata:
 	if fdPlayerID == 0:
 		fdPlayerID = player.get_player(fdPlayerFirstName, fdPlayerLastName)
 
+	foundSwishID = 'false'
+
+	for swishPlayer in swishIds:
+		if fdPlayerFullName == swishPlayer['name']:
+			foundSwishID = 'true'
+			fdPlayerSwishId = swishPlayer['swishID']
+			break;
+
+	if foundSwishID == 'false':
+		print(fdPlayerFullName + " ERROR SWISH ID NOT FOUND")
+
+	grindersProj = 0
+
+	for grindersPlayer in grindersProjData:
+		if fdPlayerFullName == grindersPlayer[0]:
+			grindersProj = grindersPlayer[7]
+			break;
+
+	swishProj = 0
+
+	for swishPlayer in swishProjData:
+		if fdPlayerFullName == swishPlayer['name']:
+			swishProj = swishPlayer['fanduelFpts']
+			break;
+
+
 	gameLogs = player.PlayerGameLogs(fdPlayerID,'00','2016-17').info()
 
 	playerGames = []
@@ -130,6 +168,8 @@ for playerName in fddata:
 	pointsPerDollar = round(round(playerName['FPPG'], 1) / (playerName['Salary'] / 1000.0), 1)
 	ceilingPPD = round(ceiling / (playerName['Salary'] / 1000.0), 1)
 	floorPPD = round(floor / (playerName['Salary'] / 1000.0), 1)
+	grindersPPD = round(float(grindersProj) / (playerName['Salary'] / 1000.0), 1)
+	swishPPD = round(float(swishProj) / (playerName['Salary'] / 1000.0), 1)
 
 	if len(gameLogs) > 0:
 		playerGameMinutes = round(playerGameMinutes / float(len(gameLogs)), 1)
@@ -143,7 +183,12 @@ for playerName in fddata:
 			lastFiveGamePointsPPD = round(lastFiveGamePoints / (playerName['Salary'] / 1000.0), 1)
 			lastFiveGameMin = round(lastFiveGameMin / float(len(gameLogs)), 1)
 
-	finalJson.append({'ID': fdPlayerID, 'Name': fdPlayerFirstName + " " + fdPlayerLastName, 'Salary': playerName['Salary'], 'Position': playerName['Position'], 'Team': playerName['Team'], 'AvgPointsPerGame': round(playerName['FPPG'], 1), 'PPD': pointsPerDollar, 'MIN': playerGameMinutes, 'Ceiling': round(ceiling, 1), 'ceilingPPD': ceilingPPD, 'Floor': round(floor, 1), 'floorPPD': floorPPD, 'lastFivePoints': round(lastFiveGamePoints, 1), 'lastFivePPD': lastFiveGamePointsPPD, 'lastFiveGameMin':lastFiveGameMin, 'GameLogs': playerGames})
+	finalJson.append({'ID': fdPlayerID, 'Name': fdPlayerFirstName + " " + fdPlayerLastName, 'Salary': playerName['Salary'], \
+		'Position': playerName['Position'], 'Team': playerName['Team'], 'AvgPointsPerGame': round(playerName['FPPG'], 1), \
+		'PPD': pointsPerDollar, 'MIN': playerGameMinutes, 'Ceiling': round(ceiling, 1), 'ceilingPPD': ceilingPPD, \
+		'Floor': round(floor, 1), 'floorPPD': floorPPD, 'lastFivePoints': round(lastFiveGamePoints, 1), \
+		'lastFivePPD': lastFiveGamePointsPPD, 'lastFiveGameMin':lastFiveGameMin, 'GameLogs': playerGames, \
+		'grindersProj': grindersProj, 'grindersPPD': grindersPPD, 'swishProj': swishProj, 'swishPPD': swishPPD, 'swishID': fdPlayerSwishId})
 	continue
 
 import optimizer
