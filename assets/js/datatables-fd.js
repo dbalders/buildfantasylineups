@@ -204,6 +204,20 @@ var teamTable = $('#team-table').dataTable({
             table.ajax.url('/assets/json/optimalLastFive.json').load();
             tableFilled();
         }
+    }, {
+        text: 'Best Roster Based on Rotogrinders Projections',
+        action: function(e, dt, node, config) {
+            var table = $('#team-table').DataTable();
+            table.ajax.url('/assets/json/optimalRotogrinders.json').load();
+            tableFilled();
+        }
+    }, {
+        text: 'Best Roster Based on SwishAnalytics Projections',
+        action: function(e, dt, node, config) {
+            var table = $('#team-table').DataTable();
+            table.ajax.url('/assets/json/optimalSwish.json').load();
+            tableFilled();
+        }
     }],
     initComplete: function(settings, json) {
         origPGRow = $('#team-table').DataTable().row(0).data();
@@ -370,6 +384,8 @@ function calculateTeamTotals() {
     var rowsRemaining = 9;
     var ppg = 0;
     var lastPPG = 0;
+    var grindersPPG = 0;
+    var swishPPG = 0;
     var ceilingPPG = 0;
     var floorPPG = 0;
 
@@ -395,6 +411,12 @@ function calculateTeamTotals() {
 
         lastPPG = Math.round(Number(lastPPG) + Number(this.data().lastFivePoints), 1);
         $('#last-five-avg').text(lastPPG);
+
+        grindersPPG = Math.round(Number(grindersPPG) + Number(this.data().grindersProj), 1);
+        $('#total-rotogrinders').text(grindersPPG);
+
+        swishPPG = Math.round(Number(swishPPG) + Number(this.data().swishProj), 1);
+        $('#total-swish').text(swishPPG);
 
         ceilingPPG = Math.round(Number(ceilingPPG) + Number(this.data().Ceiling), 1);
         $('#total-ceiling').text(ceilingPPG);
