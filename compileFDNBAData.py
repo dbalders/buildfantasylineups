@@ -7,6 +7,7 @@ import os
 import csv
 import urllib2
 import requests
+import sys
 
 filename = 'assets/json/fdFinalData.json'
 playerIdList = []
@@ -14,14 +15,19 @@ playerSalary = []
 playerFantasyPointsAvg = []
 finalJson = []
 numberInList = 0
-tomorrow = str(datetime.date.today() + datetime.timedelta(days=1))
 grinderProj = 0
 swishProj = 0
+
+if (len(sys.argv) > 1):
+	if (sys.argv[1] == "today"):
+		date = str(datetime.date.today())
+else:
+	date = str(datetime.date.today() + datetime.timedelta(days=1))
 
 grindersProjectionUrl = 'https://rotogrinders.com/projected-stats/nba-player.csv?site=fanduel'
 grindersProjectionUrlResponse = urllib2.urlopen(grindersProjectionUrl)
 grindersProjData = list(csv.reader(grindersProjectionUrlResponse))
-swishProjData = requests.get('https://api.swishanalytics.com/nba/players/fantasy?date=' + tomorrow + '/&apikey=e4d97b074362422b80f18e6545beb37c').json()['data']['results']
+swishProjData = requests.get('https://api.swishanalytics.com/nba/players/fantasy?date=' + date + '/&apikey=e4d97b074362422b80f18e6545beb37c').json()['data']['results']
 
 # print(player.get_player('James', 'Michael McAdoo'))
 
