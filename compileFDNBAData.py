@@ -129,6 +129,8 @@ for playerName in fddata:
 
 	gameLogs = player.PlayerGameLogs(fdPlayerID,'00','2016-17').info()
 
+	print(player.PlayerSummary(fdPlayerID).headline_stats())
+
 	playerGames = []
 	ceiling = 0
 	floor = 100
