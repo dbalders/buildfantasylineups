@@ -53,6 +53,14 @@ for playerName in fddata:
 	if fdPlayerFirstName == 'DJ':
 		fdPlayerFirstName = 'D.J.'
 
+	if fdPlayerFirstName == 'Lou':
+		fdPlayerFirstName = 'Louis'
+		fdPlayerID = 101150
+
+	if fdPlayerLastName == 'Nance Jr.':
+		fdPlayerLastName = 'Nance'
+		fdPlayerID = 1626204
+
 	if fdPlayerFirstName == 'Juancho':
 		fdPlayerFirstName = 'Juan'
 
@@ -129,7 +137,7 @@ for playerName in fddata:
 
 	gameLogs = player.PlayerGameLogs(fdPlayerID,'00','2016-17').info()
 
-	print(player.PlayerSummary(fdPlayerID).headline_stats())
+	# print(player.PlayerSummary(fdPlayerID).headline_stats())
 
 	playerGames = []
 	ceiling = 0
