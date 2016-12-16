@@ -45,7 +45,7 @@ for playerName in fddata:
 
 	numberInList += 1
 
-	print(str(numberInList) + "/" + str(len(fddata)) + " " + fdPlayerLastName)
+	print(str(numberInList) + "/" + str(len(fddata)) + " " + fdPlayerFirstName + " " + fdPlayerLastName)
 
 	if (fdPlayerFirstName == 'JJ' and fdPlayerLastName == 'Barea'):
 		fdPlayerID = 200826
@@ -68,7 +68,7 @@ for playerName in fddata:
 		fdPlayerFirstName = 'DeAndre'
 
 	if fdPlayerLastName.find('IV') > -1:
-		fdPlayerLastName = 'Baldwin'
+		fdPlayerID = 1627735
 
 	if fdPlayerLastName == 'Jones Jr.':
 		fdPlayerLastName = 'Jones, Jr.'
@@ -81,6 +81,10 @@ for playerName in fddata:
 
 	if fdPlayerFirstName == 'Michael McAdoo':
 		fdPlayerID = 203949
+
+	if fdPlayerLastName == 'Ennis':
+		if fdPlayerFirstName == 'James': 
+			fdPlayerID = 203516
 
 	if fdPlayerLastName == 'Oubre Jr.':
 		fdPlayerID = 1626162
