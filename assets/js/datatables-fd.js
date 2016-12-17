@@ -60,14 +60,6 @@ var playersTable = $('#players-table').dataTable({
     }, {
         "data": "PPD"
     }, {
-        "data": "Ceiling"
-    }, {
-        "data": "ceilingPPD"
-    }, {
-        "data": "Floor"
-    }, {
-        "data": "floorPPD"
-    }, {
         "data": "lastFiveGameMin"
     }, {
         "data": "lastFivePoints"
@@ -158,14 +150,6 @@ var teamTable = $('#team-table').dataTable({
         "data": "AvgPointsPerGame"
     }, {
         "data": "PPD"
-    }, {
-        "data": "Ceiling"
-    }, {
-        "data": "ceilingPPD"
-    }, {
-        "data": "Floor"
-    }, {
-        "data": "floorPPD"
     }, {
         "data": "lastFiveGameMin"
     }, {
@@ -386,8 +370,6 @@ function calculateTeamTotals() {
     var lastPPG = 0;
     var grindersPPG = 0;
     var swishPPG = 0;
-    var ceilingPPG = 0;
-    var floorPPG = 0;
 
     var table = $('#team-table').DataTable();
 
@@ -417,11 +399,5 @@ function calculateTeamTotals() {
 
         swishPPG = Math.round(Number(swishPPG) + Number(this.data().swishProj), 1);
         $('#total-swish').text(swishPPG);
-
-        ceilingPPG = Math.round(Number(ceilingPPG) + Number(this.data().Ceiling), 1);
-        $('#total-ceiling').text(ceilingPPG);
-
-        floorPPG = Math.round(Number(floorPPG) + Number(this.data().Floor), 1);
-        $('#total-floor').text(floorPPG);
     });
 }

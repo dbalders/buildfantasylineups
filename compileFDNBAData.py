@@ -144,57 +144,49 @@ for playerName in fddata:
 	# print(player.PlayerSummary(fdPlayerID).headline_stats())
 
 	playerGames = []
-	ceiling = 0
-	floor = 100
 	playerGameMinutes = 0
 	lastFive = 0
 	lastFiveGamePoints = 0
 	lastFiveGamePointsPPD = 0
 	lastFiveGameMin = 0
 
+	gameLogCounter = 0
+
 	for games in gameLogs:
-		gamePoints = 0
-		gamePoints += games['PTS']
-		gamePoints += games['AST'] * 1.5
-		gamePoints += games['REB'] * 1.2
-		gamePoints -= games['TOV'] * 1
-		gamePoints += games['STL'] * 2
-		gamePoints += games['BLK'] * 2
+		if gameLogCounter < 5:
+			gamePoints = 0
+			gamePoints += games['PTS']
+			gamePoints += games['AST'] * 1.5
+			gamePoints += games['REB'] * 1.2
+			gamePoints -= games['TOV'] * 1
+			gamePoints += games['STL'] * 2
+			gamePoints += games['BLK'] * 2
 
-		playerGameMinutes += games['MIN']
+			playerGameMinutes += games['MIN']
 
-		gameDate = game.BoxscoreSummary(games['Game_ID']).game_summary()
-		gameDate = datetime.datetime.strptime(gameDate[0]['GAME_DATE_EST'], "%Y-%m-%dT%H:%M:%S").date()
-		gameDate = str(gameDate.month) + "/" + str(gameDate.day)
+			gameDate = game.BoxscoreSummary(games['Game_ID']).game_summary()
+			gameDate = datetime.datetime.strptime(gameDate[0]['GAME_DATE_EST'], "%Y-%m-%dT%H:%M:%S").date()
+			gameDate = str(gameDate.month) + "/" + str(gameDate.day)
 
-		if gamePoints > ceiling:
-			ceiling = gamePoints
+			pointsPerDollarGameLog = round(gamePoints / (playerName['Salary'] / 1000.0), 1)
 
-		if gamePoints < floor:
-			floor = gamePoints
+			if lastFive < 5:
+				lastFiveGamePoints += gamePoints
+				lastFiveGameMin += games['MIN']
+				lastFive += 1
 
-		pointsPerDollarGameLog = round(gamePoints / (playerName['Salary'] / 1000.0), 1)
+			playerGames.append({'DATE': gameDate, 'MIN': games['MIN'], 'PTS': games['PTS'], 'FG3M': games['FG3M'], 'AST': games['AST'], 'REB': games['REB'], 'STL': games['STL'], 'BLK': games['BLK'], 'TOV': games['TOV'], 'PPD': pointsPerDollarGameLog})
 
-		if lastFive < 5:
-			lastFiveGamePoints += gamePoints
-			lastFiveGameMin += games['MIN']
-			lastFive += 1
-
-		playerGames.append({'DATE': gameDate, 'MIN': games['MIN'], 'PTS': games['PTS'], 'FG3M': games['FG3M'], 'AST': games['AST'], 'REB': games['REB'], 'STL': games['STL'], 'BLK': games['BLK'], 'TOV': games['TOV'], 'PPD': pointsPerDollarGameLog})
-
-	if floor == 100:
-		floor = 0
+			gameLogCounter += 1
 
 	pointsPerDollar = round(round(playerName['FPPG'], 1) / (playerName['Salary'] / 1000.0), 1)
-	ceilingPPD = round(ceiling / (playerName['Salary'] / 1000.0), 1)
-	floorPPD = round(floor / (playerName['Salary'] / 1000.0), 1)
 	grindersPPD = round(float(grindersProj) / (playerName['Salary'] / 1000.0), 1)
 	swishPPD = round(float(swishProj) / (playerName['Salary'] / 1000.0), 1)
 
 	if len(gameLogs) > 0:
 		playerGameMinutes = round(playerGameMinutes / float(len(gameLogs)), 1)
 
-		if len(gameLogs) >= 5:
+		if len(gameLogs) == 5:
 			lastFiveGamePoints = lastFiveGamePoints / 5.0
 			lastFiveGamePointsPPD = round(lastFiveGamePoints / (playerName['Salary'] / 1000.0), 1)
 			lastFiveGameMin = lastFiveGameMin / 5.0
@@ -205,8 +197,8 @@ for playerName in fddata:
 
 	finalJson.append({'ID': fdPlayerID, 'Name': fdPlayerFirstName + " " + fdPlayerLastName, 'Salary': playerName['Salary'], \
 		'Position': playerName['Position'], 'Team': playerName['Team'], 'AvgPointsPerGame': round(playerName['FPPG'], 1), \
-		'PPD': pointsPerDollar, 'MIN': playerGameMinutes, 'Ceiling': round(ceiling, 1), 'ceilingPPD': ceilingPPD, \
-		'Floor': round(floor, 1), 'floorPPD': floorPPD, 'lastFivePoints': round(lastFiveGamePoints, 1), \
+		'PPD': pointsPerDollar, 'MIN': playerGameMinutes, \
+		'lastFivePoints': round(lastFiveGamePoints, 1), \
 		'lastFivePPD': lastFiveGamePointsPPD, 'lastFiveGameMin':lastFiveGameMin, 'GameLogs': playerGames, \
 		'grindersProj': grindersProj, 'grindersPPD': grindersPPD, 'swishProj': swishProj, 'swishPPD': swishPPD, 'swishID': fdPlayerSwishId})
 	continue
