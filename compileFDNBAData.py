@@ -186,7 +186,7 @@ for playerName in fddata:
 	if len(gameLogs) > 0:
 		playerGameMinutes = round(playerGameMinutes / float(len(gameLogs)), 1)
 
-		if len(gameLogs) == 5:
+		if len(gameLogs) >= 5:
 			lastFiveGamePoints = lastFiveGamePoints / 5.0
 			lastFiveGamePointsPPD = round(lastFiveGamePoints / (playerName['Salary'] / 1000.0), 1)
 			lastFiveGameMin = lastFiveGameMin / 5.0
