@@ -107,7 +107,10 @@ var playersTable = $('#players-table').dataTable({
         action: function(e, dt, node, config) {
             addPlayersToTeam();
         }
-    }]
+    }],
+    rowCallback: function(row, data, index) {
+        colorTableCells(row, data, index);
+    }
 });
 
 var teamTable = $('#team-table').dataTable({
@@ -213,6 +216,9 @@ var teamTable = $('#team-table').dataTable({
         origSFRow = $('#team-table').DataTable().row(4).data();
         origPFRow = $('#team-table').DataTable().row(6).data();
         origCRow = $('#team-table').DataTable().row(8).data();
+    },
+    rowCallback: function(row, data, index) {
+        colorTableCells(row, data, index);
     }
 });
 
@@ -404,4 +410,71 @@ function calculateTeamTotals() {
         swishPPG = Math.round(Number(swishPPG) + Number(this.data().swishProj), 1);
         $('#total-swish').text(swishPPG);
     });
+}
+
+function colorTableCells(row, data, index) {
+    if (data.oppTeamDvPRank < 6 && data.oppTeamDvPRank !== "") {
+        $('td:eq(3)', row).addClass('bright-green');
+    }
+    if (data.oppTeamDvPRank > 5 && data.oppTeamDvPRank < 11) {
+        $('td:eq(3)', row).addClass('light-green');
+    }
+    if (data.oppTeamDvPRank > 20 && data.oppTeamDvPRank < 26) {
+        $('td:eq(3)', row).addClass('light-red');
+    }
+    if (data.oppTeamDvPRank < 31 && data.oppTeamDvPRank > 25) {
+        $('td:eq(3)', row).addClass('bright-red');
+    }
+
+    if (data.PPD > 5.1) {
+        $('td:eq(10)', row).addClass('bright-green');
+    }
+    if (data.PPD > 4.7 && data.PPD < 5.2) {
+        $('td:eq(10)', row).addClass('light-green');
+    }
+    if (data.PPD > 3.9 && data.PPD < 4.4) {
+        $('td:eq(10)', row).addClass('light-red');
+    }
+    if (data.PPD < 4 && data.PPD !== "") {
+        $('td:eq(10)', row).addClass('bright-red');
+    }
+
+    if (data.lastFivePPD > 5.1) {
+        $('td:eq(13)', row).addClass('bright-green');
+    }
+    if (data.lastFivePPD > 4.7 && data.lastFivePPD < 5.2) {
+        $('td:eq(13)', row).addClass('light-green');
+    }
+    if (data.lastFivePPD > 3.9 && data.lastFivePPD < 4.4) {
+        $('td:eq(13)', row).addClass('light-red');
+    }
+    if (data.lastFivePPD < 4 && data.lastFivePPD !== "") {
+        $('td:eq(13)', row).addClass('bright-red');
+    }
+
+    if (data.grindersPPD > 5.1) {
+        $('td:eq(5)', row).addClass('bright-green');
+    }
+    if (data.grindersPPD > 4.7 && data.grindersPPD < 5.2) {
+        $('td:eq(5)', row).addClass('light-green');
+    }
+    if (data.grindersPPD > 3.9 && data.grindersPPD < 4.4) {
+        $('td:eq(5)', row).addClass('light-red');
+    }
+    if (data.grindersPPD < 4 && data.grindersPPD !== "") {
+        $('td:eq(5)', row).addClass('bright-red');
+    }
+
+    if (data.swishPPD > 5.1) {
+        $('td:eq(7)', row).addClass('bright-green');
+    }
+    if (data.swishPPD > 4.7 && data.swishPPD < 5.2) {
+        $('td:eq(7)', row).addClass('light-green');
+    }
+    if (data.swishPPD > 3.9 && data.swishPPD < 4.4) {
+        $('td:eq(7)', row).addClass('light-red');
+    }
+    if (data.swishPPD < 4 && data.swishPPD !== "") {
+        $('td:eq(7)', row).addClass('bright-red');
+    }
 }
