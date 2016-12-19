@@ -37,6 +37,24 @@ with open('assets/json/fddata.json') as data_file:
 with open('assets/json/swishIds.json') as data_file:    
     swishIds = json.load(data_file)
  
+with open('assets/json/dvpPG.json') as data_file:    
+    dvpPG = json.load(data_file)
+
+with open('assets/json/dvpSG.json') as data_file:    
+    dvpSG = json.load(data_file)
+
+with open('assets/json/dvpSF.json') as data_file:    
+    dvpSF = json.load(data_file)
+
+with open('assets/json/dvpPF.json') as data_file:    
+    dvpPF = json.load(data_file)
+
+with open('assets/json/dvpC.json') as data_file:    
+    dvpC = json.load(data_file)
+
+with open('assets/json/teamAbbr.json') as data_file:    
+    teamAbbr = json.load(data_file)
+
 for playerName in fddata:
 	fdPlayerID = 0
 	fdPlayerFullName = str(playerName['First Name']) + " " + str(playerName['Last Name'])
@@ -141,6 +159,43 @@ for playerName in fddata:
 
 	gameLogs = player.PlayerGameLogs(fdPlayerID,'00','2016-17').info()
 
+	for team in teamAbbr:
+		if team[0] == playerName['Opponent']:
+			oppTeam = team[1]
+			print(oppTeam)
+
+	dvpIndex = 0
+	if playerName['Position'] == 'PG':
+		for team in dvpPG:
+			dvpIndex += 1
+			if team['team'] == oppTeam:
+				break;
+				
+
+	if playerName['Position'] == 'SG':
+		for team in dvpSG:
+			dvpIndex += 1
+			if team['team'] == oppTeam:
+				break;
+
+	if playerName['Position'] == 'SF':
+		for team in dvpSF:
+			dvpIndex += 1
+			if team['team'] == oppTeam:
+				break;
+
+	if playerName['Position'] == 'PF':
+		for team in dvpPF:
+			dvpIndex += 1
+			if team['team'] == oppTeam:
+				break;
+
+	if playerName['Position'] == 'C':
+		for team in dvpC:
+			dvpIndex += 1
+			if team['team'] == oppTeam:
+				break;
+
 	# print(player.PlayerSummary(fdPlayerID).headline_stats())
 
 	playerGames = []
@@ -200,7 +255,8 @@ for playerName in fddata:
 		'PPD': pointsPerDollar, 'MIN': playerGameMinutes, \
 		'lastFivePoints': round(lastFiveGamePoints, 1), \
 		'lastFivePPD': lastFiveGamePointsPPD, 'lastFiveGameMin':lastFiveGameMin, 'GameLogs': playerGames, \
-		'grindersProj': grindersProj, 'grindersPPD': grindersPPD, 'swishProj': swishProj, 'swishPPD': swishPPD, 'swishID': fdPlayerSwishId})
+		'grindersProj': grindersProj, 'grindersPPD': grindersPPD, 'swishProj': swishProj, 'swishPPD': swishPPD, \
+		'swishID': fdPlayerSwishId, 'oppTeamDvPRank': dvpIndex})
 	continue
 
 import optimizer

@@ -46,6 +46,8 @@ var playersTable = $('#players-table').dataTable({
     }, {
         "data": "Salary"
     }, {
+        "data": "oppTeamDvPRank"
+    }, {
         "data": "grindersProj"
     }, {
         "data": "grindersPPD"
@@ -136,6 +138,8 @@ var teamTable = $('#team-table').dataTable({
         "data": "Name"
     }, {
         "data": "Salary"
+    }, {
+        "data": "oppTeamDvPRank"
     }, {
         "data": "grindersProj"
     }, {
