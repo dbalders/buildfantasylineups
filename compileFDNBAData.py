@@ -162,7 +162,6 @@ for playerName in fddata:
 	for team in teamAbbr:
 		if team[0] == playerName['Opponent']:
 			oppTeam = team[1]
-			print(oppTeam)
 
 	dvpIndex = 0
 	if playerName['Position'] == 'PG':
