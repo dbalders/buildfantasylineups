@@ -33,7 +33,7 @@ var playersTable = $('#players-table').dataTable({
     ],
     "columnDefs": [{
         "visible": false,
-        "targets": [0, 1]
+        "targets": [0]
     }],
     columns: [{
         "data": "ID"
@@ -123,7 +123,7 @@ var teamTable = $('#team-table').dataTable({
     ],
     "columnDefs": [{
         "visible": false,
-        "targets": [0, 1]
+        "targets": [0]
     }],
     columns: [{
         "data": "ID"
