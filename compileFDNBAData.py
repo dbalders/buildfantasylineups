@@ -16,7 +16,6 @@ playerFantasyPointsAvg = []
 finalJson = []
 numberInList = 0
 grinderProj = 0
-swishProj = 0
 
 if (len(sys.argv) > 1):
 	if (sys.argv[1] == "today"):
@@ -27,15 +26,11 @@ else:
 grindersProjectionUrl = 'https://rotogrinders.com/projected-stats/nba-player.csv?site=fanduel'
 grindersProjectionUrlResponse = urllib2.urlopen(grindersProjectionUrl)
 grindersProjData = list(csv.reader(grindersProjectionUrlResponse))
-swishProjData = requests.get('https://api.swishanalytics.com/nba/players/fantasy?date=' + date + '/&apikey=e4d97b074362422b80f18e6545beb37c').json()['data']['results']
 
 # print(player.get_player('James', 'Michael McAdoo'))
 
 with open('assets/json/fddata.json') as data_file:    
     fddata = json.load(data_file)
-
-with open('assets/json/swishIds.json') as data_file:    
-    swishIds = json.load(data_file)
  
 with open('assets/json/dvpPG.json') as data_file:    
     dvpPG = json.load(data_file)
@@ -131,31 +126,12 @@ for playerName in fddata:
 	if fdPlayerID == 0:
 		fdPlayerID = player.get_player(fdPlayerFirstName, fdPlayerLastName)
 
-	foundSwishID = 'false'
-
-	for swishPlayer in swishIds:
-		if fdPlayerFullName == swishPlayer['name']:
-			foundSwishID = 'true'
-			fdPlayerSwishId = swishPlayer['swishID']
-			break;
-
-	if foundSwishID == 'false':
-		print(fdPlayerFullName + " ERROR SWISH ID NOT FOUND")
-
 	grindersProj = 0
 
 	for grindersPlayer in grindersProjData:
 		if fdPlayerFullName == grindersPlayer[0]:
 			grindersProj = grindersPlayer[7]
 			break;
-
-	swishProj = 0
-
-	for swishPlayer in swishProjData:
-		if fdPlayerFullName == swishPlayer['name']:
-			swishProj = swishPlayer['fanduelFpts']
-			break;
-
 
 	gameLogs = player.PlayerGameLogs(fdPlayerID,'00','2016-17').info()
 
@@ -235,7 +211,6 @@ for playerName in fddata:
 
 	pointsPerDollar = round(round(playerName['FPPG'], 1) / (playerName['Salary'] / 1000.0), 1)
 	grindersPPD = round(float(grindersProj) / (playerName['Salary'] / 1000.0), 1)
-	swishPPD = round(float(swishProj) / (playerName['Salary'] / 1000.0), 1)
 
 	if len(gameLogs) > 0:
 		playerGameMinutes = round(playerGameMinutes / float(len(gameLogs)), 1)
@@ -254,8 +229,7 @@ for playerName in fddata:
 		'PPD': pointsPerDollar, 'MIN': playerGameMinutes, \
 		'lastFivePoints': round(lastFiveGamePoints, 1), \
 		'lastFivePPD': lastFiveGamePointsPPD, 'lastFiveGameMin':lastFiveGameMin, 'GameLogs': playerGames, \
-		'grindersProj': grindersProj, 'grindersPPD': grindersPPD, 'swishProj': swishProj, 'swishPPD': swishPPD, \
-		'swishID': fdPlayerSwishId, 'oppTeamDvPRank': dvpIndex})
+		'grindersProj': grindersProj, 'grindersPPD': grindersPPD,'oppTeamDvPRank': dvpIndex})
 	continue
 
 import optimizer

@@ -157,14 +157,3 @@ for row in finalJson:
 from ortools.linear_solver import pywraplp
 
 main(players, salaryCap, 'assets/json/optimalRotogrinders.json')
-
-players = [[], [], [], [], []]
-
-for row in finalJson:
-    players[getPositionNumber(row['Position'])].append(
-        [row['Name'], float(row['swishProj']), int(row['Salary']), row['Team'], row]
-    )
-
-from ortools.linear_solver import pywraplp
-
-main(players, salaryCap, 'assets/json/optimalSwish.json')

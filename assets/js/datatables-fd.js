@@ -38,8 +38,6 @@ var playersTable = $('#players-table').dataTable({
     columns: [{
         "data": "ID"
     }, {
-        "data": "swishID"
-    }, {
         "data": "Position"
     }, {
         "data": "Name"
@@ -51,10 +49,6 @@ var playersTable = $('#players-table').dataTable({
         "data": "grindersProj"
     }, {
         "data": "grindersPPD"
-    }, {
-        "data": "swishProj"
-    }, {
-        "data": "swishPPD"
     }, {
         "data": "MIN"
     }, {
@@ -134,8 +128,6 @@ var teamTable = $('#team-table').dataTable({
     columns: [{
         "data": "ID"
     }, {
-        "data": "swishID"
-    }, {
         "data": "Position"
     }, {
         "data": "Name"
@@ -147,10 +139,6 @@ var teamTable = $('#team-table').dataTable({
         "data": "grindersProj"
     }, {
         "data": "grindersPPD"
-    }, {
-        "data": "swishProj"
-    }, {
-        "data": "swishPPD"
     }, {
         "data": "MIN"
     }, {
@@ -200,13 +188,6 @@ var teamTable = $('#team-table').dataTable({
         action: function(e, dt, node, config) {
             var table = $('#team-table').DataTable();
             table.ajax.url('/assets/json/optimalRotogrinders.json').load();
-            tableFilled();
-        }
-    }, {
-        text: 'Best Roster Based on SwishAnalytics Projections',
-        action: function(e, dt, node, config) {
-            var table = $('#team-table').DataTable();
-            table.ajax.url('/assets/json/optimalSwish.json').load();
             tableFilled();
         }
     }],
@@ -379,7 +360,6 @@ function calculateTeamTotals() {
     var ppg = 0;
     var lastPPG = 0;
     var grindersPPG = 0;
-    var swishPPG = 0;
 
     var table = $('#team-table').DataTable();
 
@@ -406,9 +386,6 @@ function calculateTeamTotals() {
 
         grindersPPG = Math.round(Number(grindersPPG) + Number(this.data().grindersProj), 1);
         $('#total-rotogrinders').text(grindersPPG);
-
-        swishPPG = Math.round(Number(swishPPG) + Number(this.data().swishProj), 1);
-        $('#total-swish').text(swishPPG);
     });
 }
 
@@ -463,18 +440,5 @@ function colorTableCells(row, data, index) {
     }
     if (data.grindersPPD < 4 && data.grindersPPD !== "") {
         $('td:eq(5)', row).addClass('bright-red');
-    }
-
-    if (data.swishPPD > 5.1) {
-        $('td:eq(7)', row).addClass('bright-green');
-    }
-    if (data.swishPPD > 4.7 && data.swishPPD < 5.2) {
-        $('td:eq(7)', row).addClass('light-green');
-    }
-    if (data.swishPPD > 3.9 && data.swishPPD < 4.4) {
-        $('td:eq(7)', row).addClass('light-red');
-    }
-    if (data.swishPPD < 4 && data.swishPPD !== "") {
-        $('td:eq(7)', row).addClass('bright-red');
     }
 }
