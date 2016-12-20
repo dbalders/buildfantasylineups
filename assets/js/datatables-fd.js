@@ -29,7 +29,7 @@ var playersTable = $('#players-table').dataTable({
     deferRender: false,
     scroller: true,
     order: [
-        [4, "desc"]
+        [3, "desc"]
     ],
     "columnDefs": [{
         "visible": false,
