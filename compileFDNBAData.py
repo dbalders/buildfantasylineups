@@ -1,6 +1,7 @@
 from __future__ import print_function
 from nba_py import player
 from nba_py import game
+from nba_py import team
 import json
 import datetime
 import os
@@ -8,6 +9,11 @@ import csv
 import urllib2
 import requests
 import sys
+
+# print(team.TeamSummary(1610612745).info())
+
+paceJson = urllib2.urlopen('http://stats.nba.com/stats/leaguedashteamstats?Conference=&DateFrom=&DateTo=&Division=&GameScope=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=PerGame&Period=0&PlayerExperience=&PlayerPosition=&PlusMinus=N&Rank=N&Season=2016-17&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&StarterBench=&TeamID=0&VsConference=&VsDivision=')
+paceJson = json.loads(paceJson.read())['resultSets'][0]['rowSet']
 
 filename = 'assets/json/fdFinalData.json'
 playerIdList = []
@@ -139,6 +145,15 @@ for playerName in fddata:
 		if team[0] == playerName['Opponent']:
 			oppTeam = team[1]
 
+		if team[0] == playerName['Team']:
+			playerTeam = team[1]
+
+	for pace in paceJson:
+		if playerTeam == pace[1]:
+			teamPace = pace[19]
+		if oppTeam == pace[1]:
+			oppPace = pace[19]
+
 	dvpIndex = 0
 	if playerName['Position'] == 'PG':
 		for team in dvpPG:
@@ -229,7 +244,7 @@ for playerName in fddata:
 		'PPD': pointsPerDollar, 'MIN': playerGameMinutes, \
 		'lastFivePoints': round(lastFiveGamePoints, 1), \
 		'lastFivePPD': lastFiveGamePointsPPD, 'lastFiveGameMin':lastFiveGameMin, 'GameLogs': playerGames, \
-		'grindersProj': grindersProj, 'grindersPPD': grindersPPD,'oppTeamDvPRank': dvpIndex})
+		'grindersProj': grindersProj, 'grindersPPD': grindersPPD,'oppTeamDvPRank': dvpIndex, 'teamPace': teamPace, 'oppPace': oppPace})
 	continue
 
 import optimizer

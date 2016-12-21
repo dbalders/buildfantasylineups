@@ -46,6 +46,10 @@ var playersTable = $('#players-table').dataTable({
     }, {
         "data": "oppTeamDvPRank"
     }, {
+        "data": "teamPace"
+    }, {
+        "data": "oppPace"
+    }, {
         "data": "grindersProj"
     }, {
         "data": "grindersPPD"
@@ -135,6 +139,10 @@ var teamTable = $('#team-table').dataTable({
         "data": "Salary"
     }, {
         "data": "oppTeamDvPRank"
+    }, {
+        "data": "teamPace"
+    }, {
+        "data": "oppPace"
     }, {
         "data": "grindersProj"
     }, {
@@ -404,41 +412,67 @@ function colorTableCells(row, data, index) {
     }
 
     if (data.PPD > 5.1) {
-        $('td:eq(8)', row).addClass('bright-green');
+        $('td:eq(10)', row).addClass('bright-green');
     }
     if (data.PPD > 4.7 && data.PPD < 5.2) {
-        $('td:eq(8)', row).addClass('light-green');
+        $('td:eq(10)', row).addClass('light-green');
     }
     if (data.PPD > 3.9 && data.PPD < 4.4) {
-        $('td:eq(8)', row).addClass('light-red');
+        $('td:eq(10)', row).addClass('light-red');
     }
     if (data.PPD < 4 && data.PPD !== "") {
-        $('td:eq(8)', row).addClass('bright-red');
+        $('td:eq(10)', row).addClass('bright-red');
     }
 
     if (data.lastFivePPD > 5.1) {
-        $('td:eq(11)', row).addClass('bright-green');
+        $('td:eq(13)', row).addClass('bright-green');
     }
     if (data.lastFivePPD > 4.7 && data.lastFivePPD < 5.2) {
-        $('td:eq(11)', row).addClass('light-green');
+        $('td:eq(13)', row).addClass('light-green');
     }
     if (data.lastFivePPD > 3.9 && data.lastFivePPD < 4.4) {
-        $('td:eq(11)', row).addClass('light-red');
+        $('td:eq(13)', row).addClass('light-red');
     }
     if (data.lastFivePPD < 4 && data.lastFivePPD !== "") {
-        $('td:eq(11)', row).addClass('bright-red');
+        $('td:eq(13)', row).addClass('bright-red');
     }
 
     if (data.grindersPPD > 5.1) {
-        $('td:eq(5)', row).addClass('bright-green');
+        $('td:eq(7)', row).addClass('bright-green');
     }
     if (data.grindersPPD > 4.7 && data.grindersPPD < 5.2) {
-        $('td:eq(5)', row).addClass('light-green');
+        $('td:eq(7)', row).addClass('light-green');
     }
     if (data.grindersPPD > 3.9 && data.grindersPPD < 4.4) {
-        $('td:eq(5)', row).addClass('light-red');
+        $('td:eq(7)', row).addClass('light-red');
     }
     if (data.grindersPPD < 4 && data.grindersPPD !== "") {
+        $('td:eq(7)', row).addClass('bright-red');
+    }
+
+    if (data.oppPace > 101) {
+        $('td:eq(5)', row).addClass('bright-green');
+    }
+    if (data.oppPace > 100 && data.oppPace < 101.01) {
+        $('td:eq(5)', row).addClass('light-green');
+    }
+    if (data.oppPace > 96.5 && data.oppPace < 98) {
+        $('td:eq(5)', row).addClass('light-red');
+    }
+    if (data.oppPace < 96.5 && data.oppPace !== "") {
         $('td:eq(5)', row).addClass('bright-red');
+    }
+
+    if (data.teamPace > 101) {
+        $('td:eq(4)', row).addClass('bright-red');
+    }
+    if (data.teamPace > 100 && data.teamPace < 101.01) {
+        $('td:eq(4)', row).addClass('light-red');
+    }
+    if (data.teamPace > 96.5 && data.teamPace < 98) {
+        $('td:eq(4)', row).addClass('light-green');
+    }
+    if (data.teamPace < 96.5 && data.teamPace !== "") {
+        $('td:eq(4)', row).addClass('bright-green');
     }
 }
