@@ -69,32 +69,32 @@ var playersTable = $('#players-table').dataTable({
     buttons: [{
         text: 'All',
         action: function(e, dt, node, config) {
-            playersTable.api().column(2).search('').draw();
+            playersTable.api().column(1).search('').draw();
         }
     }, {
         text: 'PG',
         action: function(e, dt, node, config) {
-            playersTable.api().column(2).search('PG').draw();
+            playersTable.api().column(1).search('PG').draw();
         }
     }, {
         text: 'SG',
         action: function(e, dt, node, config) {
-            playersTable.api().column(2).search('SG').draw();
+            playersTable.api().column(1).search('SG').draw();
         }
     }, {
         text: 'SF',
         action: function(e, dt, node, config) {
-            playersTable.api().column(2).search('SF').draw();
+            playersTable.api().column(1).search('SF').draw();
         }
     }, {
         text: 'PF',
         action: function(e, dt, node, config) {
-            playersTable.api().column(2).search('PF').draw();
+            playersTable.api().column(1).search('PF').draw();
         }
     }, {
         text: 'C',
         action: function(e, dt, node, config) {
-            playersTable.api().column(2).search('C').draw();
+            playersTable.api().column(1).search('C').draw();
         }
     }, {
         text: 'Add Player',
