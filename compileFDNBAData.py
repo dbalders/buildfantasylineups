@@ -23,11 +23,11 @@ finalJson = []
 numberInList = 0
 grinderProj = 0
 
-if (len(sys.argv) > 1):
-	if (sys.argv[1] == "today"):
-		date = str(datetime.date.today())
-else:
-	date = str(datetime.date.today() + datetime.timedelta(days=1))
+# if (len(sys.argv) > 1):
+# 	if (sys.argv[1] == "today"):
+# 		date = str(datetime.date.today())
+# else:
+# 	date = str(datetime.date.today() + datetime.timedelta(days=1))
 
 grindersProjectionUrl = 'https://rotogrinders.com/projected-stats/nba-player.csv?site=fanduel'
 grindersProjectionUrlResponse = urllib2.urlopen(grindersProjectionUrl)
