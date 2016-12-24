@@ -33,7 +33,7 @@ grindersProjectionUrl = 'https://rotogrinders.com/projected-stats/nba-player.csv
 grindersProjectionUrlResponse = urllib2.urlopen(grindersProjectionUrl)
 grindersProjData = list(csv.reader(grindersProjectionUrlResponse))
 
-# print(player.get_player('James', 'Michael McAdoo'))
+# print(player.get_player('Rivers', 'Austin'))
 
 with open('assets/json/fddata.json') as data_file:    
     fddata = json.load(data_file)
@@ -91,6 +91,9 @@ for playerName in fddata:
 
 	if fdPlayerLastName == 'Jones Jr.':
 		fdPlayerLastName = 'Jones, Jr.'
+
+	if fdPlayerLastName == 'Rivers':
+		fdPlayerID = 203085
 
 	if fdPlayerFirstName == 'Nene':
 		fdPlayerID = 2403
