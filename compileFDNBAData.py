@@ -147,6 +147,8 @@ for playerName in fddata:
 	for team in teamAbbr:
 		if team[0] == playerName['Opponent']:
 			oppTeam = team[1]
+			if oppTeam == "Los Angeles Clippers":
+				oppTeam = "LA Clippers"
 
 		if team[0] == playerName['Team']:
 			playerTeam = team[1]
