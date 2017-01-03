@@ -408,29 +408,29 @@ function colorTableCells(row, data, index) {
     }
 
     if (data.PPD > 5.1) {
-        $('td:eq(10)', row).addClass('bright-green');
+        $('td:eq(9)', row).addClass('bright-green');
     }
     if (data.PPD > 4.7 && data.PPD < 5.2) {
-        $('td:eq(10)', row).addClass('light-green');
+        $('td:eq(9)', row).addClass('light-green');
     }
     if (data.PPD > 3.9 && data.PPD < 4.4) {
-        $('td:eq(10)', row).addClass('light-red');
+        $('td:eq(9)', row).addClass('light-red');
     }
     if (data.PPD < 4 && data.PPD !== "") {
-        $('td:eq(10)', row).addClass('bright-red');
+        $('td:eq(9)', row).addClass('bright-red');
     }
 
     if (data.lastFivePPD > 5.1) {
-        $('td:eq(13)', row).addClass('bright-green');
+        $('td:eq(12)', row).addClass('bright-green');
     }
     if (data.lastFivePPD > 4.7 && data.lastFivePPD < 5.2) {
-        $('td:eq(13)', row).addClass('light-green');
+        $('td:eq(12)', row).addClass('light-green');
     }
     if (data.lastFivePPD > 3.9 && data.lastFivePPD < 4.4) {
-        $('td:eq(13)', row).addClass('light-red');
+        $('td:eq(12)', row).addClass('light-red');
     }
     if (data.lastFivePPD < 4 && data.lastFivePPD !== "") {
-        $('td:eq(13)', row).addClass('bright-red');
+        $('td:eq(12)', row).addClass('bright-red');
     }
 
     if (data.grindersPPD > 5.1) {
