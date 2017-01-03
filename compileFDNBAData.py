@@ -194,7 +194,6 @@ for playerName in fddata:
 	# print(player.PlayerSummary(fdPlayerID).headline_stats())
 
 	playerGames = []
-	playerGameMinutes = 0
 	lastFive = 0
 	lastFiveGamePoints = 0
 	lastFiveGamePointsPPD = 0
@@ -211,8 +210,6 @@ for playerName in fddata:
 			gamePoints -= games['TOV'] * 1
 			gamePoints += games['STL'] * 2
 			gamePoints += games['BLK'] * 2
-
-			playerGameMinutes += games['MIN']
 
 			gameDate = game.BoxscoreSummary(games['Game_ID']).game_summary()
 			gameDate = datetime.datetime.strptime(gameDate[0]['GAME_DATE_EST'], "%Y-%m-%dT%H:%M:%S").date()
@@ -233,8 +230,6 @@ for playerName in fddata:
 	grindersPPD = round(float(grindersProj) / (playerName['Salary'] / 1000.0), 1)
 
 	if len(gameLogs) > 0:
-		playerGameMinutes = round(playerGameMinutes / float(len(gameLogs)), 1)
-
 		if len(gameLogs) >= 5:
 			lastFiveGamePoints = lastFiveGamePoints / 5.0
 			lastFiveGamePointsPPD = round(lastFiveGamePoints / (playerName['Salary'] / 1000.0), 1)
@@ -246,8 +241,7 @@ for playerName in fddata:
 
 	finalJson.append({'ID': fdPlayerID, 'Name': fdPlayerFirstName + " " + fdPlayerLastName, 'Salary': playerName['Salary'], \
 		'Position': playerName['Position'], 'Team': playerName['Team'], 'AvgPointsPerGame': round(playerName['FPPG'], 1), \
-		'PPD': pointsPerDollar, 'MIN': playerGameMinutes, \
-		'lastFivePoints': round(lastFiveGamePoints, 1), \
+		'PPD': pointsPerDollar, 'lastFivePoints': round(lastFiveGamePoints, 1), \
 		'lastFivePPD': lastFiveGamePointsPPD, 'lastFiveGameMin':lastFiveGameMin, 'GameLogs': playerGames, \
 		'grindersProj': grindersProj, 'grindersPPD': grindersPPD,'oppTeamDvPRank': dvpIndex, 'teamPace': teamPace, 'oppPace': oppPace})
 	continue

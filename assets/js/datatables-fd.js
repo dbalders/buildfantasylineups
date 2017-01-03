@@ -54,8 +54,6 @@ var playersTable = $('#players-table').dataTable({
     }, {
         "data": "grindersPPD"
     }, {
-        "data": "MIN"
-    }, {
         "data": "AvgPointsPerGame"
     }, {
         "data": "PPD"
@@ -147,8 +145,6 @@ var teamTable = $('#team-table').dataTable({
         "data": "grindersProj"
     }, {
         "data": "grindersPPD"
-    }, {
-        "data": "MIN"
     }, {
         "data": "AvgPointsPerGame"
     }, {
