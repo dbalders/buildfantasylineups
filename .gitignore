@@ -1,6 +1,5 @@
 .DS_Store
-json/fdFinalData.json
-json/optimalAVG.json
-json/optimalLastFive.json
-json/optimalRotogrinders.json
-json/dkFinalJson.json
+assets/json/fdFinalData.json
+assets/json/optimalAVG.json
+assets/json/optimalLastFive.json
+assets/json/optimalRotogrinders.json
