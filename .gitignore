@@ -1,5 +1,6 @@
 .DS_Store
 assets/json/fdFinalData.json
+assets/json/dkFinalData.json
 assets/json/optimalAVG.json
 assets/json/optimalLastFive.json
 assets/json/optimalRotogrinders.json
