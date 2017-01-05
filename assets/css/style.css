@@ -37,3 +37,12 @@
 .light-red {
 	background: rgba(255, 0, 0, .25) !important;
 }
+
+.center {
+    text-align: center;
+    margin: auto;
+    align-self: center;
+    align-content: center;
+    -webkit-align-self: center;
+    -webkit-align-content: center;
+}
