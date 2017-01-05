@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.0/css/select.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/scroller/1.4.2/css/scroller.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.dataTables.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,600,400,300|Source+Sans+Pro|Ubuntu" />
     <script src="http://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
@@ -12,13 +13,17 @@
     <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
     <script src="https://cdn.datatables.net/select/1.2.0/js/dataTables.select.min.js"></script>
     <script src="https://cdn.datatables.net/scroller/1.4.2/js/dataTables.scroller.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.1.1/js/dataTables.responsive.min.js"></script>
 </head>
 
 <body>
     <div id="main-container" class="flex-vertical">
         <nav id="nav" class="flex">
-            <div id="nav-title">FanDuel NBA Values</div>
         </nav>
+        <div id="site-title-container" class="flex-vertical center">
+            <h1 id="site-title">Fantasy Lineup Builder</h1>
+            <h3 id="site-subtitle">Helping you build your daily lineups to win more money</h3>
+        </div>
         <div id="totals-container">
             <table>
                 <thead>
@@ -59,169 +64,25 @@
                     <td>Last 5 Points</td>
                     <td>Last 5 PPD</td>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td>PG</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>PG</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>SG</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>SG</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>SF</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>SF</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>PF</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>PF</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>C</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
             </table>
         </div>
         <div id="players-table-container">
             <table id="players-table" class="dt-table display responsive" style="width:100%">
                 <thead>
                     <td>ID</td>
-                    <td>Pos</td>
-                    <td>Name</td>
-                    <td>Salary</td>
-                    <td>DvP</td>
-                    <td>Pace</td>
-                    <td>OppPace</td>
-                    <td>RGProj</td>
-                    <td>RGPPD</td>
-                    <td>Avg PPG</td>
-                    <td>Avg PPD</td>
-                    <td>Last 5 MPG</td>
-                    <td>Last 5 Points</td>
-                    <td>Last 5 PPD</td>
+                    <td title="Position">Pos</td>
+                    <td title="Player Name">Name</td>
+                    <td title="Fanduel Salary">Salary</td>
+                    <td title="Opponent Defense vs Position">DvP</td>
+                    <td title="Player Team Pace (Lower Better)">Pace</td>
+                    <td title="Opposing Team Pace (Higher Better)">OppPace</td>
+                    <td title="Rotogrinders Projected Score">RGProj</td>
+                    <td title="Rotogrinders Projected Points Per Dollar">RGPPD</td>
+                    <td title="Season Average Points Per Game (1000x)">Avg PPG</td>
+                    <td title="Season Average Points Per Dollar (1000x)">Avg PPD</td>
+                    <td title="Last Five Games Minutes Per Game">Last 5 MPG</td>
+                    <td title="Last Five Games Points Per Game">Last 5 Points</td>
+                    <td title="Last Five Games Points Per Dollar (1000x)">Last 5 PPD</td>
                 </thead>
             </table>
         </div>

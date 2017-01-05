@@ -28,6 +28,7 @@ var playersTable = $('#players-table').dataTable({
     scrollY: 600,
     deferRender: false,
     scroller: true,
+    responsive: true,
     order: [
         [3, "desc"]
     ],
@@ -120,6 +121,7 @@ var teamTable = $('#team-table').dataTable({
     destroy: true,
     select: true,
     ordering: false,
+    responsive: true,
     order: [
         [3, "desc"]
     ],
@@ -215,10 +217,10 @@ function addPlayersToTeam() {
     switch (playerPosition) {
         case 'PG':
             if (pg1 === 0) {
-                addTeamTable.row(0).data(playerData);
+                addTeamTable.row(0).data(playerData).draw();
                 pg1 = 1;
             } else if (pg2 === 0) {
-                addTeamTable.row(1).data(playerData);
+                addTeamTable.row(1).data(playerData).draw();
                 pg2 = 1;
             } else {
 
@@ -227,10 +229,10 @@ function addPlayersToTeam() {
 
         case 'SG':
             if (sg1 === 0) {
-                addTeamTable.row(2).data(playerData);
+                addTeamTable.row(2).data(playerData).draw();
                 sg1 = 1;
             } else if (sg2 === 0) {
-                addTeamTable.row(3).data(playerData);
+                addTeamTable.row(3).data(playerData).draw();
                 sg2 = 1;
             } else {
 
@@ -239,10 +241,10 @@ function addPlayersToTeam() {
 
         case 'SF':
             if (sf1 === 0) {
-                addTeamTable.row(4).data(playerData);
+                addTeamTable.row(4).data(playerData).draw();
                 sf1 = 1;
             } else if (sf2 === 0) {
-                addTeamTable.row(5).data(playerData);
+                addTeamTable.row(5).data(playerData).draw();
                 sf2 = 1;
             } else {
 
@@ -251,10 +253,10 @@ function addPlayersToTeam() {
 
         case 'PF':
             if (pf1 === 0) {
-                addTeamTable.row(6).data(playerData);
+                addTeamTable.row(6).data(playerData).draw();
                 pf1 = 1;
             } else if (pf2 === 0) {
-                addTeamTable.row(7).data(playerData);
+                addTeamTable.row(7).data(playerData).draw();
                 pf2 = 1;
             } else {
 
@@ -263,7 +265,7 @@ function addPlayersToTeam() {
 
         case 'C':
             if (c1 === 0) {
-                addTeamTable.row(8).data(playerData);
+                addTeamTable.row(8).data(playerData).draw();
                 c1 = 1;
             } else {
 
