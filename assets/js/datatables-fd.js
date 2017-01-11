@@ -17,7 +17,7 @@ var origCRow = [];
 
 var playersTable = $('#players-table').dataTable({
     ajax: {
-        url: '/assets/json/fdFinalData.json',
+        url: '/fdFinalData',
         dataSrc: ""
     },
     dom: 'Bflrtip',
@@ -112,7 +112,7 @@ var playersTable = $('#players-table').dataTable({
 
 var teamTable = $('#team-table').dataTable({
     ajax: {
-        url: "/assets/json/blank.json",
+        url: "/blank",
         dataSrc: ""
     },
     dom: 'Blrtip',
@@ -172,28 +172,28 @@ var teamTable = $('#team-table').dataTable({
         text: 'Clear',
         action: function(e, dt, node, config) {
             var table = $('#team-table').DataTable();
-            table.ajax.url('/assets/json/blank.json').load();
+            table.ajax.url('/blank').load();
             tableCleared();
         }
     }, {
         text: 'Best Roster Based on Season AVG',
         action: function(e, dt, node, config) {
             var table = $('#team-table').DataTable();
-            table.ajax.url('/assets/json/optimalAVG.json').load();
+            table.ajax.url('/optimalAVG').load();
             tableFilled();
         }
     }, {
         text: 'Best Roster Based on Last 5 Games',
         action: function(e, dt, node, config) {
             var table = $('#team-table').DataTable();
-            table.ajax.url('/assets/json/optimalLastFive.json').load();
+            table.ajax.url('/optimalLastFive').load();
             tableFilled();
         }
     }, {
         text: 'Best Roster Based on Rotogrinders Projections',
         action: function(e, dt, node, config) {
             var table = $('#team-table').DataTable();
-            table.ajax.url('/assets/json/optimalRotogrinders.json').load();
+            table.ajax.url('/optimalRotogrinders').load();
             tableFilled();
         }
     }],
