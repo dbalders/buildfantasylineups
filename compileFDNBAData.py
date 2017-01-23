@@ -12,7 +12,9 @@ import sys
 
 # print(team.TeamSummary(1610612745).info())
 
-paceJson = urllib2.urlopen('http://stats.nba.com/stats/leaguedashteamstats?Conference=&DateFrom=&DateTo=&Division=&GameScope=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=PerGame&Period=0&PlayerExperience=&PlayerPosition=&PlusMinus=N&Rank=N&Season=2016-17&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&StarterBench=&TeamID=0&VsConference=&VsDivision=')
+paceJson = urllib2.Request('http://stats.nba.com/stats/leaguedashteamstats?Conference=&DateFrom=&DateTo=&Division=&GameScope=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Advanced&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=PerGame&Period=0&PlayerExperience=&PlayerPosition=&PlusMinus=N&Rank=N&Season=2016-17&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&StarterBench=&TeamID=0&VsConference=&VsDivision=')
+paceJson.add_header('User-Agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:39.0) Gecko/20100101 Firefox/39.0')
+paceJson = urllib2.urlopen(paceJson)
 paceJson = json.loads(paceJson.read())['resultSets'][0]['rowSet']
 
 filename = 'assets/json/fdFinalData.json'
@@ -29,7 +31,8 @@ grinderProj = 0
 # else:
 # 	date = str(datetime.date.today() + datetime.timedelta(days=1))
 
-grindersProjectionUrl = 'https://rotogrinders.com/projected-stats/nba-player.csv?site=fanduel'
+grindersProjectionUrl = urllib2.Request('https://rotogrinders.com/projected-stats/nba-player.csv?site=fanduel')
+grindersProjectionUrl.add_header('User-Agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:39.0) Gecko/20100101 Firefox/39.0')
 grindersProjectionUrlResponse = urllib2.urlopen(grindersProjectionUrl)
 grindersProjData = list(csv.reader(grindersProjectionUrlResponse))
 
